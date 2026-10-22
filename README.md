@@ -1,5 +1,7 @@
 # Herbal Wellness AI
 
+**Live app:** https://herbalai-4zk2xbn3wmgfuwdp5juo5f.streamlit.app/
+
 A conversational herbal wellness and nutrition education assistant built with Python and Streamlit.
 It asks relevant questions gradually, runs a **deterministic safety engine** (allergies, medicines,
 pregnancy, age, warning signs), and only then suggests single-ingredient options from a local knowledge
