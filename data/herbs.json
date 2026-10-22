@@ -1,0 +1,1666 @@
+{
+  "_note": "Curated starter dataset. Every entry is a DRAFT that must be reviewed by a qualified clinician/pharmacist before real-world use. 'insufficient_data' means unknown and is treated as NOT safe.",
+  "herbs": [
+    {
+      "id": "aloe_vera",
+      "common_name": "Aloe vera",
+      "scientific_name": "Aloe barbadensis miller (Aloe vera)",
+      "aliases": [
+        "aloe",
+        "aloe gel",
+        "ghritkumari"
+      ],
+      "plant_parts": [
+        "leaf gel (inner)"
+      ],
+      "categories": [
+        "skin",
+        "hair"
+      ],
+      "routes": [
+        "topical"
+      ],
+      "traditional_uses": [
+        "Soothing minor sunburn and irritated skin",
+        "Scalp soothing"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Topical gel for minor burns and skin irritation",
+          "category": "skin",
+          "evidence_level": "limited"
+        },
+        {
+          "use": "Dandruff / scalp comfort",
+          "category": "hair",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "limited",
+      "forms": [
+        "gel",
+        "cream"
+      ],
+      "risks": [
+        "Skin irritation or allergic contact dermatitis in some people",
+        "Do not apply to deep, infected, or heavily bleeding wounds"
+      ],
+      "contraindications": {
+        "conditions": [],
+        "notes": [
+          "Oral aloe latex (laxative) is NOT covered by this app: it can cause cramps, electrolyte loss and has safety concerns."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "diuretics",
+          "severity": "moderate",
+          "note": "Applies to oral aloe latex only; topical gel is not expected to interact but data are limited."
+        }
+      ],
+      "allergy_info": {
+        "family": "Asphodelaceae/Liliaceae",
+        "keywords": [
+          "aloe",
+          "aloe vera",
+          "garlic",
+          "onion",
+          "tulip"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "topical": 18,
+        "oral": null
+      },
+      "preparation": "Use a commercial gel with a short, known ingredient list. Patch test first (see precautions).",
+      "when_to_stop": [
+        "Redness, itching, burning or rash appears",
+        "No improvement after about 2 weeks of reasonable use"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Aloe Vera - Herbs at a Glance",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "skin": [
+          "topical"
+        ],
+        "hair": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "ginger",
+      "common_name": "Ginger",
+      "scientific_name": "Zingiber officinale",
+      "aliases": [
+        "adrak",
+        "ginger root"
+      ],
+      "plant_parts": [
+        "rhizome"
+      ],
+      "categories": [
+        "digestion",
+        "general"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Nausea and indigestion",
+        "Warming tea for colds"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Short-term relief of nausea (e.g. motion or post-operative nausea)",
+          "category": "digestion",
+          "evidence_level": "moderate"
+        },
+        {
+          "use": "General indigestion / bloating",
+          "category": "digestion",
+          "evidence_level": "limited"
+        }
+      ],
+      "evidence_level": "moderate",
+      "forms": [
+        "fresh root tea",
+        "capsule",
+        "powder"
+      ],
+      "risks": [
+        "Heartburn, stomach upset or gas, especially in larger amounts",
+        "May increase bleeding tendency in theory at high intakes"
+      ],
+      "contraindications": {
+        "conditions": [
+          "gallstones",
+          "bleeding disorder"
+        ],
+        "notes": [
+          "Stop before planned surgery unless your surgeon says otherwise."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Possible additive effect on bleeding risk; evidence mixed."
+        },
+        {
+          "medication_class": "antidiabetics",
+          "severity": "mild",
+          "note": "May lower blood sugar; monitor if using supplements."
+        }
+      ],
+      "allergy_info": {
+        "family": "Zingiberaceae",
+        "keywords": [
+          "ginger",
+          "turmeric",
+          "cardamom",
+          "galangal"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Simple tea from fresh sliced root steeped in hot water is a common food-level preparation.",
+      "when_to_stop": [
+        "Worsening heartburn or stomach pain",
+        "Rash or swelling",
+        "Any unusual bruising or bleeding"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Ginger - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "European Medicines Agency (EMA/HMPC)",
+          "title": "Community herbal monograph on Zingiber officinale rhizoma",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "digestion": [
+          "oral"
+        ],
+        "general": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "turmeric",
+      "common_name": "Turmeric",
+      "scientific_name": "Curcuma longa",
+      "aliases": [
+        "haldi",
+        "curcumin"
+      ],
+      "plant_parts": [
+        "rhizome"
+      ],
+      "categories": [
+        "general",
+        "digestion",
+        "skin"
+      ],
+      "routes": [
+        "oral",
+        "topical"
+      ],
+      "traditional_uses": [
+        "Culinary spice and traditional skin and digestive remedy"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Joint comfort (curcumin extracts)",
+          "category": "general",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "culinary spice",
+        "capsule",
+        "paste"
+      ],
+      "risks": [
+        "Liver injury has been reported with concentrated turmeric/curcumin supplements",
+        "Topical paste stains skin and can irritate"
+      ],
+      "contraindications": {
+        "conditions": [
+          "liver disease",
+          "gallbladder disease",
+          "bile duct obstruction",
+          "bleeding disorder",
+          "iron deficiency"
+        ],
+        "notes": [
+          "Culinary amounts are different from concentrated supplements."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Possible additive bleeding risk."
+        },
+        {
+          "medication_class": "antidiabetics",
+          "severity": "moderate",
+          "note": "May lower blood sugar."
+        },
+        {
+          "medication_class": "immunosuppressants",
+          "severity": "moderate",
+          "note": "Possible effect on drug levels; data limited."
+        }
+      ],
+      "allergy_info": {
+        "family": "Zingiberaceae",
+        "keywords": [
+          "turmeric",
+          "curcumin",
+          "ginger",
+          "cardamom"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": 18
+      },
+      "preparation": "Culinary use in food is the lowest-risk way to include turmeric. Supplements are not recommended by this app without clinician input.",
+      "when_to_stop": [
+        "Dark urine, yellow skin/eyes, or abdominal pain (seek care)",
+        "Rash or itching"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Turmeric - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "NIH LiverTox",
+          "title": "Turmeric",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "general": [
+          "oral"
+        ],
+        "digestion": [
+          "oral"
+        ],
+        "skin": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "peppermint",
+      "common_name": "Peppermint",
+      "scientific_name": "Mentha x piperita",
+      "aliases": [
+        "pudina",
+        "mint"
+      ],
+      "plant_parts": [
+        "leaf",
+        "leaf oil"
+      ],
+      "categories": [
+        "digestion"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "After-meal tea for bloating and indigestion"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Enteric-coated peppermint oil for irritable bowel syndrome symptoms",
+          "category": "digestion",
+          "evidence_level": "moderate"
+        }
+      ],
+      "evidence_level": "moderate",
+      "forms": [
+        "leaf tea",
+        "enteric-coated oil capsule"
+      ],
+      "risks": [
+        "Can worsen heartburn / reflux",
+        "Peppermint oil capsules can cause anal burning or nausea",
+        "Menthol products must not be applied to the face of infants or young children"
+      ],
+      "contraindications": {
+        "conditions": [
+          "gastroesophageal reflux",
+          "hiatal hernia",
+          "gallstones",
+          "G6PD deficiency",
+          "kidney stones"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "cyp3a4_substrates",
+          "severity": "moderate",
+          "note": "Peppermint oil may affect levels of some drugs (e.g. certain calcium-channel blockers, statins, immunosuppressants)."
+        },
+        {
+          "medication_class": "antacids_acid_reducers",
+          "severity": "mild",
+          "note": "Acid reducers can cause enteric-coated capsules to dissolve too early."
+        }
+      ],
+      "allergy_info": {
+        "family": "Lamiaceae",
+        "keywords": [
+          "mint",
+          "peppermint",
+          "spearmint",
+          "menthol",
+          "lavender",
+          "rosemary",
+          "sage",
+          "thyme",
+          "basil",
+          "oregano"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "A cup of peppermint leaf tea after meals is a common food-level use.",
+      "when_to_stop": [
+        "Heartburn gets worse",
+        "Rash or mouth sores"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Peppermint Oil - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "European Medicines Agency (EMA/HMPC)",
+          "title": "Community herbal monograph on Mentha x piperita L., folium",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "digestion": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "chamomile",
+      "common_name": "Chamomile",
+      "scientific_name": "Matricaria chamomilla (German chamomile)",
+      "aliases": [
+        "babune"
+      ],
+      "plant_parts": [
+        "flower"
+      ],
+      "categories": [
+        "sleep_stress",
+        "digestion",
+        "skin"
+      ],
+      "routes": [
+        "oral",
+        "topical"
+      ],
+      "traditional_uses": [
+        "Calming evening tea",
+        "Settling upset stomach",
+        "Soothing skin"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Mild anxiety symptoms (extract, small trials)",
+          "category": "sleep_stress",
+          "evidence_level": "preliminary"
+        },
+        {
+          "use": "Sleep quality (tea)",
+          "category": "sleep_stress",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "flower tea",
+        "extract"
+      ],
+      "risks": [
+        "Allergic reactions, including in people allergic to ragweed or related plants"
+      ],
+      "contraindications": {
+        "conditions": [
+          "bleeding disorder"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Case reports of increased bleeding with warfarin."
+        },
+        {
+          "medication_class": "sedatives",
+          "severity": "mild",
+          "note": "May add to drowsiness."
+        },
+        {
+          "medication_class": "cyp_substrates_general",
+          "severity": "mild",
+          "note": "Possible mild enzyme effects; data limited."
+        }
+      ],
+      "allergy_info": {
+        "family": "Asteraceae",
+        "keywords": [
+          "chamomile",
+          "ragweed",
+          "daisy",
+          "chrysanthemum",
+          "marigold",
+          "calendula",
+          "echinacea",
+          "sunflower"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "A cup of chamomile tea in the evening is a food-level use.",
+      "when_to_stop": [
+        "Itching, rash, swelling or breathing difficulty (emergency care for breathing trouble)"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Chamomile - Herbs at a Glance",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "sleep_stress": [
+          "oral"
+        ],
+        "digestion": [
+          "oral"
+        ],
+        "skin": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "rosemary",
+      "common_name": "Rosemary",
+      "scientific_name": "Salvia rosmarinus (Rosmarinus officinalis)",
+      "aliases": [
+        "rosemary oil",
+        "rosemary extract"
+      ],
+      "plant_parts": [
+        "leaf"
+      ],
+      "categories": [
+        "hair"
+      ],
+      "routes": [
+        "topical"
+      ],
+      "traditional_uses": [
+        "Scalp massage oils for hair care"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Rosemary oil on the scalp for androgenetic hair loss (one small trial compared with 2% minoxidil)",
+          "category": "hair",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "diluted rosemary oil in a carrier oil",
+        "shampoo containing rosemary"
+      ],
+      "risks": [
+        "Scalp irritation or allergic contact dermatitis",
+        "Concentrated essential oil must be diluted and never swallowed"
+      ],
+      "contraindications": {
+        "conditions": [
+          "epilepsy",
+          "active scalp inflammation",
+          "broken skin on scalp"
+        ],
+        "notes": [
+          "Hair loss with redness, scaling, pain or patches needs a clinician, not self-care."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "mild",
+          "note": "Applies mainly to oral use; topical interaction data are limited."
+        }
+      ],
+      "allergy_info": {
+        "family": "Lamiaceae",
+        "keywords": [
+          "rosemary",
+          "mint",
+          "peppermint",
+          "lavender",
+          "sage",
+          "thyme",
+          "basil",
+          "oregano"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "topical": 18,
+        "oral": null
+      },
+      "preparation": "Use a commercial scalp product with the essential oil already diluted, or ask a clinician/pharmacist about a safe dilution. Patch test first.",
+      "when_to_stop": [
+        "Itching, burning, redness or flaking",
+        "More shedding or new bald patches"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Essential oils safety overview",
+          "url": null
+        },
+        {
+          "publisher": "Skinmed (journal)",
+          "title": "Panahi et al. 2015. Rosemary oil vs minoxidil 2% for androgenetic alopecia: a comparative trial",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "hair": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "green_tea",
+      "common_name": "Green tea",
+      "scientific_name": "Camellia sinensis",
+      "aliases": [
+        "chai sabz",
+        "matcha"
+      ],
+      "plant_parts": [
+        "leaf"
+      ],
+      "categories": [
+        "general",
+        "nutrition"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Everyday beverage; traditional digestive and alertness aid"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Mild alertness (caffeine content)",
+          "category": "general",
+          "evidence_level": "moderate"
+        }
+      ],
+      "evidence_level": "limited",
+      "forms": [
+        "brewed tea"
+      ],
+      "risks": [
+        "Contains caffeine: sleep disruption, jitteriness, palpitations",
+        "Concentrated green tea EXTRACT supplements are linked to liver injury; this app does not recommend them",
+        "Can reduce iron absorption when taken with meals"
+      ],
+      "contraindications": {
+        "conditions": [
+          "anxiety disorder",
+          "heart rhythm problems",
+          "liver disease",
+          "iron deficiency anemia",
+          "insomnia"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Vitamin K content may oppose warfarin."
+        },
+        {
+          "medication_class": "stimulants",
+          "severity": "moderate",
+          "note": "Additive caffeine effects."
+        },
+        {
+          "medication_class": "beta_blockers",
+          "severity": "moderate",
+          "note": "Green tea may lower levels of some beta-blockers such as nadolol."
+        }
+      ],
+      "allergy_info": {
+        "family": "Theaceae",
+        "keywords": [
+          "green tea",
+          "tea",
+          "camellia",
+          "caffeine"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Brewed tea as a beverage only. Avoid late in the day if sleep is a concern.",
+      "when_to_stop": [
+        "Palpitations, tremor, or worsened sleep",
+        "Stomach upset"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Green Tea - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "NIH LiverTox",
+          "title": "Green tea",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "general": [
+          "oral"
+        ],
+        "nutrition": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "psyllium_husk",
+      "common_name": "Psyllium husk",
+      "scientific_name": "Plantago ovata",
+      "aliases": [
+        "isabgol",
+        "ispaghula"
+      ],
+      "plant_parts": [
+        "seed husk"
+      ],
+      "categories": [
+        "digestion",
+        "nutrition"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Bulk fibre for regularity"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Constipation (bulk-forming fibre)",
+          "category": "digestion",
+          "evidence_level": "well_established"
+        },
+        {
+          "use": "Modest reduction in LDL cholesterol as part of a healthy diet",
+          "category": "nutrition",
+          "evidence_level": "moderate"
+        }
+      ],
+      "evidence_level": "well_established",
+      "forms": [
+        "powder",
+        "capsule",
+        "wafer"
+      ],
+      "risks": [
+        "Must be taken with plenty of fluid: choking or bowel obstruction risk if not",
+        "Gas, bloating, cramps especially when starting",
+        "Rare allergy, including in people who handle psyllium powder"
+      ],
+      "contraindications": {
+        "conditions": [
+          "difficulty swallowing",
+          "bowel obstruction",
+          "narrowed bowel",
+          "fecal impaction"
+        ],
+        "notes": [
+          "Persistent constipation or blood in stool needs medical evaluation."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "antidiabetics",
+          "severity": "mild",
+          "note": "May slow sugar absorption; monitor."
+        },
+        {
+          "medication_class": "any_oral_medication",
+          "severity": "moderate",
+          "note": "Fibre can reduce absorption of other medicines; they are usually taken at a different time of day. Ask a pharmacist."
+        },
+        {
+          "medication_class": "lithium",
+          "severity": "moderate",
+          "note": "Reported reduced absorption."
+        }
+      ],
+      "allergy_info": {
+        "family": "Plantaginaceae",
+        "keywords": [
+          "psyllium",
+          "plantain",
+          "plantago",
+          "isabgol",
+          "ispaghula"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Follow the product label exactly and drink adequate fluid. This app does not state doses.",
+      "when_to_stop": [
+        "Chest or throat discomfort when swallowing (emergency)",
+        "Severe abdominal pain or vomiting",
+        "No improvement within the time stated on the product label"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Psyllium (fibre) information",
+          "url": null
+        },
+        {
+          "publisher": "European Medicines Agency (EMA/HMPC)",
+          "title": "Community herbal monograph on Plantago ovata seed/husk",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "digestion": [
+          "oral"
+        ],
+        "nutrition": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "fenugreek",
+      "common_name": "Fenugreek",
+      "scientific_name": "Trigonella foenum-graecum",
+      "aliases": [
+        "methi"
+      ],
+      "plant_parts": [
+        "seed",
+        "leaf"
+      ],
+      "categories": [
+        "nutrition",
+        "digestion"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Cooking spice",
+        "Traditional hair and lactation remedy"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Blood glucose support (small trials, mixed)",
+          "category": "nutrition",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "culinary seed",
+        "powder",
+        "capsule"
+      ],
+      "risks": [
+        "Gas, diarrhoea, nausea",
+        "Allergic reactions, including cross-reactivity with peanut/chickpea",
+        "Maple-syrup body odour"
+      ],
+      "contraindications": {
+        "conditions": [
+          "peanut or legume allergy",
+          "bleeding disorder"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "antidiabetics",
+          "severity": "moderate",
+          "note": "May lower blood sugar; hypoglycaemia possible."
+        },
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Possible additive bleeding risk."
+        }
+      ],
+      "allergy_info": {
+        "family": "Fabaceae",
+        "keywords": [
+          "fenugreek",
+          "peanut",
+          "chickpea",
+          "legume",
+          "soy"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Culinary use as a spice is the lowest-risk approach. Supplement forms are not recommended by this app without clinician input.",
+      "when_to_stop": [
+        "Wheeze, rash or swelling (emergency care for breathing trouble)",
+        "Persistent diarrhoea"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Fenugreek - Herbs at a Glance",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "nutrition": [
+          "oral"
+        ],
+        "digestion": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "neem",
+      "common_name": "Neem",
+      "scientific_name": "Azadirachta indica",
+      "aliases": [
+        "margosa",
+        "nimba"
+      ],
+      "plant_parts": [
+        "leaf",
+        "seed oil"
+      ],
+      "categories": [
+        "skin",
+        "hair"
+      ],
+      "routes": [
+        "topical"
+      ],
+      "traditional_uses": [
+        "Traditional skin and scalp preparations in South Asia"
+      ],
+      "evidence_supported_uses": [],
+      "evidence_level": "traditional_only",
+      "forms": [
+        "leaf paste",
+        "shampoo",
+        "soap"
+      ],
+      "risks": [
+        "Neem OIL swallowed has caused severe toxicity, especially in infants and children",
+        "Skin irritation or allergic contact dermatitis"
+      ],
+      "contraindications": {
+        "conditions": [
+          "autoimmune disease",
+          "organ transplant"
+        ],
+        "notes": [
+          "Do not swallow neem oil or give neem products to children."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "antidiabetics",
+          "severity": "moderate",
+          "note": "Possible blood sugar lowering."
+        },
+        {
+          "medication_class": "immunosuppressants",
+          "severity": "moderate",
+          "note": "Possible immune stimulation; data limited."
+        }
+      ],
+      "allergy_info": {
+        "family": "Meliaceae",
+        "keywords": [
+          "neem",
+          "margosa"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "topical": 18,
+        "oral": null
+      },
+      "preparation": "Use only a product whose label states topical use. Patch test first. No home neem-oil recipes are provided.",
+      "when_to_stop": [
+        "Rash, burning, or any swallowing of neem oil (seek urgent care)"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH LiverTox",
+          "title": "Neem",
+          "url": null
+        },
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Herbal safety overview",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "skin": [
+          "topical"
+        ],
+        "hair": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "calendula",
+      "common_name": "Calendula",
+      "scientific_name": "Calendula officinalis",
+      "aliases": [
+        "marigold",
+        "pot marigold"
+      ],
+      "plant_parts": [
+        "flower"
+      ],
+      "categories": [
+        "skin"
+      ],
+      "routes": [
+        "topical"
+      ],
+      "traditional_uses": [
+        "Soothing creams for minor skin irritation and dryness"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Topical use for minor skin irritation and wound care (limited evidence)",
+          "category": "skin",
+          "evidence_level": "limited"
+        }
+      ],
+      "evidence_level": "limited",
+      "forms": [
+        "cream",
+        "ointment"
+      ],
+      "risks": [
+        "Allergic contact dermatitis, especially if allergic to daisy-family plants"
+      ],
+      "contraindications": {
+        "conditions": [
+          "deep or infected wounds"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [],
+      "allergy_info": {
+        "family": "Asteraceae",
+        "keywords": [
+          "calendula",
+          "marigold",
+          "ragweed",
+          "chamomile",
+          "daisy",
+          "chrysanthemum",
+          "echinacea",
+          "sunflower"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "topical": 18,
+        "oral": null
+      },
+      "preparation": "Use a commercial cream with a clear ingredient list. Patch test first.",
+      "when_to_stop": [
+        "Redness, itching or rash",
+        "Wound shows signs of infection (see a clinician)"
+      ],
+      "sources": [
+        {
+          "publisher": "European Medicines Agency (EMA/HMPC)",
+          "title": "Community herbal monograph on Calendula officinalis flos",
+          "url": null
+        },
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Herbal safety overview",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "skin": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "lavender",
+      "common_name": "Lavender",
+      "scientific_name": "Lavandula angustifolia",
+      "aliases": [
+        "lavender oil"
+      ],
+      "plant_parts": [
+        "flower"
+      ],
+      "categories": [
+        "sleep_stress"
+      ],
+      "routes": [
+        "topical"
+      ],
+      "traditional_uses": [
+        "Aromatic relaxation and sleep aid"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Aromatherapy for relaxation and sleep quality (small trials, mixed)",
+          "category": "sleep_stress",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "room aromatherapy",
+        "diluted massage oil"
+      ],
+      "risks": [
+        "Skin irritation if applied undiluted",
+        "Do not swallow essential oil",
+        "Some case reports of hormone-related effects in boys with repeated skin exposure"
+      ],
+      "contraindications": {
+        "conditions": [
+          "epilepsy"
+        ],
+        "notes": []
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "sedatives",
+          "severity": "mild",
+          "note": "May add to drowsiness."
+        }
+      ],
+      "allergy_info": {
+        "family": "Lamiaceae",
+        "keywords": [
+          "lavender",
+          "mint",
+          "peppermint",
+          "rosemary",
+          "sage",
+          "thyme",
+          "basil",
+          "oregano"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "topical": 18,
+        "oral": null
+      },
+      "preparation": "Inhalation via a room diffuser or a ready-diluted product. No undiluted skin application.",
+      "when_to_stop": [
+        "Headache, nausea, rash or breathing irritation"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Lavender - Herbs at a Glance",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "sleep_stress": [
+          "topical"
+        ]
+      }
+    },
+    {
+      "id": "licorice",
+      "common_name": "Licorice root",
+      "scientific_name": "Glycyrrhiza glabra",
+      "aliases": [
+        "mulethi",
+        "liquorice"
+      ],
+      "plant_parts": [
+        "root"
+      ],
+      "categories": [
+        "digestion"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Soothing throat and stomach remedy"
+      ],
+      "evidence_supported_uses": [],
+      "evidence_level": "limited",
+      "forms": [
+        "root tea",
+        "extract"
+      ],
+      "risks": [
+        "Glycyrrhizin can raise blood pressure, lower potassium and cause fluid retention",
+        "Higher-risk herb: this app does not recommend it without clinician review"
+      ],
+      "contraindications": {
+        "conditions": [
+          "high blood pressure",
+          "heart disease",
+          "kidney disease",
+          "liver disease",
+          "low potassium"
+        ],
+        "notes": [
+          "Deglycyrrhizinated (DGL) products differ; not assessed in this app."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "diuretics",
+          "severity": "major",
+          "note": "Additive potassium loss."
+        },
+        {
+          "medication_class": "digoxin",
+          "severity": "major",
+          "note": "Low potassium raises digoxin toxicity risk."
+        },
+        {
+          "medication_class": "antihypertensives",
+          "severity": "major",
+          "note": "May oppose blood-pressure lowering."
+        },
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "May reduce warfarin effect."
+        },
+        {
+          "medication_class": "corticosteroids",
+          "severity": "major",
+          "note": "Additive potassium loss and fluid retention."
+        }
+      ],
+      "allergy_info": {
+        "family": "Fabaceae",
+        "keywords": [
+          "licorice",
+          "liquorice",
+          "glycyrrhiza"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Not provided: restricted herb in this app.",
+      "when_to_stop": [
+        "Headache, swelling, muscle weakness or palpitations (seek care)"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Licorice Root - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "NIH LiverTox",
+          "title": "Licorice",
+          "url": null
+        }
+      ],
+      "restricted": true,
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "digestion": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "ashwagandha",
+      "common_name": "Ashwagandha",
+      "scientific_name": "Withania somnifera",
+      "aliases": [
+        "indian ginseng",
+        "winter cherry"
+      ],
+      "plant_parts": [
+        "root"
+      ],
+      "categories": [
+        "sleep_stress",
+        "general"
+      ],
+      "routes": [
+        "oral"
+      ],
+      "traditional_uses": [
+        "Ayurvedic tonic for stress and vitality"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Perceived stress and sleep (small, short trials of root extracts)",
+          "category": "sleep_stress",
+          "evidence_level": "preliminary"
+        }
+      ],
+      "evidence_level": "preliminary",
+      "forms": [
+        "capsule",
+        "powder"
+      ],
+      "risks": [
+        "Liver injury has been reported",
+        "May affect thyroid hormone levels",
+        "Drowsiness, stomach upset"
+      ],
+      "contraindications": {
+        "conditions": [
+          "thyroid disorder",
+          "liver disease",
+          "autoimmune disease",
+          "organ transplant",
+          "prostate cancer (hormone-sensitive)"
+        ],
+        "notes": [
+          "Stop before planned surgery unless a clinician advises otherwise."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "thyroid_medication",
+          "severity": "major",
+          "note": "May increase thyroid hormone levels."
+        },
+        {
+          "medication_class": "sedatives",
+          "severity": "moderate",
+          "note": "Additive sedation."
+        },
+        {
+          "medication_class": "immunosuppressants",
+          "severity": "major",
+          "note": "May counteract immunosuppression."
+        },
+        {
+          "medication_class": "antidiabetics",
+          "severity": "moderate",
+          "note": "May lower blood sugar."
+        },
+        {
+          "medication_class": "antihypertensives",
+          "severity": "moderate",
+          "note": "May lower blood pressure."
+        }
+      ],
+      "allergy_info": {
+        "family": "Solanaceae",
+        "keywords": [
+          "ashwagandha",
+          "withania",
+          "nightshade",
+          "tomato",
+          "potato",
+          "eggplant"
+        ]
+      },
+      "pregnancy": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "avoid",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": null
+      },
+      "preparation": "Supplement only. Needs clinician input when any medication is used. No dose is stated here.",
+      "when_to_stop": [
+        "Yellow skin/eyes, dark urine, itching or abdominal pain (seek care)",
+        "Excess sleepiness"
+      ],
+      "sources": [
+        {
+          "publisher": "NIH National Center for Complementary and Integrative Health (NCCIH)",
+          "title": "Ashwagandha - Herbs at a Glance",
+          "url": null
+        },
+        {
+          "publisher": "NIH LiverTox",
+          "title": "Ashwagandha",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "sleep_stress": [
+          "oral"
+        ],
+        "general": [
+          "oral"
+        ]
+      }
+    },
+    {
+      "id": "amla",
+      "common_name": "Amla (Indian gooseberry)",
+      "scientific_name": "Phyllanthus emblica (Emblica officinalis)",
+      "aliases": [
+        "amalaki",
+        "indian gooseberry"
+      ],
+      "plant_parts": [
+        "fruit"
+      ],
+      "categories": [
+        "hair",
+        "nutrition",
+        "immunity"
+      ],
+      "routes": [
+        "oral",
+        "topical"
+      ],
+      "traditional_uses": [
+        "Ayurvedic fruit used for general health, hair care and as a vitamin C-rich food"
+      ],
+      "evidence_supported_uses": [
+        {
+          "use": "Nutritious fruit (food use)",
+          "category": "nutrition",
+          "evidence_level": "limited"
+        }
+      ],
+      "evidence_level": "traditional_only",
+      "forms": [
+        "fresh fruit",
+        "powder",
+        "oil"
+      ],
+      "risks": [
+        "May lower blood sugar and affect clotting in concentrated forms",
+        "Stomach upset"
+      ],
+      "contraindications": {
+        "conditions": [
+          "bleeding disorder"
+        ],
+        "notes": [
+          "Stop concentrated forms before planned surgery unless a clinician advises otherwise."
+        ]
+      },
+      "medication_interactions": [
+        {
+          "medication_class": "anticoagulants",
+          "severity": "moderate",
+          "note": "Possible additive antiplatelet effect; data limited."
+        },
+        {
+          "medication_class": "antidiabetics",
+          "severity": "moderate",
+          "note": "Possible blood sugar lowering."
+        }
+      ],
+      "allergy_info": {
+        "family": "Phyllanthaceae",
+        "keywords": [
+          "amla",
+          "amalaki",
+          "gooseberry",
+          "phyllanthus",
+          "emblica"
+        ]
+      },
+      "pregnancy": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "breastfeeding": {
+        "oral": "insufficient_data",
+        "topical": "insufficient_data"
+      },
+      "min_age_years": {
+        "oral": 18,
+        "topical": 18
+      },
+      "preparation": "Eating the fresh fruit as food is the simplest use. Concentrated supplements: not assessed.",
+      "when_to_stop": [
+        "Rash, swelling or stomach pain",
+        "Unusual bruising or bleeding"
+      ],
+      "sources": [
+        {
+          "publisher": "Ayurvedic Pharmacopoeia / traditional-use literature",
+          "title": "Emblica officinalis (traditional use summary)",
+          "url": null
+        }
+      ],
+      "last_reviewed": "2026-10-11",
+      "review_status": "draft_requires_clinical_review",
+      "usage_guidance": "No dose is given by this app. Follow the label of a verified product or advice from a qualified clinician.",
+      "category_routes": {
+        "hair": [
+          "topical",
+          "oral"
+        ],
+        "nutrition": [
+          "oral"
+        ],
+        "immunity": [
+          "oral"
+        ]
+      }
+    }
+  ]
+}

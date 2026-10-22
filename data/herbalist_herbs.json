@@ -1,0 +1,3719 @@
+{
+  "_meta": {
+    "purpose": "Herb monographs for the professional-herbalist consultation engine.",
+    "how_to_read": "risk = how careful to be by default (low: kitchen or gentle herbs; moderate: needs a screen of medicines and conditions; high: only offered when no medicines are taken). preg/bf values: ok | limited (allowed with the stated limit) | avoid. min_age is the youngest age for therapeutic use; smaller food amounts are fine earlier. interactions use the medicine class ids from herbalist_rules.json; severity major = do not combine, moderate = combine only with a note and prescriber awareness, minor = mention only.",
+    "evidence_keys": [
+      "well_established",
+      "moderate",
+      "limited",
+      "preliminary",
+      "traditional_only"
+    ],
+    "accuracy_note": "Amounts are typical published or monograph ranges for healthy adults. EMA/HMPC figures for peppermint leaf and valerian root, the Cochrane/AAFP honey-for-cough evidence, the licorice blood-pressure/pregnancy cautions and the pregnancy herb review were checked against the source documents; the rest reflect widely published herbal references (ESCOP, WHO monographs, German Commission E, NCCIH, LiverTox) and traditional systems, and should be reviewed by a qualified herbalist or pharmacist before use with real patients.",
+    "last_reviewed": "2026-10-13"
+  },
+  "herbs": {
+    "ginger": {
+      "name": "Ginger (adrak, sonth, zanjabeel)",
+      "sci": "Zingiber officinale",
+      "aka": [
+        "adrak",
+        "sonth",
+        "zanjabeel",
+        "dry ginger",
+        "fresh ginger"
+      ],
+      "tradition": "Ayurveda, Unani and TCM: a warming digestive, anti-nausea and circulation herb; the base of most cold and cough kadhas.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Good evidence for nausea (motion, post-operative, pregnancy); moderate for period pain; limited for joint pain.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "fresh ginger tea",
+          "how": "Simmer 3-4 thin slices (about 2 g fresh root) in 1 cup of water for 10 minutes; add honey or lemon if you like.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day",
+          "duration": "a few days for symptoms, up to 1-2 weeks"
+        },
+        {
+          "route": "oral",
+          "form": "dried ginger (sonth) powder",
+          "how": "Stir 1/4 to 1/2 teaspoon (0.5-1 g) into warm water, tea or food.",
+          "amount": "0.5-1 g",
+          "freq": "up to 3 times a day (keep the total from all sources under about 4 g a day)",
+          "duration": "short courses of 1-2 weeks"
+        }
+      ],
+      "cautions": [
+        "Large amounts can cause heartburn, mouth irritation or loose stools.",
+        "Concentrated ginger supplements have a mild blood-thinning effect; stop them 1-2 weeks before surgery."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "gallbladder or bile duct disease",
+        "bleeding disorder",
+        "scheduled surgery"
+      ],
+      "preg": "limited",
+      "preg_note": "Ginger is widely used for pregnancy nausea. Keep to about 1 g of dried ginger (or 3-4 thin fresh slices) a day in divided amounts, and tell your midwife or doctor.",
+      "bf": "ok",
+      "min_age": 6,
+      "child_note": "Small amounts in food are fine from age 2.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "Ginger in food or tea amounts is usually fine, but concentrated ginger can add to the blood-thinning effect. Keep to tea and food amounts and tell your prescriber."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly; keep monitoring as usual."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "minor",
+          "note": "May add a small blood-pressure-lowering effect."
+        }
+      ],
+      "allergy_kw": [
+        "ginger",
+        "zingiberaceae"
+      ],
+      "stop_if": [
+        "heartburn or stomach upset",
+        "rash or itching"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Ginger",
+        "WHO monographs on selected medicinal plants, vol 1",
+        "Narrative review on ginger in nausea and vomiting of pregnancy (J Res Med Health)"
+      ]
+    },
+    "peppermint": {
+      "name": "Peppermint (pudina)",
+      "sci": "Mentha x piperita",
+      "aka": [
+        "pudina",
+        "mint",
+        "mint tea",
+        "peppermint tea",
+        "peppermint oil"
+      ],
+      "tradition": "Used across Europe, the Middle East and South Asia for gas, cramps, nausea and tension headache.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Enteric-coated peppermint oil has good trial support for irritable-bowel cramping; the leaf tea has long traditional use for dyspepsia and gas (EMA/HMPC monograph, long-standing use).",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "peppermint leaf tea",
+          "how": "1.5-3 g dried leaf (about 1 heaped teaspoon) in 100-150 ml of boiling water, covered, steeped 10 minutes (EMA/HMPC).",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day, after meals",
+          "duration": "up to 2 weeks; see a doctor if symptoms last longer"
+        },
+        {
+          "route": "oral",
+          "form": "enteric-coated peppermint oil capsules (a product)",
+          "how": "Use a capsule labelled enteric-coated, about 0.2 ml (180-225 mg) of oil, swallowed whole with water 30 minutes before meals.",
+          "amount": "1 capsule",
+          "freq": "2-3 times a day",
+          "duration": "up to 8 weeks for irritable-bowel cramping"
+        },
+        {
+          "route": "topical",
+          "form": "diluted peppermint oil on the temples",
+          "how": "Mix 1 drop of peppermint essential oil into about 1/2 teaspoon of carrier oil (roughly 10 percent) and dab a little on each temple and the forehead, away from the eyes.",
+          "amount": "a thin film",
+          "freq": "up to 3 times a day",
+          "duration": "as needed for tension headache"
+        }
+      ],
+      "cautions": [
+        "Can worsen heartburn and reflux by relaxing the valve at the top of the stomach.",
+        "Never put menthol or peppermint oil on the face or chest of babies and young children.",
+        "Do not swallow undiluted essential oil."
+      ],
+      "avoid_conditions": [
+        "gastroesophageal reflux"
+      ],
+      "caution_conditions": [
+        "gallbladder or bile duct disease"
+      ],
+      "preg": "limited",
+      "preg_note": "No harm has been shown from an occasional cup of weak peppermint tea, but safety is not established; avoid concentrated oil and large amounts, especially in early pregnancy.",
+      "bf": "limited",
+      "bf_note": "Large amounts may reduce milk supply; an occasional cup is fine.",
+      "min_age": 4,
+      "child_note": "EMA does not recommend peppermint tea under 4 years.",
+      "interactions": [
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Concentrated peppermint oil can slightly raise levels of some medicines (for example some statins and calcium-channel blockers); tea is much less likely to."
+        },
+        {
+          "cls": "acid_reducer",
+          "sev": "minor",
+          "note": "Acid reducers can make enteric-coated oil capsules dissolve too early, causing heartburn."
+        }
+      ],
+      "allergy_kw": [
+        "peppermint",
+        "menthol",
+        "mint",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "heartburn",
+        "rash"
+      ],
+      "sources": [
+        "EMA/HMPC European Union herbal monograph on Mentha x piperita leaf (2020), checked",
+        "NCCIH Herbs at a Glance: Peppermint Oil"
+      ]
+    },
+    "chamomile": {
+      "name": "Chamomile (babuna, gul-e-babunah)",
+      "sci": "Matricaria chamomilla",
+      "aka": [
+        "babuna",
+        "babunah",
+        "gul-e-babunah",
+        "german chamomile",
+        "chamomile tea"
+      ],
+      "tradition": "One of the most used gentle herbs in Europe and Unani medicine: calming, soothing to the gut and skin.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Traditional use for mild stomach upset and sleep; small trials for anxiety and sleep; creams and compresses for mild skin irritation.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "chamomile tea",
+          "how": "1-2 heaped teaspoons (2-4 g) dried flowers in a cup of just-boiled water, covered, steeped 10 minutes.",
+          "amount": "1 cup",
+          "freq": "up to 3-4 times a day; one cup 30-60 minutes before bed for sleep",
+          "duration": "as needed, ideally up to 2 weeks at a time"
+        },
+        {
+          "route": "topical",
+          "form": "cooled chamomile compress or rinse",
+          "how": "Steep 2 teaspoons of flowers in a cup of hot water for 10-15 minutes, cool completely, then soak a clean cloth and press on the skin for 10 minutes. The same cooled tea can be used as a mouth rinse.",
+          "amount": "1 cup",
+          "freq": "2-3 times a day",
+          "duration": "until settled"
+        }
+      ],
+      "cautions": [
+        "People allergic to ragweed, daisies or marigolds can react to chamomile.",
+        "Can add a little to the effect of sedatives."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Reviews have raised concern about regular chamomile tea in pregnancy, especially the last trimester. If used at all, make it an occasional weak cup and check with your midwife.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "Weak, cooled tea only for young children.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Contains coumarin-type compounds; a few case reports with warfarin. Moderate tea use is generally fine; tell your prescriber."
+        },
+        {
+          "cls": "sedative",
+          "sev": "minor",
+          "note": "May add mild drowsiness."
+        }
+      ],
+      "allergy_kw": [
+        "chamomile",
+        "ragweed",
+        "daisy",
+        "aster",
+        "chrysanthemum",
+        "marigold",
+        "asteraceae",
+        "compositae",
+        "mugwort",
+        "echinacea",
+        "feverfew",
+        "arnica",
+        "calendula"
+      ],
+      "stop_if": [
+        "itching, rash or swelling",
+        "sneezing or wheeze after drinking"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Matricaria flower",
+        "NCCIH Herbs at a Glance: Chamomile",
+        "Review: herbal teas in pregnancy (PMC7384490), checked"
+      ]
+    },
+    "fennel": {
+      "name": "Fennel seed (saunf)",
+      "sci": "Foeniculum vulgare",
+      "aka": [
+        "saunf",
+        "sauf",
+        "badian saunf",
+        "fennel seeds",
+        "fennel tea"
+      ],
+      "tradition": "Chewed after meals across South Asia for gas and bloating; a classic carminative in Europe and Unani medicine.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Traditional carminative with small trials for bloating, colic cramps and period pain.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "fennel seed tea",
+          "how": "Lightly crush 1/2 to 1 teaspoon (1-2 g) seeds, cover with a cup of boiling water, steep 10-15 minutes and strain.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day, after meals",
+          "duration": "up to 2 weeks"
+        },
+        {
+          "route": "oral",
+          "form": "chewed after meals",
+          "how": "Chew 1/2 teaspoon of plain roasted saunf slowly after meals.",
+          "amount": "1/2 teaspoon",
+          "freq": "after meals",
+          "duration": "ongoing, it is a food"
+        }
+      ],
+      "cautions": [
+        "Do not use fennel essential oil internally.",
+        "Regular medicinal amounts have estrogen-like activity."
+      ],
+      "avoid_conditions": [
+        "hormone-sensitive condition"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Cooking amounts are fine, but regular fennel tea is best avoided in pregnancy because of its estrogen-like activity.",
+      "bf": "limited",
+      "bf_note": "Occasional tea is common, but heavy daily use has been linked to rare problems; keep it modest.",
+      "min_age": 4,
+      "child_note": "Not recommended as a medicinal tea under 4 years.",
+      "interactions": [
+        {
+          "cls": "hormonal",
+          "sev": "moderate",
+          "note": "Estrogen-like activity; avoid regular medicinal use with hormonal medicines or tamoxifen."
+        },
+        {
+          "cls": "antibiotic_cipro",
+          "sev": "minor",
+          "note": "May reduce absorption of ciprofloxacin; take at least 2 hours apart."
+        }
+      ],
+      "allergy_kw": [
+        "fennel",
+        "anise",
+        "celery",
+        "carrot",
+        "parsley",
+        "coriander",
+        "cumin",
+        "caraway",
+        "dill",
+        "mugwort",
+        "apiaceae",
+        "umbelliferae"
+      ],
+      "stop_if": [
+        "rash or itching"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Foeniculum vulgare fruit",
+        "Review: herbal teas in pregnancy (PMC7384490), checked"
+      ]
+    },
+    "ajwain": {
+      "name": "Carom seeds (ajwain)",
+      "sci": "Trachyspermum ammi",
+      "aka": [
+        "ajwain",
+        "ajowan",
+        "carom",
+        "carom seeds",
+        "tukhm-e-ajwain",
+        "omam"
+      ],
+      "tradition": "A first-line kitchen remedy in South Asia for gas, indigestion and colicky pain; used in steam and warm poultices for congestion.",
+      "risk": "low",
+      "evidence": "traditional_only",
+      "evidence_note": "Strong traditional use; the active oil (thymol) has lab evidence, but there is little clinical trial data.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "ajwain with warm water",
+          "how": "Chew 1/2 teaspoon (about 1 g) ajwain with a pinch of black salt and follow with a few sips of warm water, or simmer 1/2 teaspoon in a cup of water for 5 minutes and sip.",
+          "amount": "1/2 teaspoon",
+          "freq": "up to 2 times a day",
+          "duration": "a few days"
+        },
+        {
+          "route": "inhaled",
+          "form": "ajwain steam",
+          "how": "Add 1 tablespoon ajwain to a bowl of hot water and breathe the steam gently from arm's length for 5 minutes.",
+          "amount": "1 tablespoon in a bowl",
+          "freq": "once or twice a day",
+          "duration": "a few days for a blocked nose"
+        }
+      ],
+      "cautions": [
+        "Strongly heating; can aggravate acidity or ulcers."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "peptic ulcer or gastritis",
+        "gastroesophageal reflux",
+        "liver disease"
+      ],
+      "preg": "avoid",
+      "preg_note": "Cooking amounts are fine, but medicinal amounts are traditionally avoided in pregnancy.",
+      "bf": "limited",
+      "min_age": 6,
+      "child_note": "A tiny pinch in food for younger children is traditional.",
+      "interactions": [],
+      "allergy_kw": [
+        "ajwain",
+        "carom",
+        "celery",
+        "carrot",
+        "fennel",
+        "cumin",
+        "coriander",
+        "apiaceae",
+        "umbelliferae"
+      ],
+      "stop_if": [
+        "burning in the stomach",
+        "rash"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)",
+        "Pharmacological review of Trachyspermum ammi"
+      ]
+    },
+    "cumin": {
+      "name": "Cumin (zeera, jeera)",
+      "sci": "Cuminum cyminum",
+      "aka": [
+        "zeera",
+        "jeera",
+        "cumin seeds",
+        "jeera water",
+        "zeera water"
+      ],
+      "tradition": "Jeera water is a household digestive; part of the classic CCF (cumin-coriander-fennel) tea in Ayurveda.",
+      "risk": "low",
+      "evidence": "preliminary",
+      "evidence_note": "Small studies in dyspepsia and irritable-bowel symptoms; mainly traditional.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "jeera water",
+          "how": "Simmer 1/2 to 1 teaspoon cumin seeds in 1 cup water for 5-10 minutes, strain and sip warm.",
+          "amount": "1 cup",
+          "freq": "up to 2 times a day",
+          "duration": "a few days to 2 weeks"
+        },
+        {
+          "route": "oral",
+          "form": "CCF tea (cumin, coriander, fennel)",
+          "how": "Simmer 1/2 teaspoon each of cumin, coriander and fennel seeds in 3 cups of water for 10 minutes, strain and sip through the day.",
+          "amount": "3 cups through the day",
+          "freq": "daily",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Heating; large amounts may cause heartburn."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Cooking amounts are fine; avoid concentrated medicinal amounts.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "Food amounts only for small children.",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "cumin",
+        "celery",
+        "carrot",
+        "fennel",
+        "coriander",
+        "caraway",
+        "apiaceae",
+        "umbelliferae"
+      ],
+      "stop_if": [
+        "rash",
+        "heartburn"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)",
+        "Small trials in irritable-bowel symptoms"
+      ]
+    },
+    "cardamom": {
+      "name": "Green cardamom (elaichi)",
+      "sci": "Elettaria cardamomum",
+      "aka": [
+        "elaichi",
+        "illaichi",
+        "cardamom",
+        "choti elaichi"
+      ],
+      "tradition": "A cooling, aromatic digestive and breath freshener in South Asian cooking.",
+      "risk": "low",
+      "evidence": "preliminary",
+      "evidence_note": "Mostly traditional; small studies on blood pressure and nausea.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "cardamom tea",
+          "how": "Lightly crush 2-3 pods and steep in a cup of hot water or tea for 5-10 minutes.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day",
+          "duration": "as needed"
+        }
+      ],
+      "cautions": [
+        "May provoke colic in people with gallstones."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "gallbladder or bile duct disease"
+      ],
+      "preg": "limited",
+      "preg_note": "Cooking amounts only.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "Food amounts only.",
+      "interactions": [],
+      "allergy_kw": [
+        "cardamom",
+        "ginger",
+        "turmeric",
+        "zingiberaceae"
+      ],
+      "stop_if": [
+        "rash"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)"
+      ]
+    },
+    "hing": {
+      "name": "Asafoetida (hing)",
+      "sci": "Ferula assa-foetida",
+      "aka": [
+        "hing",
+        "heeng",
+        "asafoetida",
+        "asafetida"
+      ],
+      "tradition": "A pinch in lentils and beans in South Asian cooking, used for gas; in warm water or as a paste on the belly.",
+      "risk": "low",
+      "evidence": "traditional_only",
+      "evidence_note": "Traditional anti-flatulent; limited human data.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "hing in warm water",
+          "how": "Dissolve a small pinch (about 1/8 teaspoon) of hing in half a cup of warm water and sip, or cook it in a little ghee or oil at the start of a dal or vegetable dish.",
+          "amount": "1 small pinch",
+          "freq": "once or twice a day",
+          "duration": "a few days"
+        }
+      ],
+      "cautions": [
+        "Never give hing preparations to infants."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "bleeding disorder",
+        "low blood pressure"
+      ],
+      "preg": "avoid",
+      "preg_note": "Cooking pinches are fine; avoid medicinal amounts.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "Cooking amounts only under 12; infants should not have hing.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Has mild blood-thinning properties."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "minor",
+          "note": "May add a small blood-pressure-lowering effect."
+        }
+      ],
+      "allergy_kw": [
+        "hing",
+        "asafoetida",
+        "asafetida",
+        "ferula",
+        "apiaceae"
+      ],
+      "stop_if": [
+        "rash",
+        "nausea"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)"
+      ]
+    },
+    "lemon_balm": {
+      "name": "Lemon balm (Melissa, bilsan)",
+      "sci": "Melissa officinalis",
+      "aka": [
+        "melissa",
+        "lemon balm",
+        "balm tea",
+        "bilsan"
+      ],
+      "tradition": "A calming, lemon-scented herb for nervous tension, restless sleep and nervous stomach; the cream is used on cold sores.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Small trials for mild anxiety and sleep; topical cream shortens cold-sore healing in trials.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "lemon balm tea",
+          "how": "1-2 teaspoons (1.5-4.5 g) dried leaf in a cup of just-boiled water, covered, steeped 10 minutes.",
+          "amount": "1 cup",
+          "freq": "1-3 times a day; one cup in the evening for sleep",
+          "duration": "up to 4 weeks, then take a break"
+        },
+        {
+          "route": "topical",
+          "form": "lemon balm cream (1 percent leaf extract)",
+          "how": "Use a pharmacy cream labelled for cold sores and apply to the tingling area at the first sign.",
+          "amount": "thin layer",
+          "freq": "2-4 times a day",
+          "duration": "5-7 days"
+        }
+      ],
+      "cautions": [
+        "May cause drowsiness; avoid driving if it makes you sleepy."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "thyroid disorder"
+      ],
+      "preg": "avoid",
+      "preg_note": "Safety is not established; best avoided.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "sedative",
+          "sev": "moderate",
+          "note": "Adds to drowsiness from sedating medicines."
+        },
+        {
+          "cls": "thyroid",
+          "sev": "moderate",
+          "note": "May interfere with thyroid hormone activity; avoid regular use with thyroid medicine unless your prescriber agrees."
+        }
+      ],
+      "allergy_kw": [
+        "lemon balm",
+        "melissa",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "unusual drowsiness",
+        "rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Melissa officinalis leaf",
+        "NCCIH-listed trials on lemon balm"
+      ]
+    },
+    "passionflower": {
+      "name": "Passionflower",
+      "sci": "Passiflora incarnata",
+      "aka": [
+        "passion flower",
+        "passiflora",
+        "passionflower tea"
+      ],
+      "tradition": "A European and American calming herb for nervous restlessness and light sleep.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Small trials suggest benefit for mild anxiety and sleep quality.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "passionflower tea",
+          "how": "About 1 teaspoon (1-2 g) dried herb in a cup of just-boiled water, covered, steeped 10 minutes.",
+          "amount": "1 cup",
+          "freq": "1-3 times a day; one cup 30-60 minutes before bed for sleep",
+          "duration": "up to 4 weeks"
+        }
+      ],
+      "cautions": [
+        "Can cause drowsiness and dizziness; avoid driving afterward.",
+        "Do not combine with alcohol."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Animal data suggest it can stimulate the uterus.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "sedative",
+          "sev": "moderate",
+          "note": "Adds to drowsiness from sedating medicines."
+        },
+        {
+          "cls": "maoi",
+          "sev": "moderate",
+          "note": "Contains harmala-type compounds; do not combine with MAO inhibitors."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        }
+      ],
+      "allergy_kw": [
+        "passionflower",
+        "passiflora"
+      ],
+      "stop_if": [
+        "excess drowsiness",
+        "confusion or palpitations"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Passiflora herb",
+        "NCCIH Herbs at a Glance: Passionflower"
+      ]
+    },
+    "valerian": {
+      "name": "Valerian root",
+      "sci": "Valeriana officinalis",
+      "aka": [
+        "valerian",
+        "valerian root",
+        "valerian tea"
+      ],
+      "tradition": "The classic European sleep and nervous-tension root.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "EMA: well-established use for mild nervous tension and sleep disorders; the effect builds over 2-4 weeks and trial results are mixed.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "valerian root tea or capsule",
+          "how": "Tea: 0.3-3 g (about 1/2 to 1 teaspoon) cut root in 150 ml boiling water, covered, steeped 10-15 minutes. Or a standardised extract per the label (EMA reference 450-600 mg dry extract).",
+          "amount": "1 cup or 1 dose",
+          "freq": "once, 30-60 minutes before bed (may also be used up to 3 times a day for nervous tension)",
+          "duration": "2-4 weeks; see a doctor if no better after 2 weeks"
+        }
+      ],
+      "cautions": [
+        "May impair driving and machinery use.",
+        "Vivid dreams, headache or morning grogginess in some people.",
+        "Not for acute use: the effect builds over days to weeks.",
+        "Avoid alcohol with it."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "liver disease"
+      ],
+      "preg": "avoid",
+      "preg_note": "Safety is not established (EMA).",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "Not recommended under 12 (EMA).",
+      "interactions": [
+        {
+          "cls": "sedative",
+          "sev": "major",
+          "note": "Adds to the effect of sedating medicines; EMA advises this combination only with medical supervision."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Possible minor effect on liver enzymes."
+        }
+      ],
+      "allergy_kw": [
+        "valerian",
+        "valeriana"
+      ],
+      "stop_if": [
+        "unusual sedation",
+        "dark urine, yellow skin or eyes, or upper-right abdominal pain"
+      ],
+      "sources": [
+        "EMA/HMPC EU herbal monograph on Valeriana officinalis root (draft, 2015), checked",
+        "LiverTox: valerian"
+      ]
+    },
+    "lavender": {
+      "name": "Lavender",
+      "sci": "Lavandula angustifolia",
+      "aka": [
+        "lavender",
+        "lavender oil",
+        "lavender tea",
+        "lavender aromatherapy"
+      ],
+      "tradition": "A calming aromatic used for stress, sleep and minor skin complaints.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Inhaled lavender oil and a standardised oral extract (silexan) have trial support for anxiety and sleep; EMA lists traditional use for mild stress and sleep.",
+      "prep": [
+        {
+          "route": "inhaled",
+          "form": "lavender aromatherapy",
+          "how": "Put 2-3 drops of lavender essential oil on a tissue or cotton pad and place it near your pillow, or use a diffuser for 20-30 minutes before bed.",
+          "amount": "2-3 drops",
+          "freq": "nightly",
+          "duration": "ongoing as a bedtime ritual"
+        },
+        {
+          "route": "oral",
+          "form": "lavender flower tea",
+          "how": "1 teaspoon (about 1 g) culinary dried flowers in a cup of just-boiled water, covered, steeped 10 minutes.",
+          "amount": "1 cup",
+          "freq": "1-2 times a day",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Do not swallow lavender essential oil (use tea or a labelled capsule).",
+        "Repeated skin use of lavender or tea tree oil has been linked to breast tissue growth in prepubertal boys."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Aromatherapy and an occasional cup of tea are generally considered fine; avoid oral oil.",
+      "bf": "limited",
+      "min_age": 6,
+      "child_note": "Light aromatherapy only for young children.",
+      "interactions": [
+        {
+          "cls": "sedative",
+          "sev": "moderate",
+          "note": "May add to the effect of sedating medicines."
+        }
+      ],
+      "allergy_kw": [
+        "lavender",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "headache or nausea from the scent",
+        "skin rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Lavandula angustifolia flower",
+        "NCCIH Herbs at a Glance: Lavender"
+      ]
+    },
+    "ashwagandha": {
+      "name": "Ashwagandha (Indian ginseng)",
+      "sci": "Withania somnifera",
+      "aka": [
+        "ashwagandha",
+        "asgandh",
+        "aswagandha",
+        "indian ginseng",
+        "winter cherry"
+      ],
+      "tradition": "The best-known Ayurvedic adaptogen for stress, low stamina and sleep.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "Several small to medium trials show lower stress and better sleep over 6-12 weeks; rare cases of liver injury have been reported.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "ashwagandha root extract or powder",
+          "how": "Standardised root extract 300 mg once or twice a day with food, or 1-3 g root powder stirred into warm milk at night, from a reputable tested brand.",
+          "amount": "300 mg or 1-3 g",
+          "freq": "once or twice a day",
+          "duration": "4-8 weeks, then take a break; up to 3 months at most without review"
+        }
+      ],
+      "cautions": [
+        "Rare reports of liver injury: stop if you notice dark urine, yellow skin or eyes, itching or severe tiredness.",
+        "Can raise thyroid hormone levels.",
+        "May cause sleepiness or stomach upset."
+      ],
+      "avoid_conditions": [
+        "thyroid disorder",
+        "liver disease",
+        "autoimmune disease",
+        "organ transplant",
+        "scheduled surgery"
+      ],
+      "caution_conditions": [
+        "diabetes",
+        "hormone-sensitive condition"
+      ],
+      "preg": "avoid",
+      "preg_note": "May cause miscarriage; avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "thyroid",
+          "sev": "major",
+          "note": "Can raise thyroid hormones and add to thyroid medicine."
+        },
+        {
+          "cls": "immunosuppressant",
+          "sev": "major",
+          "note": "May stimulate the immune system and work against immune-suppressing medicines."
+        },
+        {
+          "cls": "sedative",
+          "sev": "moderate",
+          "note": "Adds to drowsiness from sedating medicines."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "May lower blood sugar further."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "moderate",
+          "note": "May lower blood pressure further."
+        }
+      ],
+      "allergy_kw": [
+        "ashwagandha",
+        "withania",
+        "nightshade",
+        "solanaceae"
+      ],
+      "stop_if": [
+        "dark urine, yellow skin or eyes, itching or abdominal pain",
+        "palpitations"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Ashwagandha",
+        "LiverTox: ashwagandha",
+        "Randomised trials on ashwagandha and stress"
+      ]
+    },
+    "tulsi": {
+      "name": "Holy basil (tulsi)",
+      "sci": "Ocimum tenuiflorum (O. sanctum)",
+      "aka": [
+        "tulsi",
+        "holy basil",
+        "tulasi",
+        "tulsi tea",
+        "tulsi leaves"
+      ],
+      "tradition": "Sacred in Ayurveda; leaves are taken daily in tea and kadha for colds, cough, stress and general resilience.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Strong traditional use; small trials for stress and blood sugar; no strong evidence for colds.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "tulsi tea",
+          "how": "5-8 fresh leaves, or 1 teaspoon dried leaf, in a cup of just-boiled water, covered, steeped 5-10 minutes; honey and ginger can be added.",
+          "amount": "1 cup",
+          "freq": "1-3 times a day",
+          "duration": "as needed, up to a few weeks"
+        }
+      ],
+      "cautions": [
+        "Animal studies suggest an anti-fertility effect, so avoid regular use if you are trying to conceive.",
+        "May lower blood sugar slightly."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "fertility treatment",
+        "scheduled surgery"
+      ],
+      "preg": "limited",
+      "preg_note": "Culinary leaf amounts are fine; avoid concentrated or regular large amounts.",
+      "bf": "limited",
+      "min_age": 6,
+      "child_note": "A few leaves in a weak tea are traditional for children.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "tulsi",
+        "basil",
+        "ocimum",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "rash"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda)",
+        "Systematic review: Ocimum sanctum clinical trials (2017)"
+      ]
+    },
+    "turmeric": {
+      "name": "Turmeric (haldi)",
+      "sci": "Curcuma longa",
+      "aka": [
+        "haldi",
+        "turmeric",
+        "golden milk",
+        "haldi doodh",
+        "curcumin"
+      ],
+      "tradition": "Haldi doodh (turmeric milk) is the household remedy for colds, aches and wounds across South Asia.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Food amounts are very safe. Standardised curcumin extracts show moderate evidence for osteoarthritis pain; supplements carry more risk than the spice.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "golden milk (haldi doodh)",
+          "how": "Warm 1 cup of milk (or plant milk), stir in 1/2 to 1 teaspoon (1.5-3 g) turmeric powder and a pinch of black pepper, simmer 3-5 minutes and sweeten with honey if you like.",
+          "amount": "1 cup",
+          "freq": "once or twice a day",
+          "duration": "a few days for a cold; ongoing in cooking"
+        },
+        {
+          "route": "topical",
+          "form": "turmeric paste",
+          "how": "Mix 1/2 teaspoon turmeric with enough honey or aloe gel to make a paste, apply to a minor skin spot for 15 minutes and rinse (it stains).",
+          "amount": "thin layer",
+          "freq": "once a day",
+          "duration": "up to 1 week"
+        }
+      ],
+      "cautions": [
+        "Concentrated curcumin supplements (especially with piperine) have been linked to rare liver injury; prefer the spice.",
+        "Can aggravate gallstones and kidney-stone formers (oxalate).",
+        "Binds iron, which matters if you are low in iron."
+      ],
+      "avoid_conditions": [
+        "gallbladder or bile duct disease"
+      ],
+      "caution_conditions": [
+        "kidney stones",
+        "iron deficiency",
+        "liver disease",
+        "bleeding disorder",
+        "scheduled surgery"
+      ],
+      "preg": "limited",
+      "preg_note": "Food amounts are fine; avoid supplements.",
+      "bf": "limited",
+      "min_age": 2,
+      "child_note": "Food amounts only for small children.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "Concentrated curcumin may add to the blood-thinning effect; food amounts are rarely a problem."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "May lower blood sugar further."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "moderate",
+          "note": "Curcumin, especially with piperine, can raise levels of some medicines."
+        },
+        {
+          "cls": "immunosuppressant",
+          "sev": "moderate",
+          "note": "May raise levels of tacrolimus and similar medicines."
+        },
+        {
+          "cls": "antiviral_cancer",
+          "sev": "moderate",
+          "note": "May interact with some chemotherapy and antiviral medicines."
+        }
+      ],
+      "allergy_kw": [
+        "turmeric",
+        "curcuma",
+        "zingiberaceae",
+        "ginger"
+      ],
+      "stop_if": [
+        "stomach upset",
+        "dark urine or yellow skin or eyes"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Turmeric",
+        "LiverTox: turmeric",
+        "EFSA and Italian Ministry of Health statements on turmeric supplements and liver injury"
+      ]
+    },
+    "black_pepper": {
+      "name": "Black pepper (kali mirch)",
+      "sci": "Piper nigrum",
+      "aka": [
+        "kali mirch",
+        "black pepper",
+        "peppercorn",
+        "pepper"
+      ],
+      "tradition": "Part of every kadha: warming, stimulating mucus clearance and appetite.",
+      "risk": "low",
+      "evidence": "traditional_only",
+      "evidence_note": "Traditional use; piperine increases absorption of many substances.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "pepper in kadha or honey",
+          "how": "Add 2-3 crushed peppercorns or a pinch of powder (1/8 to 1/4 teaspoon) to a cup of tea or kadha, or take with honey.",
+          "amount": "pinch",
+          "freq": "1-2 times a day",
+          "duration": "a few days"
+        }
+      ],
+      "cautions": [
+        "Piperine can raise blood levels of some medicines."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "gastroesophageal reflux",
+        "peptic ulcer or gastritis"
+      ],
+      "preg": "limited",
+      "preg_note": "Cooking amounts are fine.",
+      "bf": "ok",
+      "min_age": 6,
+      "child_note": "Tiny amounts in food.",
+      "interactions": [
+        {
+          "cls": "cyp3a4",
+          "sev": "moderate",
+          "note": "Piperine can raise levels of some medicines; keep to a pinch."
+        },
+        {
+          "cls": "antiepileptic",
+          "sev": "moderate",
+          "note": "Piperine can raise levels of phenytoin and carbamazepine; keep to a cooking pinch."
+        }
+      ],
+      "allergy_kw": [
+        "pepper",
+        "piper"
+      ],
+      "stop_if": [
+        "heartburn"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)",
+        "Pharmacokinetic reviews of piperine"
+      ]
+    },
+    "cinnamon": {
+      "name": "Cinnamon (dalchini)",
+      "sci": "Cinnamomum verum (true) / C. cassia",
+      "aka": [
+        "dalchini",
+        "cinnamon",
+        "ceylon cinnamon",
+        "cassia",
+        "darchini"
+      ],
+      "tradition": "Warming digestive and cold remedy; used in kadha and spiced teas.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Mixed small trials on blood sugar; traditional for digestion and colds.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "cinnamon tea",
+          "how": "Simmer a 5 cm stick (or 1/2 teaspoon powder) in a cup of water for 10 minutes. Prefer Ceylon cinnamon; cassia should stay under about 1/2 teaspoon (1 g) a day because of coumarin.",
+          "amount": "1 cup",
+          "freq": "1-2 times a day",
+          "duration": "as needed, up to a few weeks"
+        }
+      ],
+      "cautions": [
+        "Cassia cinnamon contains coumarin, which can stress the liver at higher intakes."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "liver disease"
+      ],
+      "preg": "limited",
+      "preg_note": "Cooking amounts only.",
+      "bf": "ok",
+      "min_age": 6,
+      "child_note": "Food amounts only.",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "May lower blood sugar further."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Cassia contains coumarin."
+        }
+      ],
+      "allergy_kw": [
+        "cinnamon",
+        "cassia",
+        "lauraceae"
+      ],
+      "stop_if": [
+        "mouth soreness",
+        "rash"
+      ],
+      "sources": [
+        "EFSA opinion on coumarin in cinnamon",
+        "NCCIH Cinnamon"
+      ]
+    },
+    "clove": {
+      "name": "Clove (laung)",
+      "sci": "Syzygium aromaticum",
+      "aka": [
+        "laung",
+        "clove",
+        "cloves",
+        "clove oil"
+      ],
+      "tradition": "A whole clove held against a sore tooth is a classic remedy; also in kadha for cough.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Eugenol is a recognised dental analgesic; the whole spice is a long-standing cough and toothache remedy.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "clove in tea or kadha",
+          "how": "Add 1-2 whole cloves to a cup of tea or kadha and steep 5-10 minutes.",
+          "amount": "1-2 cloves",
+          "freq": "up to 2 times a day",
+          "duration": "a few days"
+        },
+        {
+          "route": "topical",
+          "form": "clove for toothache (temporary)",
+          "how": "Hold one whole clove against the sore tooth and gently bite, or put 1 drop of clove oil in 1/2 teaspoon of carrier oil on a cotton bud and dab on the tooth. Never apply undiluted oil to gums.",
+          "amount": "1 clove or 1 diluted drop",
+          "freq": "up to 3 times a day",
+          "duration": "until you can see a dentist"
+        }
+      ],
+      "cautions": [
+        "Undiluted clove oil burns gums and tissue.",
+        "Concentrated eugenol is toxic to the liver in large amounts; never swallow the oil."
+      ],
+      "avoid_conditions": [
+        "bleeding disorder"
+      ],
+      "caution_conditions": [
+        "liver disease",
+        "scheduled surgery"
+      ],
+      "preg": "limited",
+      "preg_note": "Cooking amounts only; avoid the oil.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "Do not use clove oil for children.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "Eugenol can add to the blood-thinning effect."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "clove",
+        "eugenol",
+        "myrtaceae"
+      ],
+      "stop_if": [
+        "gum burning or ulcers",
+        "rash"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda, Unani)",
+        "ESCOP and WHO notes on clove oil"
+      ]
+    },
+    "thyme": {
+      "name": "Thyme",
+      "sci": "Thymus vulgaris",
+      "aka": [
+        "thyme",
+        "thyme tea",
+        "ajwain ke patte"
+      ],
+      "tradition": "A classic European expectorant and cough herb.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Thyme-containing cough syrups show benefit for chesty cough in trials; EMA lists traditional use for cough with mucus.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "thyme tea",
+          "how": "1/2 to 1 teaspoon (1-2 g) dried thyme in 150 ml of just-boiled water, covered, steeped 10 minutes; add honey for adults and children over 1.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day",
+          "duration": "up to 1-2 weeks"
+        }
+      ],
+      "cautions": [
+        "Use culinary thyme, not the essential oil, by mouth."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Cooking amounts only; avoid medicinal teas.",
+      "bf": "limited",
+      "min_age": 4,
+      "child_note": "Weak tea with honey for ages 4 and over (honey only over 1 year).",
+      "interactions": [],
+      "allergy_kw": [
+        "thyme",
+        "oregano",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "rash",
+        "stomach upset"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Thymus vulgaris herb",
+        "ESCOP monograph on thyme"
+      ]
+    },
+    "sage": {
+      "name": "Sage",
+      "sci": "Salvia officinalis",
+      "aka": [
+        "sage",
+        "sage tea",
+        "sage gargle",
+        "salvia"
+      ],
+      "tradition": "A gargle for sore throat and mouth; tea for night sweats and hot flushes.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Sage lozenges and spray show benefit for sore throat; small studies for hot flushes.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "sage gargle",
+          "how": "Pour 100 ml of boiling water over 2.5 g (about 1 teaspoon) dried sage leaf, steep 10 minutes, strain, cool to warm and gargle (do not swallow).",
+          "amount": "100 ml",
+          "freq": "3 times a day",
+          "duration": "up to 1 week"
+        },
+        {
+          "route": "oral",
+          "form": "sage tea",
+          "how": "1 teaspoon dried leaf in a cup of just-boiled water, steeped 10 minutes.",
+          "amount": "1 cup",
+          "freq": "up to 2-3 times a day",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Contains thujone: do not exceed the stated amounts or duration."
+      ],
+      "avoid_conditions": [
+        "epilepsy"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Avoid; thujone may harm the pregnancy.",
+      "bf": "avoid",
+      "bf_note": "Sage can reduce milk supply.",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        },
+        {
+          "cls": "sedative",
+          "sev": "minor",
+          "note": "May add mild sedation."
+        },
+        {
+          "cls": "antiepileptic",
+          "sev": "moderate",
+          "note": "Thujone may lower the seizure threshold."
+        }
+      ],
+      "allergy_kw": [
+        "sage",
+        "salvia",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "restlessness or tremor",
+        "rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Salvia officinalis leaf",
+        "WHO monograph on sage leaf"
+      ]
+    },
+    "licorice": {
+      "name": "Licorice root (mulethi, mulaithi)",
+      "sci": "Glycyrrhiza glabra",
+      "aka": [
+        "mulethi",
+        "mulaithi",
+        "licorice",
+        "liquorice",
+        "aslus-soos",
+        "jethimadh"
+      ],
+      "tradition": "Mulethi is chewed or brewed for sore throat and dry cough in South Asian homes; a soothing demulcent in Unani and TCM.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Soothing for sore throat and cough; whole licorice raises blood pressure and lowers potassium at high intakes.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "mulethi tea",
+          "how": "Simmer 1/2 teaspoon (about 1-2 g) dried root in a cup of water for 10 minutes and sip warm.",
+          "amount": "1 cup",
+          "freq": "up to 2 times a day",
+          "duration": "no longer than about 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Glycyrrhizin in real licorice causes salt and water retention and lowers potassium: raises blood pressure and can trigger rhythm problems.",
+        "Do not use for more than about 2 weeks; avoid licorice sweets in large amounts."
+      ],
+      "avoid_conditions": [
+        "high blood pressure",
+        "heart disease",
+        "kidney disease",
+        "low potassium",
+        "liver disease",
+        "hormone-sensitive condition"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "May increase preterm birth risk; avoid.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antihypertensive",
+          "sev": "major",
+          "note": "Licorice raises blood pressure and works against blood-pressure medicines."
+        },
+        {
+          "cls": "diuretic",
+          "sev": "major",
+          "note": "Adds to potassium loss from water pills."
+        },
+        {
+          "cls": "digoxin",
+          "sev": "major",
+          "note": "Low potassium makes digoxin toxicity more likely."
+        },
+        {
+          "cls": "corticosteroid",
+          "sev": "moderate",
+          "note": "Can increase steroid side effects."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "major",
+          "note": "May reduce the effect of warfarin and other blood thinners; best avoided."
+        },
+        {
+          "cls": "hormonal",
+          "sev": "moderate",
+          "note": "Has estrogen-like effects."
+        }
+      ],
+      "allergy_kw": [
+        "licorice",
+        "liquorice",
+        "glycyrrhiza",
+        "mulethi"
+      ],
+      "stop_if": [
+        "headache, swelling, palpitations or muscle weakness"
+      ],
+      "sources": [
+        "Merck Manual Professional: Licorice, checked",
+        "EFSA and WHO notes on glycyrrhizin intake"
+      ]
+    },
+    "dgl": {
+      "name": "DGL (deglycyrrhizinated licorice)",
+      "sci": "Glycyrrhiza glabra (glycyrrhizin removed)",
+      "aka": [
+        "dgl",
+        "deglycyrrhizinated licorice",
+        "dgl chewables"
+      ],
+      "tradition": "A modern form of licorice with the blood-pressure-raising compound removed, used for heartburn and stomach lining comfort.",
+      "risk": "low",
+      "evidence": "preliminary",
+      "evidence_note": "Small trials in dyspepsia; mostly traditional and clinical-practice use.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "DGL chewable tablets",
+          "how": "Chew 400-800 mg (per the label) 20 minutes before meals; make sure the label says deglycyrrhizinated.",
+          "amount": "1-2 tablets",
+          "freq": "up to 3 times a day before meals",
+          "duration": "4-8 weeks"
+        }
+      ],
+      "cautions": [
+        "Only use products clearly labelled deglycyrrhizinated."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Not enough data; ask your doctor or midwife.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "licorice",
+        "liquorice",
+        "glycyrrhiza",
+        "mulethi"
+      ],
+      "stop_if": [
+        "rash",
+        "swelling or raised blood pressure"
+      ],
+      "sources": [
+        "Clinical herbal practice references",
+        "Small trials of DGL in dyspepsia"
+      ]
+    },
+    "marshmallow_root": {
+      "name": "Marshmallow root (khatmi)",
+      "sci": "Althaea officinalis",
+      "aka": [
+        "marshmallow",
+        "marshmallow root",
+        "khatmi",
+        "althaea"
+      ],
+      "tradition": "A mucilage-rich root that coats irritated throat and gut.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "EMA lists traditional use for dry cough and irritated mouth and throat.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "cold marshmallow infusion",
+          "how": "Soak 2-5 g (1-2 teaspoons) cut root in a cup of cold water for 2-8 hours, strain and sip; or use lozenges per the label.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day",
+          "duration": "up to 1-2 weeks"
+        }
+      ],
+      "cautions": [
+        "Take other medicines about an hour away; the mucilage can slow absorption."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Not enough data; occasional use is generally considered low risk but ask your doctor.",
+      "bf": "limited",
+      "min_age": 3,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "marshmallow",
+        "althaea",
+        "malvaceae",
+        "hollyhock",
+        "hibiscus"
+      ],
+      "stop_if": [
+        "rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Althaea officinalis root"
+      ]
+    },
+    "slippery_elm": {
+      "name": "Slippery elm",
+      "sci": "Ulmus rubra",
+      "aka": [
+        "slippery elm",
+        "elm bark"
+      ],
+      "tradition": "A soothing demulcent for irritated throat and stomach, taken as a gruel or lozenge.",
+      "risk": "low",
+      "evidence": "traditional_only",
+      "evidence_note": "Mainly traditional; limited trial data.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "slippery elm gruel or lozenge",
+          "how": "Stir 1 teaspoon (2-4 g) powder into a cup of warm water or oatmeal to a thin paste, or use lozenges per the label.",
+          "amount": "1 teaspoon",
+          "freq": "2-3 times a day",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Take other medicines 1-2 hours apart."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Insufficient data; best avoided.",
+      "bf": "limited",
+      "min_age": 6,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "slippery elm",
+        "ulmus"
+      ],
+      "stop_if": [
+        "rash"
+      ],
+      "sources": [
+        "Clinical herbal practice references"
+      ]
+    },
+    "honey": {
+      "name": "Honey (shahd)",
+      "sci": "Apis mellifera honey",
+      "aka": [
+        "honey",
+        "shahd",
+        "shehad",
+        "raw honey",
+        "manuka honey"
+      ],
+      "tradition": "Universal household remedy for cough and sore throat; also a topical wound dressing (medical grade).",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "A Cochrane review of three trials (568 children) found honey reduces cough frequency better than no treatment or placebo and about as well as dextromethorphan (summarised by AAFP).",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "honey for cough",
+          "how": "Take straight from the spoon or stirred into warm water or herbal tea, before bed. Ages 1-5: 1/2 teaspoon; ages 6-11: 1 teaspoon; ages 12 and over: 2 teaspoons.",
+          "amount": "1/2 to 2 teaspoons by age",
+          "freq": "at bedtime, and up to 2-3 times a day if the cough is bad",
+          "duration": "up to 1 week"
+        },
+        {
+          "route": "topical",
+          "form": "medical-grade honey on a minor wound",
+          "how": "On a clean minor cut or scrape, apply a thin layer of sterile medical-grade honey (for example manuka dressings sold at pharmacies), cover with a dressing and change it daily. Do not use raw kitchen honey on deep wounds.",
+          "amount": "thin layer",
+          "freq": "once a day, at dressing change",
+          "duration": "until healed, up to 1-2 weeks"
+        }
+      ],
+      "cautions": [
+        "Never give honey to a child under 12 months (infant botulism).",
+        "Honey is sugar: count it if you have diabetes."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "diabetes"
+      ],
+      "preg": "ok",
+      "bf": "ok",
+      "min_age": 1,
+      "child_note": "Not under 12 months.",
+      "interactions": [],
+      "allergy_kw": [
+        "honey",
+        "bee",
+        "pollen"
+      ],
+      "stop_if": [
+        "rash or swelling"
+      ],
+      "sources": [
+        "AAFP: Honey for acute cough in children (summary of Cochrane review)",
+        "WHO guidance on demulcents for cough"
+      ]
+    },
+    "elder": {
+      "name": "Elderflower and elderberry",
+      "sci": "Sambucus nigra",
+      "aka": [
+        "elderflower",
+        "elderberry",
+        "elder",
+        "sambucus"
+      ],
+      "tradition": "Elderflower tea is a European diaphoretic for the start of a cold; cooked elderberry syrup for flu.",
+      "risk": "moderate",
+      "evidence": "preliminary",
+      "evidence_note": "Small trials suggest elderberry extract can shorten flu symptoms by a day or two.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "elderflower tea",
+          "how": "1-2 teaspoons (3-5 g) dried elderflower in a cup of hot water, covered, steeped 10-15 minutes; drink hot. Elderberry syrup: use a commercial cooked product per its label.",
+          "amount": "1 cup",
+          "freq": "up to 3 times a day",
+          "duration": "3-5 days at the start of a cold"
+        }
+      ],
+      "cautions": [
+        "Raw elderberries, leaves and stems are toxic (cyanogenic compounds): only cooked or commercial products."
+      ],
+      "avoid_conditions": [
+        "organ transplant"
+      ],
+      "caution_conditions": [
+        "autoimmune disease"
+      ],
+      "preg": "avoid",
+      "preg_note": "Safety is not established.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "immunosuppressant",
+          "sev": "moderate",
+          "note": "May stimulate the immune system and work against immune-suppressing medicines."
+        },
+        {
+          "cls": "diuretic",
+          "sev": "minor",
+          "note": "May add a mild diuretic effect."
+        }
+      ],
+      "allergy_kw": [
+        "elder",
+        "elderflower",
+        "elderberry",
+        "sambucus"
+      ],
+      "stop_if": [
+        "nausea or vomiting",
+        "rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Sambucus nigra flower",
+        "NCCIH Herbs at a Glance: Elderberry"
+      ]
+    },
+    "echinacea": {
+      "name": "Echinacea",
+      "sci": "Echinacea purpurea",
+      "aka": [
+        "echinacea",
+        "coneflower"
+      ],
+      "tradition": "The North American immune herb, taken at the first sign of a cold.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Reviews are inconclusive; some preparations may modestly reduce the length or chance of a cold.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "echinacea product",
+          "how": "A standardised product (tincture, tablet or tea) used exactly as the label directs, starting at the first sign of a cold.",
+          "amount": "per the label",
+          "freq": "per the label",
+          "duration": "no longer than 7-10 days"
+        }
+      ],
+      "cautions": [
+        "Not for long-term use."
+      ],
+      "avoid_conditions": [
+        "autoimmune disease",
+        "organ transplant"
+      ],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Short-term use has not shown harm but data are limited; ask your doctor.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "immunosuppressant",
+          "sev": "major",
+          "note": "Stimulates the immune system and works against immune-suppressing medicines."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Possible minor effect on liver enzymes."
+        }
+      ],
+      "allergy_kw": [
+        "echinacea",
+        "ragweed",
+        "daisy",
+        "chamomile",
+        "marigold",
+        "asteraceae",
+        "compositae"
+      ],
+      "stop_if": [
+        "rash, itching or wheeze"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Echinacea",
+        "Cochrane review on echinacea for colds"
+      ]
+    },
+    "garlic": {
+      "name": "Garlic (lehsun)",
+      "sci": "Allium sativum",
+      "aka": [
+        "lehsun",
+        "lahsun",
+        "garlic",
+        "raw garlic"
+      ],
+      "tradition": "A kitchen medicine for colds, cough and circulation across many traditions.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Modest effects on cholesterol and blood pressure in trials; may reduce frequency of colds in one trial.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "raw crushed garlic",
+          "how": "Crush 1 clove (about 3-4 g), leave 10 minutes so the active compound forms, and swallow with honey or food, or stir into soup at the end of cooking.",
+          "amount": "1 clove",
+          "freq": "once a day",
+          "duration": "while a cold lasts"
+        }
+      ],
+      "cautions": [
+        "Raw garlic can irritate the stomach; never put raw garlic on skin (it burns)."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "bleeding disorder",
+        "scheduled surgery",
+        "peptic ulcer or gastritis"
+      ],
+      "preg": "limited",
+      "preg_note": "Cooking amounts are fine.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "Cooked, in food.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "Garlic supplements can add to the blood-thinning effect; food amounts are generally fine."
+        },
+        {
+          "cls": "antiviral_cancer",
+          "sev": "moderate",
+          "note": "Garlic supplements can lower levels of some HIV medicines (for example saquinavir)."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "minor",
+          "note": "May add a small blood-pressure-lowering effect."
+        }
+      ],
+      "allergy_kw": [
+        "garlic",
+        "onion",
+        "leek",
+        "chive",
+        "allium",
+        "liliaceae"
+      ],
+      "stop_if": [
+        "heartburn",
+        "rash"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Garlic",
+        "Cochrane review on garlic for colds"
+      ]
+    },
+    "aloe_vera": {
+      "name": "Aloe vera gel (ghritkumari)",
+      "sci": "Aloe barbadensis",
+      "aka": [
+        "aloe",
+        "aloe vera",
+        "ghritkumari",
+        "gwarpatha",
+        "aloe gel"
+      ],
+      "tradition": "Cooling gel for burns, sun-irritated and itchy skin.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Limited evidence for first-degree burns and sunburn; traditional soothing use.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "pure aloe gel",
+          "how": "After cooling the burn under cool running water for 10-20 minutes, spread a thin layer of pure gel (scooped from the inner leaf, or a product that is at least 95 percent aloe with no alcohol or fragrance).",
+          "amount": "thin layer",
+          "freq": "2-3 times a day",
+          "duration": "until healed, up to 1-2 weeks"
+        }
+      ],
+      "cautions": [
+        "Do not put on deep, infected or heavily bleeding wounds.",
+        "Do not swallow the yellow latex or whole-leaf products (strong laxative)."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "ok",
+      "preg_note": "Topical use only.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "aloe",
+        "garlic",
+        "onion",
+        "tulip",
+        "liliaceae"
+      ],
+      "stop_if": [
+        "burning, redness or rash"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Aloe Vera",
+        "Systematic review: aloe vera for burns"
+      ]
+    },
+    "calendula": {
+      "name": "Calendula (marigold)",
+      "sci": "Calendula officinalis",
+      "aka": [
+        "calendula",
+        "marigold",
+        "gul-e-ashrafi",
+        "genda"
+      ],
+      "tradition": "A gentle skin-healing flower for minor cuts, rashes and dry skin.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Trials support calendula ointment for wound healing and radiation dermatitis; traditional for dry and irritated skin.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "calendula cream or ointment",
+          "how": "Use a cream or ointment with calendula flower extract (about 2-5 percent) in a thin layer on clean, unbroken or lightly broken skin.",
+          "amount": "thin layer",
+          "freq": "2-3 times a day",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Not for deep or infected wounds."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Topical use is generally considered low risk; avoid taking it by mouth.",
+      "bf": "ok",
+      "min_age": 1,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "calendula",
+        "marigold",
+        "ragweed",
+        "daisy",
+        "chamomile",
+        "asteraceae",
+        "compositae"
+      ],
+      "stop_if": [
+        "itching, redness or rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Calendula flower",
+        "Cochrane review on calendula for radiation dermatitis"
+      ]
+    },
+    "tea_tree": {
+      "name": "Tea tree oil",
+      "sci": "Melaleuca alternifolia",
+      "aka": [
+        "tea tree",
+        "tea tree oil",
+        "melaleuca"
+      ],
+      "tradition": "Australian antiseptic oil for acne, dandruff and fungal skin infections.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "Trials support 5 percent gel for mild to moderate acne and 5 percent shampoo for dandruff; 10-50 percent solutions are used for athlete's foot.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "tea tree 5 percent gel or shampoo",
+          "how": "Use a commercial product with about 5 percent tea tree oil: dab the gel on spots, or lather the shampoo into the scalp for 3 minutes before rinsing.",
+          "amount": "thin layer / a palmful",
+          "freq": "gel 1-2 times a day; shampoo daily to 3 times a week",
+          "duration": "up to 6-12 weeks"
+        },
+        {
+          "route": "topical",
+          "form": "diluted tea tree for fungal skin",
+          "how": "Use a cream or solution containing 10-25 percent tea tree oil, or mix 5 drops into 1 teaspoon of carrier oil to start; apply to clean, dry skin and let it dry.",
+          "amount": "thin layer",
+          "freq": "twice a day",
+          "duration": "until 2 weeks after it clears"
+        }
+      ],
+      "cautions": [
+        "Never swallow; keep away from eyes.",
+        "Always patch test: allergic skin reactions are common.",
+        "Toxic to cats and dogs.",
+        "Repeated use on prepubertal boys has been linked to breast tissue growth."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Diluted use on small skin areas is considered low risk; avoid large areas.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "tea tree",
+        "melaleuca",
+        "myrtaceae",
+        "eucalyptus"
+      ],
+      "stop_if": [
+        "redness, burning, itching or rash"
+      ],
+      "sources": [
+        "NCCIH Tea Tree Oil",
+        "Randomised trials: tea tree for acne and dandruff",
+        "Cochrane-style reviews on topical antifungals"
+      ]
+    },
+    "witch_hazel": {
+      "name": "Witch hazel (distilled)",
+      "sci": "Hamamelis virginiana",
+      "aka": [
+        "witch hazel",
+        "hamamelis"
+      ],
+      "tradition": "An astringent for insect bites, minor irritation and haemorrhoid discomfort.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "EMA lists traditional use for minor skin inflammation and small wounds.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "alcohol-free distilled witch hazel",
+          "how": "Dab on a bite or irritated skin with a cotton pad.",
+          "amount": "a few drops on a pad",
+          "freq": "2-3 times a day",
+          "duration": "a few days"
+        }
+      ],
+      "cautions": [
+        "Choose alcohol-free distilled witch hazel; keep away from eyes."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "ok",
+      "preg_note": "Topical use only.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "witch hazel",
+        "hamamelis"
+      ],
+      "stop_if": [
+        "dryness or rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Hamamelis virginiana"
+      ]
+    },
+    "plantain_leaf": {
+      "name": "Plantain leaf (barg-e-bartang)",
+      "sci": "Plantago major",
+      "aka": [
+        "plantain",
+        "plantain leaf",
+        "bartang"
+      ],
+      "tradition": "A folk poultice for stings, bites and small scrapes. Not the banana-like fruit.",
+      "risk": "low",
+      "evidence": "traditional_only",
+      "evidence_note": "Traditional use; some lab evidence for soothing and healing.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "fresh leaf poultice",
+          "how": "Pick a clean leaf from an unsprayed spot away from the roadside, wash it, crush or chew it into a wet pulp and press on the bite or sting for 10-15 minutes.",
+          "amount": "1-2 leaves",
+          "freq": "as needed",
+          "duration": "a day or two"
+        }
+      ],
+      "cautions": [
+        "Only use plants you can identify with certainty."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "ok",
+      "preg_note": "Topical use only.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "plantain",
+        "plantago",
+        "psyllium"
+      ],
+      "stop_if": [
+        "rash"
+      ],
+      "sources": [
+        "Traditional use",
+        "EMA/HMPC monograph on Plantago lanceolata leaf"
+      ]
+    },
+    "neem": {
+      "name": "Neem (nim)",
+      "sci": "Azadirachta indica",
+      "aka": [
+        "neem",
+        "nim",
+        "margosa"
+      ],
+      "tradition": "Neem leaf water and paste are traditional for scalp, acne and itchy skin.",
+      "risk": "moderate",
+      "evidence": "preliminary",
+      "evidence_note": "Lab antibacterial and antifungal activity; small studies for acne, dandruff and scalp; used topically only here.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "neem leaf rinse",
+          "how": "Simmer a handful of fresh neem leaves in 1 litre of water for 10-15 minutes, cool, strain and use as a final rinse for the scalp or skin.",
+          "amount": "1 litre",
+          "freq": "2-3 times a week",
+          "duration": "up to 6 weeks"
+        },
+        {
+          "route": "topical",
+          "form": "diluted neem oil on skin spots",
+          "how": "Dilute neem oil 1 part to 10 parts carrier oil and dab on a patch-tested spot.",
+          "amount": "a few drops",
+          "freq": "once a day",
+          "duration": "up to 2 weeks"
+        }
+      ],
+      "cautions": [
+        "Never swallow neem oil (toxic, especially to children).",
+        "Patch test first."
+      ],
+      "avoid_conditions": [
+        "fertility treatment"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Neem has anti-fertility and pregnancy-ending effects in animals; avoid.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "neem",
+        "azadirachta",
+        "margosa"
+      ],
+      "stop_if": [
+        "rash or burning"
+      ],
+      "sources": [
+        "WHO and Ayurvedic Pharmacopoeia references",
+        "Small clinical studies on neem for scalp and acne"
+      ]
+    },
+    "amla": {
+      "name": "Amla (Indian gooseberry)",
+      "sci": "Phyllanthus emblica",
+      "aka": [
+        "amla",
+        "amlaki",
+        "indian gooseberry",
+        "aamla"
+      ],
+      "tradition": "A vitamin C-rich fruit central to Ayurvedic rejuvenative tonics and hair oils.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Rich in vitamin C and tannins; small trials on cholesterol and blood sugar; hair benefits are traditional.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "amla fruit or powder",
+          "how": "One fresh fruit a day, or 1/2 to 1 teaspoon (2-3 g) powder stirred into water or honey.",
+          "amount": "1 fruit or 1/2-1 tsp",
+          "freq": "once a day",
+          "duration": "ongoing, it is a food"
+        },
+        {
+          "route": "topical",
+          "form": "amla hair oil or paste",
+          "how": "Warm amla-infused oil, or mix amla powder with water or yoghurt to a paste, massage into the scalp, leave 30 minutes and wash.",
+          "amount": "a palmful",
+          "freq": "1-2 times a week",
+          "duration": "ongoing"
+        }
+      ],
+      "cautions": [
+        "Tannin-rich; may cause stomach upset on an empty stomach."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "bleeding disorder",
+        "scheduled surgery"
+      ],
+      "preg": "limited",
+      "preg_note": "Food amounts are fine.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "Food amounts.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "amla",
+        "emblica",
+        "gooseberry",
+        "phyllanthus"
+      ],
+      "stop_if": [
+        "stomach upset",
+        "rash"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda)",
+        "Small clinical trials of Phyllanthus emblica"
+      ]
+    },
+    "triphala": {
+      "name": "Triphala",
+      "sci": "Terminalia chebula, T. bellirica, Phyllanthus emblica",
+      "aka": [
+        "triphala",
+        "triphla"
+      ],
+      "tradition": "The classic Ayurvedic three-fruit bowel tonic, taken at night.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Small trials suggest mild laxative and digestive effects; quality of commercial products varies (contamination reports).",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "triphala powder at night",
+          "how": "Stir 1/2 to 1 teaspoon (2-3 g) into a cup of warm water and drink at bedtime, from a tested brand.",
+          "amount": "2-3 g",
+          "freq": "once at night",
+          "duration": "2-4 weeks at most"
+        }
+      ],
+      "cautions": [
+        "Stop if it causes loose stools or cramps.",
+        "Use tested, reputable products."
+      ],
+      "avoid_conditions": [
+        "irritable or inflamed bowel"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Traditionally avoided in pregnancy.",
+      "bf": "avoid",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "triphala",
+        "haritaki",
+        "bibhitaki",
+        "amla",
+        "terminalia"
+      ],
+      "stop_if": [
+        "diarrhoea or cramps"
+      ],
+      "sources": [
+        "Traditional use (Ayurveda)",
+        "Systematic review of Triphala clinical studies"
+      ]
+    },
+    "psyllium": {
+      "name": "Psyllium husk (isabgol)",
+      "sci": "Plantago ovata",
+      "aka": [
+        "isabgol",
+        "ispaghula",
+        "psyllium",
+        "psyllium husk",
+        "isabgol bhusi"
+      ],
+      "tradition": "The household bulk fibre across South Asia, often stirred into water or curd.",
+      "risk": "low",
+      "evidence": "well_established",
+      "evidence_note": "Well-established for constipation, and for modestly lowering cholesterol.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "isabgol in water",
+          "how": "Stir 1 heaped teaspoon (about 5 g) into a full glass (250 ml) of water, drink at once, then drink another glass of water. Begin with once a day and increase slowly.",
+          "amount": "1 teaspoon",
+          "freq": "1-3 times a day",
+          "duration": "ongoing, effect builds over 12-72 hours"
+        }
+      ],
+      "cautions": [
+        "Always take with plenty of water; dry husk can cause choking or blockage.",
+        "Take other medicines at least 2 hours apart."
+      ],
+      "avoid_conditions": [
+        "bowel obstruction or swallowing problem"
+      ],
+      "caution_conditions": [],
+      "preg": "ok",
+      "bf": "ok",
+      "min_age": 6,
+      "child_note": "Half the dose for ages 6-11, with plenty of fluid.",
+      "interactions": [
+        {
+          "cls": "thyroid",
+          "sev": "moderate",
+          "note": "Can reduce thyroid medicine absorption; take it at least 4 hours apart."
+        },
+        {
+          "cls": "lithium",
+          "sev": "moderate",
+          "note": "May reduce lithium absorption; separate doses."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        },
+        {
+          "cls": "antiepileptic",
+          "sev": "minor",
+          "note": "May reduce carbamazepine absorption; separate doses."
+        }
+      ],
+      "allergy_kw": [
+        "psyllium",
+        "isabgol",
+        "ispaghula",
+        "plantago"
+      ],
+      "stop_if": [
+        "difficulty swallowing, chest or throat tightness",
+        "severe abdominal pain or vomiting"
+      ],
+      "sources": [
+        "NCCIH and clinical guidelines for psyllium",
+        "Cochrane and meta-analyses on fibre for constipation"
+      ]
+    },
+    "flaxseed": {
+      "name": "Flaxseed (alsi)",
+      "sci": "Linum usitatissimum",
+      "aka": [
+        "alsi",
+        "flax",
+        "flaxseed",
+        "linseed",
+        "flax seeds"
+      ],
+      "tradition": "Ground seeds as a gentle bulking laxative and omega-3 food.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Moderate evidence for mild constipation and cholesterol.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "ground flaxseed",
+          "how": "Stir 1-2 tablespoons (10-20 g) freshly ground seed into yoghurt, oats or a smoothie and drink a full glass of water.",
+          "amount": "1-2 tablespoons",
+          "freq": "once a day",
+          "duration": "ongoing, it is a food"
+        }
+      ],
+      "cautions": [
+        "Whole seeds mostly pass through undigested; grind them.",
+        "Drink plenty of fluid."
+      ],
+      "avoid_conditions": [
+        "bowel obstruction or swallowing problem"
+      ],
+      "caution_conditions": [
+        "hormone-sensitive condition"
+      ],
+      "preg": "limited",
+      "preg_note": "Food amounts only.",
+      "bf": "ok",
+      "min_age": 6,
+      "child_note": "Smaller food amounts.",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Omega-3 content may have a mild effect on clotting."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "minor",
+          "note": "May lower blood sugar slightly."
+        }
+      ],
+      "allergy_kw": [
+        "flax",
+        "flaxseed",
+        "linseed"
+      ],
+      "stop_if": [
+        "bloating or cramps",
+        "rash"
+      ],
+      "sources": [
+        "NCCIH Flaxseed and Flaxseed Oil",
+        "Systematic reviews on flaxseed and constipation"
+      ]
+    },
+    "senna": {
+      "name": "Senna (sana makki)",
+      "sci": "Senna alexandrina",
+      "aka": [
+        "senna",
+        "sana",
+        "sana makki",
+        "senna leaf"
+      ],
+      "tradition": "A strong stimulant laxative used short term for occasional constipation.",
+      "risk": "moderate",
+      "evidence": "well_established",
+      "evidence_note": "Well-established for short-term relief of occasional constipation (EMA/HMPC).",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "senna tablets or tea (a product)",
+          "how": "Use an over-the-counter senna product exactly per the label (commonly 7.5-15 mg sennosides at night).",
+          "amount": "per the label",
+          "freq": "once at night",
+          "duration": "no more than 7 days"
+        }
+      ],
+      "cautions": [
+        "Do not use for more than a week: it can cause dependence and potassium loss.",
+        "Not for weight loss."
+      ],
+      "avoid_conditions": [
+        "irritable or inflamed bowel",
+        "bowel obstruction or swallowing problem"
+      ],
+      "caution_conditions": [
+        "kidney disease",
+        "heart disease"
+      ],
+      "preg": "limited",
+      "preg_note": "Only short-term, with your doctor's agreement.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "diuretic",
+          "sev": "moderate",
+          "note": "Both lower potassium."
+        },
+        {
+          "cls": "digoxin",
+          "sev": "moderate",
+          "note": "Low potassium makes digoxin toxicity more likely."
+        },
+        {
+          "cls": "corticosteroid",
+          "sev": "moderate",
+          "note": "Both lower potassium."
+        }
+      ],
+      "allergy_kw": [
+        "senna",
+        "sennosides"
+      ],
+      "stop_if": [
+        "severe cramps, vomiting or watery diarrhoea",
+        "blood in stool"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Senna leaf",
+        "German Commission E"
+      ]
+    },
+    "hibiscus": {
+      "name": "Hibiscus tea (karkade)",
+      "sci": "Hibiscus sabdariffa",
+      "aka": [
+        "hibiscus",
+        "karkade",
+        "roselle",
+        "gudhal tea",
+        "sorrel"
+      ],
+      "tradition": "A tart red tea used for blood pressure and cooling in Egypt, the Middle East and South Asia.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "Several small trials show modest reductions in blood pressure.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "hibiscus tea",
+          "how": "1-2 teaspoons (1.5-2 g) dried calyces in a cup of just-boiled water, steeped 5-10 minutes.",
+          "amount": "1 cup",
+          "freq": "2-3 times a day",
+          "duration": "ongoing for several weeks, with blood pressure checks"
+        }
+      ],
+      "cautions": [
+        "Can lower blood pressure further: monitor if you take blood-pressure medicine."
+      ],
+      "avoid_conditions": [
+        "low blood pressure"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "May stimulate menstruation; avoid.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antihypertensive",
+          "sev": "moderate",
+          "note": "May add to the blood-pressure-lowering effect; check your blood pressure and tell your prescriber."
+        },
+        {
+          "cls": "diuretic",
+          "sev": "moderate",
+          "note": "May change levels of hydrochlorothiazide."
+        },
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "May lower blood sugar."
+        }
+      ],
+      "allergy_kw": [
+        "hibiscus",
+        "roselle",
+        "malvaceae"
+      ],
+      "stop_if": [
+        "dizziness or faintness"
+      ],
+      "sources": [
+        "Meta-analyses of Hibiscus sabdariffa on blood pressure",
+        "NCCIH Hibiscus"
+      ]
+    },
+    "fenugreek": {
+      "name": "Fenugreek (methi)",
+      "sci": "Trigonella foenum-graecum",
+      "aka": [
+        "methi",
+        "methi dana",
+        "fenugreek",
+        "fenugreek seeds"
+      ],
+      "tradition": "Soaked methi seeds are a household remedy for blood sugar, digestion and hair.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Small trials show modest improvements in blood sugar; traditional for digestion and hair.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "soaked methi seeds",
+          "how": "Soak 1 teaspoon (about 5 g) seeds in a cup of water overnight; drink the water and chew the softened seeds in the morning.",
+          "amount": "1-2 teaspoons",
+          "freq": "once a day",
+          "duration": "up to 8 weeks, then review"
+        },
+        {
+          "route": "topical",
+          "form": "methi hair paste",
+          "how": "Soak 2 tablespoons seeds overnight, grind to a paste, massage into the scalp, leave 30 minutes and wash.",
+          "amount": "2 tablespoons",
+          "freq": "once a week",
+          "duration": "ongoing"
+        }
+      ],
+      "cautions": [
+        "May cause gas or loose stools; can make sweat and urine smell of maple syrup."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "diabetes"
+      ],
+      "preg": "avoid",
+      "preg_note": "May stimulate the uterus; avoid medicinal amounts.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "Can lower blood sugar further; monitor closely."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "May add to the effect of warfarin."
+        }
+      ],
+      "allergy_kw": [
+        "fenugreek",
+        "methi",
+        "chickpea",
+        "peanut",
+        "soy",
+        "legume",
+        "fabaceae"
+      ],
+      "stop_if": [
+        "stomach upset",
+        "rash or wheeze"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Fenugreek",
+        "Meta-analyses on fenugreek and blood glucose"
+      ]
+    },
+    "karela": {
+      "name": "Bitter melon (karela)",
+      "sci": "Momordica charantia",
+      "aka": [
+        "karela",
+        "bitter melon",
+        "bitter gourd"
+      ],
+      "tradition": "A bitter vegetable and juice used traditionally for blood sugar.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Small trials with modest, inconsistent effects on blood sugar.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "karela as a cooked vegetable",
+          "how": "Eat one small cooked bitter melon as part of a meal a few times a week; if using juice, keep to about 30-50 ml diluted with water.",
+          "amount": "1 small fruit or 30-50 ml juice",
+          "freq": "a few times a week",
+          "duration": "ongoing, monitor blood sugar"
+        }
+      ],
+      "cautions": [
+        "Can cause low blood sugar and stomach upset; seeds and concentrated juice are the riskiest parts."
+      ],
+      "avoid_conditions": [
+        "g6pd deficiency",
+        "liver disease"
+      ],
+      "caution_conditions": [
+        "diabetes"
+      ],
+      "preg": "avoid",
+      "preg_note": "May cause bleeding or contractions; avoid.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "Can cause low blood sugar with diabetes medicines; keep portions small and monitor."
+        }
+      ],
+      "allergy_kw": [
+        "karela",
+        "bitter melon",
+        "momordica",
+        "gourd"
+      ],
+      "stop_if": [
+        "shakiness, sweating or confusion (low sugar)",
+        "abdominal pain"
+      ],
+      "sources": [
+        "Traditional use",
+        "Systematic reviews on Momordica charantia and glycaemic control"
+      ]
+    },
+    "kalonji": {
+      "name": "Black seed (kalonji)",
+      "sci": "Nigella sativa",
+      "aka": [
+        "kalonji",
+        "black seed",
+        "black cumin",
+        "nigella",
+        "habbat al-barakah",
+        "habbatus sauda"
+      ],
+      "tradition": "Revered in Unani and Islamic tradition; seeds and oil taken daily as a general tonic.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Small trials show benefit for allergic rhinitis symptoms and modest effects on blood sugar and blood pressure.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "kalonji seeds",
+          "how": "1/2 to 1 teaspoon (1-2 g) seeds sprinkled on food, or crushed into a spoonful of honey, or 1/2 teaspoon of seed oil.",
+          "amount": "1/2-1 teaspoon",
+          "freq": "once a day",
+          "duration": "up to 8 weeks"
+        }
+      ],
+      "cautions": [
+        "Large amounts may upset the stomach."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "bleeding disorder",
+        "scheduled surgery"
+      ],
+      "preg": "avoid",
+      "preg_note": "Medicinal amounts may stimulate the uterus; cooking amounts only.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidiabetic",
+          "sev": "moderate",
+          "note": "May lower blood sugar further."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "moderate",
+          "note": "May lower blood pressure further."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        }
+      ],
+      "allergy_kw": [
+        "kalonji",
+        "black seed",
+        "nigella",
+        "ranunculaceae"
+      ],
+      "stop_if": [
+        "rash",
+        "stomach upset"
+      ],
+      "sources": [
+        "Traditional use (Unani)",
+        "Systematic reviews of Nigella sativa clinical trials"
+      ]
+    },
+    "rosemary": {
+      "name": "Rosemary (hasalban)",
+      "sci": "Rosmarinus officinalis",
+      "aka": [
+        "rosemary",
+        "hasalban",
+        "iklil-ul-jabal",
+        "rosemary oil"
+      ],
+      "tradition": "A scalp-stimulating oil for hair, and a culinary herb.",
+      "risk": "low",
+      "evidence": "preliminary",
+      "evidence_note": "One randomised trial found rosemary oil as effective as 2 percent minoxidil for androgenetic alopecia after 6 months; evidence is still preliminary.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "diluted rosemary oil scalp massage",
+          "how": "Mix 3-4 drops of rosemary essential oil into 1 tablespoon (15 ml) of carrier oil (such as coconut, jojoba or olive oil). Patch test first. Massage into the scalp for 5 minutes, leave 30-60 minutes (or overnight) and wash out.",
+          "amount": "1 tablespoon",
+          "freq": "3-4 times a week",
+          "duration": "give it 3-6 months"
+        }
+      ],
+      "cautions": [
+        "Never use undiluted oil on skin; keep away from eyes.",
+        "Do not swallow rosemary essential oil."
+      ],
+      "avoid_conditions": [
+        "epilepsy"
+      ],
+      "caution_conditions": [
+        "high blood pressure"
+      ],
+      "preg": "avoid",
+      "preg_note": "Medicinal and essential-oil use is best avoided; culinary amounts are fine.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Large oral amounts may have a mild effect on clotting; topical use is unlikely to matter."
+        }
+      ],
+      "allergy_kw": [
+        "rosemary",
+        "lamiaceae"
+      ],
+      "stop_if": [
+        "scalp redness, itching or rash"
+      ],
+      "sources": [
+        "Panahi et al. 2015, randomised trial of rosemary oil vs minoxidil",
+        "EMA/HMPC monograph on Rosmarinus officinalis leaf"
+      ]
+    },
+    "green_tea": {
+      "name": "Green tea",
+      "sci": "Camellia sinensis",
+      "aka": [
+        "green tea",
+        "kahwa",
+        "sabz chai"
+      ],
+      "tradition": "A daily antioxidant-rich tea; the extract is used in topical skin products.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Moderate evidence for mild alertness and as a topical for acne; concentrated extracts are the safety concern, not the tea.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "green tea",
+          "how": "1 teaspoon (2 g) leaf in a cup of hot (not boiling) water, steeped 3 minutes.",
+          "amount": "1 cup",
+          "freq": "1-3 cups a day, not near bedtime",
+          "duration": "ongoing"
+        },
+        {
+          "route": "topical",
+          "form": "cooled green tea as a skin toner",
+          "how": "Steep a tea bag in hot water, cool completely, and dab on clean skin with a cotton pad.",
+          "amount": "1 cup",
+          "freq": "once or twice a day",
+          "duration": "up to 6 weeks"
+        }
+      ],
+      "cautions": [
+        "Avoid concentrated green tea extracts and capsules: rare liver injury.",
+        "Contains caffeine; reduces iron absorption if drunk with meals."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "iron deficiency",
+        "anxiety or mood disorder",
+        "heart disease"
+      ],
+      "preg": "limited",
+      "preg_note": "Count the caffeine; keep total caffeine under about 200 mg a day (around 3 cups of green tea).",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "moderate",
+          "note": "Vitamin K in tea can reduce the effect of warfarin; keep intake steady."
+        },
+        {
+          "cls": "iron",
+          "sev": "moderate",
+          "note": "Reduces iron absorption; drink tea 2 hours away from iron tablets."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Large amounts may change levels of some medicines."
+        }
+      ],
+      "allergy_kw": [
+        "green tea",
+        "camellia",
+        "caffeine"
+      ],
+      "stop_if": [
+        "palpitations or insomnia"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Green Tea",
+        "LiverTox: green tea extract"
+      ]
+    },
+    "cranberry": {
+      "name": "Cranberry",
+      "sci": "Vaccinium macrocarpon",
+      "aka": [
+        "cranberry",
+        "cranberry juice"
+      ],
+      "tradition": "A North American fruit used to reduce repeated urinary infections.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Reduces repeat UTIs in women with recurrent infection (prevention, not a treatment for an active infection).",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "cranberry juice or capsule",
+          "how": "240 ml (1 cup) of unsweetened cranberry juice daily, or a capsule delivering about 36 mg proanthocyanidins per label.",
+          "amount": "1 cup or 1 capsule",
+          "freq": "once a day",
+          "duration": "ongoing for prevention"
+        }
+      ],
+      "cautions": [
+        "Does not treat an active urinary infection: that needs testing and usually antibiotics."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "kidney stones",
+        "diabetes"
+      ],
+      "preg": "ok",
+      "preg_note": "Food amounts.",
+      "bf": "ok",
+      "min_age": 2,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "Case reports with warfarin; keep intake steady and tell your prescriber."
+        }
+      ],
+      "allergy_kw": [
+        "cranberry",
+        "vaccinium"
+      ],
+      "stop_if": [
+        "stomach upset"
+      ],
+      "sources": [
+        "Cochrane review: cranberries for preventing UTIs (2023)",
+        "NCCIH Cranberry"
+      ]
+    },
+    "willow_bark": {
+      "name": "White willow bark",
+      "sci": "Salix alba",
+      "aka": [
+        "willow bark",
+        "white willow",
+        "salix"
+      ],
+      "tradition": "The original source of salicin (aspirin's cousin) for aches, back pain and fever.",
+      "risk": "high",
+      "evidence": "moderate",
+      "evidence_note": "Standardised extracts reduce low-back and osteoarthritis pain in trials; it works like a mild aspirin and shares its risks.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "standardised willow bark extract (a product)",
+          "how": "A standardised extract providing 120-240 mg salicin a day, per the label.",
+          "amount": "per the label",
+          "freq": "per the label",
+          "duration": "short courses of up to 4 weeks"
+        }
+      ],
+      "cautions": [
+        "Acts like aspirin: can cause stomach bleeding and affect clotting.",
+        "Not for under-18s because of the Reye syndrome risk with salicylates."
+      ],
+      "avoid_conditions": [
+        "bleeding disorder",
+        "kidney disease",
+        "peptic ulcer or gastritis",
+        "asthma",
+        "scheduled surgery"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Salicylates are avoided in pregnancy.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "major",
+          "note": "Adds to the bleeding risk."
+        },
+        {
+          "cls": "nsaid",
+          "sev": "major",
+          "note": "Duplicates the NSAID effect and raises stomach and kidney risk."
+        },
+        {
+          "cls": "immunosuppressant",
+          "sev": "major",
+          "note": "Can raise methotrexate toxicity."
+        },
+        {
+          "cls": "diuretic",
+          "sev": "moderate",
+          "note": "Salicylates can reduce the effect of water pills and strain the kidneys."
+        }
+      ],
+      "allergy_kw": [
+        "aspirin",
+        "salicylate",
+        "salicylates",
+        "willow",
+        "salix",
+        "nsaid"
+      ],
+      "stop_if": [
+        "stomach pain, black stools or ringing in the ears"
+      ],
+      "sources": [
+        "ESCOP monograph on Salix cortex",
+        "NCCIH Willow Bark"
+      ]
+    },
+    "feverfew": {
+      "name": "Feverfew",
+      "sci": "Tanacetum parthenium",
+      "aka": [
+        "feverfew"
+      ],
+      "tradition": "A European herb for migraine prevention.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Some trials show fewer migraines with regular use; results are mixed.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "feverfew product (preventive)",
+          "how": "A standardised product (commonly 100-150 mg dried leaf or extract daily) per the label.",
+          "amount": "per the label",
+          "freq": "once a day",
+          "duration": "give it 4-6 weeks; this is for prevention, not for an attack"
+        }
+      ],
+      "cautions": [
+        "Chewing fresh leaves can cause mouth ulcers.",
+        "Stopping abruptly can cause rebound headaches."
+      ],
+      "avoid_conditions": [
+        "bleeding disorder",
+        "scheduled surgery"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "May stimulate the uterus; avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "anticoagulant",
+          "sev": "major",
+          "note": "May increase bleeding risk."
+        }
+      ],
+      "allergy_kw": [
+        "feverfew",
+        "ragweed",
+        "daisy",
+        "chamomile",
+        "asteraceae",
+        "compositae"
+      ],
+      "stop_if": [
+        "mouth ulcers",
+        "rash"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Feverfew",
+        "Cochrane review on feverfew for migraine prevention"
+      ]
+    },
+    "arnica": {
+      "name": "Arnica gel",
+      "sci": "Arnica montana",
+      "aka": [
+        "arnica",
+        "arnica gel",
+        "arnica cream"
+      ],
+      "tradition": "A topical for bruises, sprains and muscle soreness.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "An arnica gel performed similarly to ibuprofen gel in a small trial for hand osteoarthritis; evidence for bruising is mixed.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "arnica gel or cream",
+          "how": "Apply a thin layer of a commercial arnica gel to unbroken skin over the bruise or sore muscle and rub in gently.",
+          "amount": "thin layer",
+          "freq": "2-3 times a day",
+          "duration": "up to 2-3 weeks"
+        }
+      ],
+      "cautions": [
+        "Never on broken skin and never swallow herbal arnica (toxic)."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Topical use on unbroken skin is generally considered low risk but ask first.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "arnica",
+        "ragweed",
+        "daisy",
+        "chamomile",
+        "asteraceae",
+        "compositae"
+      ],
+      "stop_if": [
+        "rash, blisters or itching"
+      ],
+      "sources": [
+        "NCCIH Arnica",
+        "Randomised trial: arnica gel vs ibuprofen gel in hand osteoarthritis"
+      ]
+    },
+    "capsaicin": {
+      "name": "Capsaicin cream (chilli)",
+      "sci": "Capsicum annuum",
+      "aka": [
+        "capsaicin",
+        "chilli cream",
+        "cayenne cream",
+        "capsicum"
+      ],
+      "tradition": "A counter-irritant for joint and muscle pain and nerve pain.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Moderate evidence for osteoarthritis and neuropathic pain with regular use.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "capsaicin cream",
+          "how": "Apply a thin layer of an over-the-counter cream (0.025-0.075 percent) to the sore joint or muscle and wash your hands well afterward.",
+          "amount": "thin layer",
+          "freq": "3-4 times a day",
+          "duration": "give it 2-4 weeks; the early burning fades"
+        }
+      ],
+      "cautions": [
+        "Not on broken skin, near eyes, or under a tight bandage or heat pad."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Limited data; ask your doctor.",
+      "bf": "limited",
+      "min_age": 12,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "capsaicin",
+        "chilli",
+        "chili",
+        "cayenne",
+        "capsicum"
+      ],
+      "stop_if": [
+        "severe burning or blistering"
+      ],
+      "sources": [
+        "Cochrane review: topical capsaicin for chronic pain",
+        "NCCIH Capsaicin"
+      ]
+    },
+    "boswellia": {
+      "name": "Boswellia (shallaki, frankincense)",
+      "sci": "Boswellia serrata",
+      "aka": [
+        "boswellia",
+        "shallaki",
+        "salai guggal",
+        "frankincense",
+        "kundur"
+      ],
+      "tradition": "An Ayurvedic gum resin for joint stiffness and inflammation.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Several small trials show reduced knee osteoarthritis pain after 4-12 weeks.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "standardised boswellia extract (a product)",
+          "how": "A standardised extract (commonly 300-500 mg, 30-65 percent boswellic acids) with food, per the label.",
+          "amount": "300-500 mg",
+          "freq": "2-3 times a day",
+          "duration": "4-12 weeks, then review"
+        }
+      ],
+      "cautions": [
+        "May cause stomach upset."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "May stimulate menstrual flow; avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Possible minor effect on liver enzymes."
+        }
+      ],
+      "allergy_kw": [
+        "boswellia",
+        "frankincense"
+      ],
+      "stop_if": [
+        "stomach upset",
+        "rash"
+      ],
+      "sources": [
+        "NCCIH Boswellia",
+        "Systematic review: Boswellia serrata in osteoarthritis"
+      ]
+    },
+    "vitex": {
+      "name": "Chaste tree (vitex, agnus castus)",
+      "sci": "Vitex agnus-castus",
+      "aka": [
+        "vitex",
+        "chaste tree",
+        "chasteberry",
+        "agnus castus",
+        "shiwakai"
+      ],
+      "tradition": "A European herb for premenstrual symptoms and breast tenderness.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "Trials support benefit for premenstrual symptoms over at least three cycles.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "vitex extract (a product)",
+          "how": "A standardised dried-fruit extract (commonly 20-40 mg a day) taken in the morning, per the label.",
+          "amount": "per the label",
+          "freq": "once a day, morning",
+          "duration": "at least 3 menstrual cycles"
+        }
+      ],
+      "cautions": [
+        "Can cause nausea, headache or acne at first."
+      ],
+      "avoid_conditions": [
+        "hormone-sensitive condition",
+        "fertility treatment"
+      ],
+      "caution_conditions": [
+        "anxiety or mood disorder"
+      ],
+      "preg": "avoid",
+      "preg_note": "Acts on hormones; avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "hormonal",
+          "sev": "major",
+          "note": "May interfere with contraceptives and hormone therapy."
+        }
+      ],
+      "allergy_kw": [
+        "vitex",
+        "chaste tree",
+        "chasteberry"
+      ],
+      "stop_if": [
+        "worsening mood or rash"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Agnus castus fruit",
+        "NCCIH-listed trials on vitex for PMS"
+      ]
+    },
+    "black_cohosh": {
+      "name": "Black cohosh",
+      "sci": "Actaea racemosa",
+      "aka": [
+        "black cohosh",
+        "cimicifuga"
+      ],
+      "tradition": "A North American herb for menopausal hot flushes.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "Trial results for hot flushes are mixed; rare liver injury reports.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "black cohosh extract (a product)",
+          "how": "A standardised extract per the label (often 20-40 mg twice a day).",
+          "amount": "per the label",
+          "freq": "twice a day",
+          "duration": "up to 6 months"
+        }
+      ],
+      "cautions": [
+        "Stop and see a doctor if you develop dark urine, yellow skin or eyes, or upper-right abdominal pain."
+      ],
+      "avoid_conditions": [
+        "liver disease",
+        "hormone-sensitive condition"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "hormonal",
+          "sev": "moderate",
+          "note": "Effects with hormone therapy are unclear; discuss with your prescriber."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Possible minor effect."
+        }
+      ],
+      "allergy_kw": [
+        "black cohosh",
+        "actaea",
+        "cimicifuga"
+      ],
+      "stop_if": [
+        "dark urine, yellow skin or eyes, or abdominal pain"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: Black Cohosh",
+        "LiverTox: black cohosh"
+      ]
+    },
+    "saffron": {
+      "name": "Saffron (zafran, kesar)",
+      "sci": "Crocus sativus",
+      "aka": [
+        "saffron",
+        "zafran",
+        "kesar"
+      ],
+      "tradition": "A mood-lifting spice in Persian, Unani and Ayurvedic medicine.",
+      "risk": "moderate",
+      "evidence": "moderate",
+      "evidence_note": "Several randomised trials found saffron extract helpful for mild to moderate depressive symptoms over 6-8 weeks; it should sit alongside medical review, not replace it.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "saffron in milk or a standardised extract",
+          "how": "A pinch (about 0.1-0.3 g, 8-10 threads) steeped in warm milk, or a standardised extract of about 30 mg a day (15 mg twice daily) per the label.",
+          "amount": "a pinch or 30 mg",
+          "freq": "once or twice a day",
+          "duration": "6-8 weeks, with a review if mood has not lifted"
+        }
+      ],
+      "cautions": [
+        "More than about 1.5 g a day is unsafe; more than 5 g is toxic.",
+        "Can trigger mania in people with bipolar disorder."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [
+        "anxiety or mood disorder"
+      ],
+      "preg": "avoid",
+      "preg_note": "Medicinal amounts may stimulate the uterus; culinary pinches are fine.",
+      "bf": "limited",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidepressant",
+          "sev": "moderate",
+          "note": "Do not add to antidepressants without your prescriber's agreement."
+        },
+        {
+          "cls": "antihypertensive",
+          "sev": "minor",
+          "note": "May lower blood pressure slightly."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "minor",
+          "note": "May have a mild effect on clotting."
+        }
+      ],
+      "allergy_kw": [
+        "saffron",
+        "crocus",
+        "olive pollen"
+      ],
+      "stop_if": [
+        "agitation, racing thoughts or reduced need for sleep"
+      ],
+      "sources": [
+        "Meta-analyses of saffron for depression",
+        "NCCIH-listed trials"
+      ]
+    },
+    "oatmeal": {
+      "name": "Colloidal oatmeal",
+      "sci": "Avena sativa",
+      "aka": [
+        "oatmeal",
+        "colloidal oatmeal",
+        "oat bath",
+        "oats"
+      ],
+      "tradition": "Oat baths and creams for itchy, dry or eczema-prone skin.",
+      "risk": "low",
+      "evidence": "moderate",
+      "evidence_note": "Colloidal oat products are recognised skin protectants with good evidence for itch and dryness.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "oatmeal bath or cream",
+          "how": "Stir 1 cup finely ground plain oats (or a colloidal oatmeal product) into a lukewarm bath, soak 10-15 minutes, pat dry and moisturise within 3 minutes; or use a colloidal oat cream.",
+          "amount": "1 cup per bath",
+          "freq": "daily to every other day",
+          "duration": "ongoing for dry skin"
+        }
+      ],
+      "cautions": [
+        "The tub can be slippery."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "ok",
+      "preg_note": "Topical use.",
+      "bf": "ok",
+      "min_age": 1,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "oat",
+        "oats",
+        "avena"
+      ],
+      "stop_if": [
+        "worse itching or rash"
+      ],
+      "sources": [
+        "US FDA skin protectant monograph for colloidal oatmeal",
+        "Reviews of colloidal oatmeal in atopic dermatitis"
+      ]
+    },
+    "coconut_oil": {
+      "name": "Virgin coconut oil",
+      "sci": "Cocos nucifera",
+      "aka": [
+        "coconut oil",
+        "nariyal tel",
+        "virgin coconut oil"
+      ],
+      "tradition": "A daily skin and hair oil across South Asia.",
+      "risk": "low",
+      "evidence": "limited",
+      "evidence_note": "Small trials show benefit for dry and atopic skin; may clog pores in acne-prone skin.",
+      "prep": [
+        {
+          "route": "topical",
+          "form": "coconut oil on damp skin",
+          "how": "Warm a teaspoon between your palms and spread over damp skin straight after bathing; on hair, massage into the scalp and lengths before washing.",
+          "amount": "1 teaspoon",
+          "freq": "once or twice a day",
+          "duration": "ongoing"
+        }
+      ],
+      "cautions": [
+        "Can worsen acne on the face."
+      ],
+      "avoid_conditions": [],
+      "caution_conditions": [],
+      "preg": "ok",
+      "preg_note": "Topical use.",
+      "bf": "ok",
+      "min_age": 1,
+      "child_note": "",
+      "interactions": [],
+      "allergy_kw": [
+        "coconut"
+      ],
+      "stop_if": [
+        "new breakouts or rash"
+      ],
+      "sources": [
+        "Randomised trials of coconut oil in atopic dermatitis"
+      ]
+    },
+    "eucalyptus": {
+      "name": "Eucalyptus",
+      "sci": "Eucalyptus globulus",
+      "aka": [
+        "eucalyptus",
+        "eucalyptus oil",
+        "safeda"
+      ],
+      "tradition": "Steam inhalation for blocked nose and chest congestion.",
+      "risk": "moderate",
+      "evidence": "limited",
+      "evidence_note": "The active compound (cineole) helps symptoms of acute bronchitis and sinusitis in trials of capsule forms; steam use is traditional.",
+      "prep": [
+        {
+          "route": "inhaled",
+          "form": "eucalyptus steam",
+          "how": "Add 1-2 drops of eucalyptus oil to a bowl of hot (not boiling) water, lean over at arm's length with eyes closed and breathe gently for 5-10 minutes. Stop if it irritates.",
+          "amount": "1-2 drops",
+          "freq": "once or twice a day",
+          "duration": "a few days"
+        }
+      ],
+      "cautions": [
+        "Never swallow eucalyptus oil.",
+        "Do not use near the face of children under 6; the bowl of hot water is a scald risk."
+      ],
+      "avoid_conditions": [
+        "epilepsy",
+        "asthma"
+      ],
+      "caution_conditions": [],
+      "preg": "limited",
+      "preg_note": "Gentle steam is generally considered low risk; avoid the oil on skin.",
+      "bf": "limited",
+      "min_age": 6,
+      "child_note": "Not near the face of young children.",
+      "interactions": [
+        {
+          "cls": "cyp3a4",
+          "sev": "minor",
+          "note": "Eucalyptol may slightly affect liver enzymes; unlikely with inhaled use."
+        }
+      ],
+      "allergy_kw": [
+        "eucalyptus",
+        "tea tree",
+        "myrtaceae"
+      ],
+      "stop_if": [
+        "cough, wheeze or breathing difficulty"
+      ],
+      "sources": [
+        "EMA/HMPC monograph on Eucalyptus globulus leaf and oil",
+        "ESCOP monograph on eucalyptus oil"
+      ]
+    },
+    "st_johns_wort": {
+      "name": "St John's wort",
+      "sci": "Hypericum perforatum",
+      "aka": [
+        "st john's wort",
+        "st johns wort",
+        "hypericum"
+      ],
+      "tradition": "A European herb for mild to moderate low mood.",
+      "risk": "high",
+      "evidence": "moderate",
+      "evidence_note": "Trials support benefit for mild to moderate depression, but it interacts with a very large number of medicines.",
+      "prep": [
+        {
+          "route": "oral",
+          "form": "standardised St John's wort (a product)",
+          "how": "Only a standardised product, exactly per the label, and only after a pharmacist has checked all your medicines.",
+          "amount": "per the label",
+          "freq": "per the label",
+          "duration": "4-6 weeks then review with a clinician"
+        }
+      ],
+      "cautions": [
+        "Makes the skin more sun-sensitive.",
+        "Strongly changes how many medicines work, including contraceptives."
+      ],
+      "avoid_conditions": [
+        "anxiety or mood disorder",
+        "scheduled surgery"
+      ],
+      "caution_conditions": [],
+      "preg": "avoid",
+      "preg_note": "Avoid.",
+      "bf": "avoid",
+      "min_age": 18,
+      "child_note": "",
+      "interactions": [
+        {
+          "cls": "antidepressant",
+          "sev": "major",
+          "note": "Risk of serotonin syndrome."
+        },
+        {
+          "cls": "maoi",
+          "sev": "major",
+          "note": "Do not combine."
+        },
+        {
+          "cls": "hormonal",
+          "sev": "major",
+          "note": "Can cause contraceptive failure."
+        },
+        {
+          "cls": "anticoagulant",
+          "sev": "major",
+          "note": "Reduces the effect of warfarin and some other blood thinners."
+        },
+        {
+          "cls": "immunosuppressant",
+          "sev": "major",
+          "note": "Can cause transplant rejection by lowering medicine levels."
+        },
+        {
+          "cls": "antiviral_cancer",
+          "sev": "major",
+          "note": "Lowers levels of many HIV and cancer medicines."
+        },
+        {
+          "cls": "cyp3a4",
+          "sev": "major",
+          "note": "Lowers levels of many medicines."
+        },
+        {
+          "cls": "digoxin",
+          "sev": "major",
+          "note": "Lowers digoxin levels."
+        },
+        {
+          "cls": "antiepileptic",
+          "sev": "major",
+          "note": "Lowers anti-seizure medicine levels."
+        },
+        {
+          "cls": "sedative",
+          "sev": "moderate",
+          "note": "Can add to or change sedative effects."
+        }
+      ],
+      "allergy_kw": [
+        "st john",
+        "hypericum"
+      ],
+      "stop_if": [
+        "agitation, sweating or tremor",
+        "skin rash in sunlight"
+      ],
+      "sources": [
+        "NCCIH Herbs at a Glance: St. John's Wort",
+        "EMA/HMPC monograph on Hypericum perforatum"
+      ]
+    }
+  }
+}

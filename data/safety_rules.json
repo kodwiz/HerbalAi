@@ -1,0 +1,800 @@
+{
+  "_note": "Deterministic safety rules. Edit carefully and run the test suite after any change. Patterns are case-insensitive regular expressions.",
+  "negation_words": [
+    "no",
+    "not",
+    "without",
+    "never",
+    "denies",
+    "deny",
+    "don't have",
+    "do not have",
+    "haven't",
+    "have not",
+    "hasn't",
+    "isn't",
+    "aren't",
+    "free of",
+    "ruled out"
+  ],
+  "emergency_rules": [
+    {
+      "id": "breathing_or_anaphylaxis",
+      "label": "Possible breathing difficulty or severe allergic reaction",
+      "patterns": [
+        "(can'?t|cannot|unable to|difficulty|trouble|struggling to|hard to)\\s+(\\w+\\s+)?breath",
+        "short(ness)? of breath",
+        "throat\\s+(is\\s+)?(closing|swelling|tight)",
+        "swelling\\s+of\\s+(the\\s+)?(face|lips|tongue|throat)",
+        "(face|lips|tongue)\\s+(is\\s+|are\\s+)?swell",
+        "anaphyla",
+        "wheez"
+      ]
+    },
+    {
+      "id": "chest_pain",
+      "label": "Possible heart-related emergency",
+      "patterns": [
+        "chest\\s+(pain|pressure|tightness)",
+        "crushing\\s+(pain|chest)",
+        "pain\\s+(spreading|radiating)\\s+to\\s+(my\\s+)?(arm|jaw)"
+      ]
+    },
+    {
+      "id": "stroke_signs",
+      "label": "Possible stroke warning signs",
+      "patterns": [
+        "face\\s+(is\\s+)?droop",
+        "facial\\s+droop",
+        "droop(ing|y)\\s+(face|mouth|eyelid)",
+        "slurred\\s+speech",
+        "can'?t\\s+speak",
+        "difficulty\\s+speaking",
+        "sudden(ly)?\\s+(weak|weakness|numb|numbness|confus)",
+        "sudden\\s+(severe\\s+)?headache",
+        "sudden\\s+(loss\\s+of\\s+)?vision"
+      ]
+    },
+    {
+      "id": "severe_bleeding",
+      "label": "Severe bleeding",
+      "patterns": [
+        "(severe|heavy|uncontrolled|massive)\\s+bleeding",
+        "bleeding\\s+(that\\s+)?(won'?t|will\\s+not|doesn'?t|does\\s+not)\\s+stop",
+        "vomit(ing|ed)?\\s+(up\\s+)?blood",
+        "blood\\s+in\\s+(my\\s+)?vomit",
+        "cough(ing)?\\s+(up\\s+)?blood"
+      ]
+    },
+    {
+      "id": "loss_of_consciousness",
+      "label": "Loss of consciousness or seizure",
+      "patterns": [
+        "passed\\s+out",
+        "faint(ed|ing)",
+        "unconscious",
+        "lost\\s+consciousness",
+        "loss\\s+of\\s+consciousness",
+        "collaps(e|ed)",
+        "seizure",
+        "convuls"
+      ]
+    },
+    {
+      "id": "poisoning_overdose",
+      "label": "Possible poisoning or overdose",
+      "patterns": [
+        "overdos",
+        "poison",
+        "took\\s+too\\s+(many|much)",
+        "swallow(ed)?\\s+(a\\s+lot\\s+of\\s+)?(essential\\s+oil|neem\\s+oil)",
+        "(child|baby|toddler|infant)\\s+(swallowed|drank|ate)"
+      ]
+    },
+    {
+      "id": "rapid_worsening",
+      "label": "Severe or rapidly worsening symptoms",
+      "patterns": [
+        "rapidly\\s+worsening",
+        "getting\\s+worse\\s+(very\\s+)?(fast|quickly)",
+        "worst\\s+(pain|headache)\\s+of\\s+my\\s+life",
+        "unbearable\\s+pain"
+      ]
+    },
+    {
+      "id": "mental_health_crisis",
+      "label": "Possible mental-health crisis",
+      "message_type": "crisis",
+      "patterns": [
+        "suicid",
+        "kill\\s+myself",
+        "want\\s+to\\s+die",
+        "end\\s+my\\s+life",
+        "self[- ]harm",
+        "hurt\\s+myself"
+      ]
+    }
+  ],
+  "concern_red_flags": {
+    "hair": [
+      {
+        "id": "hair_patchy",
+        "label": "Sudden or patchy hair loss",
+        "action": "block_herbal",
+        "patterns": [
+          "patch(y|es)",
+          "bald\\s+(spot|patch)",
+          "sudden(ly)?\\s+(hair\\s+)?(loss|falling|losing)",
+          "coming\\s+out\\s+in\\s+clumps",
+          "clumps"
+        ]
+      },
+      {
+        "id": "hair_scalp_inflammation",
+        "label": "Severe scalp inflammation",
+        "action": "block_herbal",
+        "patterns": [
+          "scalp\\s+(is\\s+|feels\\s+|has\\s+|are\\s+)?(been\\s+)?(pain|painful|bleed|bleeding|pus|oozing|sores?|sore|blister|swollen|swelling|cracked|crusted|infected)",
+          "(painful|bleeding|oozing|crusted|sore|swollen)\\s+(patches?\\s+(on|of)\\s+(my\\s+)?)?scalp",
+          "scarring",
+          "burning\\s+scalp",
+          "pustule"
+        ]
+      },
+      {
+        "id": "hair_systemic",
+        "label": "Hair loss together with other body-wide symptoms",
+        "action": "advise_clinician",
+        "patterns": [
+          "irregular\\s+periods",
+          "unexplained\\s+weight",
+          "extreme\\s+fatigue",
+          "facial\\s+hair",
+          "heavy\\s+periods"
+        ]
+      }
+    ],
+    "skin": [
+      {
+        "id": "skin_lesion",
+        "label": "New or changing skin lesion",
+        "action": "block_herbal",
+        "patterns": [
+          "(mole|spot|lesion|growth)\\s+(is\\s+)?(changing|bleeding|growing|getting\\s+bigger|new)",
+          "changing\\s+mole",
+          "bleeding\\s+mole",
+          "(sore|wound|ulcer)\\s+(that\\s+)?(won'?t|doesn'?t|does\\s+not|will\\s+not)\\s+heal",
+          "non[- ]?healing"
+        ]
+      },
+      {
+        "id": "skin_infection",
+        "label": "Possible skin infection",
+        "action": "block_herbal",
+        "patterns": [
+          "\\bpus\\b",
+          "spreading\\s+(redness|rash)",
+          "red\\s+streaks?",
+          "warm\\s+to\\s+(the\\s+)?touch",
+          "infect(ed|ion)",
+          "rash\\s+with\\s+fever",
+          "fever\\s+and\\s+(a\\s+)?rash"
+        ]
+      },
+      {
+        "id": "skin_severe",
+        "label": "Severe or widespread skin reaction",
+        "action": "block_herbal",
+        "patterns": [
+          "blister(s|ing)?\\s+(all\\s+over|widespread)",
+          "peeling\\s+skin",
+          "painful\\s+rash",
+          "sores?\\s+in\\s+(my\\s+)?mouth"
+        ]
+      }
+    ],
+    "digestion": [
+      {
+        "id": "gi_bleeding",
+        "label": "Blood in stool or vomit",
+        "action": "block_herbal",
+        "patterns": [
+          "blood\\s+in\\s+(my\\s+)?(stool|poo|poop|bowel)",
+          "bloody\\s+(stool|poo|poop|diarrh)",
+          "black\\s+(tarry\\s+)?(stool|poo|poop)",
+          "tarry\\s+stool",
+          "rectal\\s+bleeding"
+        ]
+      },
+      {
+        "id": "gi_alarm",
+        "label": "Digestive alarm symptoms",
+        "action": "block_herbal",
+        "patterns": [
+          "unexplained\\s+weight\\s+loss",
+          "losing\\s+weight\\s+without\\s+trying",
+          "difficulty\\s+swallowing",
+          "trouble\\s+swallowing",
+          "severe\\s+(abdominal|stomach|belly)\\s+pain",
+          "persistent\\s+vomiting",
+          "can'?t\\s+keep\\s+(food|fluids?)\\s+down",
+          "jaundice",
+          "yellow(ing)?\\s+(skin|eyes)"
+        ]
+      },
+      {
+        "id": "gi_persistent",
+        "label": "Digestive symptoms lasting more than 2 weeks",
+        "action": "advise_clinician",
+        "duration_days_over": 14
+      }
+    ],
+    "sleep_stress": [
+      {
+        "id": "mood_flags",
+        "label": "Symptoms of low mood or panic that need professional support",
+        "action": "advise_clinician",
+        "patterns": [
+          "hopeless",
+          "depress",
+          "panic\\s+attack",
+          "can'?t\\s+function",
+          "no\\s+interest\\s+in\\s+anything",
+          "hallucinat"
+        ]
+      },
+      {
+        "id": "sleep_persistent",
+        "label": "Sleep problems lasting more than 4 weeks",
+        "action": "advise_clinician",
+        "duration_days_over": 28
+      }
+    ],
+    "nutrition": [
+      {
+        "id": "disordered_eating",
+        "label": "Possible disordered eating",
+        "action": "block_herbal",
+        "patterns": [
+          "eating\\s+disorder",
+          "\\bpurg(e|ing)\\b",
+          "binge",
+          "starv(e|ing)",
+          "anorexi",
+          "bulimi",
+          "afraid\\s+to\\s+eat",
+          "extreme\\s+(diet|fast)",
+          "detox\\s+cleanse",
+          "fasting\\s+for\\s+(days|a\\s+week)"
+        ]
+      }
+    ],
+    "immunity": [
+      {
+        "id": "systemic_illness",
+        "label": "Symptoms that need medical assessment",
+        "action": "block_herbal",
+        "patterns": [
+          "high\\s+fever",
+          "fever\\s+(for|over|more\\s+than)\\s+(3|three|4|four|5|five|\\d+)\\s+days",
+          "night\\s+sweats",
+          "swollen\\s+(lymph|glands)",
+          "unexplained\\s+weight\\s+loss",
+          "recurrent\\s+infections"
+        ]
+      }
+    ],
+    "general": [
+      {
+        "id": "general_alarm",
+        "label": "Symptoms that need medical assessment",
+        "action": "block_herbal",
+        "patterns": [
+          "unexplained\\s+weight\\s+loss",
+          "night\\s+sweats",
+          "persistent\\s+fever",
+          "lump",
+          "unexplained\\s+(bruising|bleeding)"
+        ]
+      }
+    ]
+  },
+  "medication_classes": {
+    "anticoagulants": [
+      "warfarin",
+      "coumadin",
+      "heparin",
+      "enoxaparin",
+      "apixaban",
+      "eliquis",
+      "rivaroxaban",
+      "xarelto",
+      "dabigatran",
+      "clopidogrel",
+      "plavix",
+      "aspirin",
+      "ticagrelor",
+      "prasugrel",
+      "blood thinner"
+    ],
+    "antidiabetics": [
+      "metformin",
+      "insulin",
+      "glipizide",
+      "glimepiride",
+      "gliclazide",
+      "glyburide",
+      "glibenclamide",
+      "sitagliptin",
+      "empagliflozin",
+      "dapagliflozin",
+      "pioglitazone",
+      "liraglutide",
+      "semaglutide",
+      "diabetes"
+    ],
+    "antihypertensives": [
+      "amlodipine",
+      "lisinopril",
+      "enalapril",
+      "ramipril",
+      "losartan",
+      "valsartan",
+      "telmisartan",
+      "atenolol",
+      "metoprolol",
+      "bisoprolol",
+      "propranolol",
+      "nadolol",
+      "carvedilol",
+      "hydrochlorothiazide",
+      "nifedipine",
+      "blood pressure"
+    ],
+    "beta_blockers": [
+      "atenolol",
+      "metoprolol",
+      "bisoprolol",
+      "propranolol",
+      "nadolol",
+      "carvedilol"
+    ],
+    "diuretics": [
+      "furosemide",
+      "lasix",
+      "hydrochlorothiazide",
+      "spironolactone",
+      "chlorthalidone",
+      "indapamide",
+      "torsemide",
+      "water pill"
+    ],
+    "digoxin": [
+      "digoxin",
+      "lanoxin"
+    ],
+    "corticosteroids": [
+      "prednisone",
+      "prednisolone",
+      "dexamethasone",
+      "hydrocortisone",
+      "methylprednisolone",
+      "budesonide"
+    ],
+    "immunosuppressants": [
+      "cyclosporine",
+      "ciclosporin",
+      "tacrolimus",
+      "mycophenolate",
+      "azathioprine",
+      "methotrexate",
+      "sirolimus",
+      "everolimus",
+      "adalimumab",
+      "etanercept",
+      "infliximab"
+    ],
+    "sedatives": [
+      "diazepam",
+      "lorazepam",
+      "alprazolam",
+      "clonazepam",
+      "zolpidem",
+      "zopiclone",
+      "eszopiclone",
+      "phenobarbital",
+      "gabapentin",
+      "pregabalin",
+      "trazodone",
+      "mirtazapine",
+      "sleeping pill",
+      "benzodiazepine"
+    ],
+    "thyroid_medication": [
+      "levothyroxine",
+      "thyroxine",
+      "synthroid",
+      "euthyrox",
+      "liothyronine",
+      "methimazole",
+      "carbimazole",
+      "propylthiouracil"
+    ],
+    "stimulants": [
+      "methylphenidate",
+      "amphetamine",
+      "adderall",
+      "ritalin",
+      "modafinil"
+    ],
+    "lithium": [
+      "lithium"
+    ],
+    "cyp3a4_substrates": [
+      "amlodipine",
+      "felodipine",
+      "nifedipine",
+      "simvastatin",
+      "atorvastatin",
+      "lovastatin",
+      "cyclosporine",
+      "ciclosporin",
+      "tacrolimus",
+      "sildenafil",
+      "tadalafil",
+      "midazolam"
+    ],
+    "cyp_substrates_general": [
+      "amlodipine",
+      "felodipine",
+      "nifedipine",
+      "simvastatin",
+      "atorvastatin",
+      "lovastatin",
+      "cyclosporine",
+      "tacrolimus",
+      "sildenafil",
+      "tadalafil",
+      "midazolam"
+    ],
+    "antacids_acid_reducers": [
+      "omeprazole",
+      "esomeprazole",
+      "pantoprazole",
+      "lansoprazole",
+      "rabeprazole",
+      "ranitidine",
+      "famotidine",
+      "antacid"
+    ]
+  },
+  "other_known_medications": [
+    "paracetamol",
+    "acetaminophen",
+    "ibuprofen",
+    "naproxen",
+    "cetirizine",
+    "loratadine",
+    "fexofenadine",
+    "salbutamol",
+    "albuterol",
+    "sertraline",
+    "fluoxetine",
+    "escitalopram",
+    "citalopram",
+    "paroxetine",
+    "venlafaxine",
+    "bupropion",
+    "atorvastatin",
+    "rosuvastatin",
+    "levocetirizine",
+    "montelukast",
+    "oral contraceptive",
+    "birth control",
+    "isotretinoin",
+    "minoxidil",
+    "finasteride",
+    "vitamin d",
+    "vitamin c",
+    "multivitamin",
+    "iron",
+    "calcium",
+    "magnesium",
+    "zinc",
+    "omega-3",
+    "fish oil"
+  ],
+  "condition_tags": {
+    "liver disease": [
+      "liver",
+      "hepatitis",
+      "cirrhosis",
+      "fatty liver",
+      "nafld"
+    ],
+    "kidney disease": [
+      "kidney disease",
+      "renal",
+      "ckd",
+      "dialysis",
+      "kidney failure"
+    ],
+    "kidney stones": [
+      "kidney stone",
+      "renal stone"
+    ],
+    "gallstones": [
+      "gallstone",
+      "gall stone"
+    ],
+    "gallbladder disease": [
+      "gallbladder",
+      "gall bladder",
+      "cholecyst"
+    ],
+    "bile duct obstruction": [
+      "bile duct"
+    ],
+    "bleeding disorder": [
+      "hemophilia",
+      "haemophilia",
+      "bleeding disorder",
+      "von willebrand",
+      "thrombocytopenia",
+      "low platelet"
+    ],
+    "high blood pressure": [
+      "hypertension",
+      "high blood pressure"
+    ],
+    "heart disease": [
+      "heart disease",
+      "heart failure",
+      "cardiac",
+      "coronary",
+      "arrhythmia",
+      "afib",
+      "atrial fibrillation"
+    ],
+    "heart rhythm problems": [
+      "arrhythmia",
+      "atrial fibrillation",
+      "afib",
+      "palpitations",
+      "irregular heartbeat"
+    ],
+    "low potassium": [
+      "hypokalemia",
+      "hypokalaemia",
+      "low potassium"
+    ],
+    "thyroid disorder": [
+      "thyroid",
+      "hashimoto",
+      "graves"
+    ],
+    "autoimmune disease": [
+      "autoimmune",
+      "lupus",
+      "rheumatoid",
+      "multiple sclerosis",
+      "crohn",
+      "ulcerative colitis",
+      "hashimoto",
+      "graves",
+      "psoriatic",
+      "sjogren"
+    ],
+    "organ transplant": [
+      "transplant"
+    ],
+    "epilepsy": [
+      "epilepsy",
+      "seizure disorder",
+      "seizures"
+    ],
+    "gastroesophageal reflux": [
+      "gerd",
+      "reflux",
+      "heartburn",
+      "acid reflux"
+    ],
+    "hiatal hernia": [
+      "hiatal"
+    ],
+    "g6pd deficiency": [
+      "g6pd"
+    ],
+    "anxiety disorder": [
+      "anxiety disorder",
+      "generalized anxiety",
+      "generalised anxiety",
+      "panic disorder"
+    ],
+    "insomnia": [
+      "insomnia"
+    ],
+    "iron deficiency": [
+      "iron deficiency",
+      "anemia",
+      "anaemia"
+    ],
+    "iron deficiency anemia": [
+      "iron deficiency",
+      "anemia",
+      "anaemia"
+    ],
+    "difficulty swallowing": [
+      "dysphagia",
+      "difficulty swallowing",
+      "trouble swallowing"
+    ],
+    "bowel obstruction": [
+      "bowel obstruction",
+      "intestinal obstruction",
+      "ileus"
+    ],
+    "narrowed bowel": [
+      "stricture",
+      "narrowed bowel",
+      "narrowing of the bowel"
+    ],
+    "fecal impaction": [
+      "impaction"
+    ],
+    "prostate cancer (hormone-sensitive)": [
+      "prostate cancer"
+    ],
+    "deep or infected wounds": [
+      "deep wound",
+      "infected wound",
+      "open wound"
+    ],
+    "active scalp inflammation": [
+      "scalp inflammation",
+      "scalp infection",
+      "inflamed scalp",
+      "seborrheic dermatitis",
+      "scalp psoriasis"
+    ],
+    "broken skin on scalp": [
+      "broken skin",
+      "scalp wound",
+      "scalp sores",
+      "open sores"
+    ]
+  },
+  "allergen_synonyms": {
+    "tree nut": [
+      "shea",
+      "almond",
+      "walnut",
+      "cashew",
+      "hazelnut",
+      "pistachio",
+      "macadamia",
+      "argan",
+      "coconut"
+    ],
+    "nut": [
+      "shea",
+      "almond",
+      "walnut",
+      "cashew",
+      "hazelnut",
+      "pistachio",
+      "macadamia",
+      "argan",
+      "peanut",
+      "arachis"
+    ],
+    "peanut": [
+      "peanut",
+      "arachis",
+      "groundnut"
+    ],
+    "fragrance": [
+      "fragrance",
+      "parfum",
+      "perfume",
+      "linalool",
+      "limonene",
+      "geraniol"
+    ],
+    "perfume": [
+      "fragrance",
+      "parfum",
+      "perfume",
+      "linalool",
+      "limonene",
+      "geraniol"
+    ],
+    "essential oil": [
+      "essential oil",
+      "oil of",
+      "lavender",
+      "rosemary",
+      "peppermint",
+      "tea tree",
+      "eucalyptus"
+    ],
+    "soy": [
+      "soy",
+      "soya",
+      "glycine max"
+    ],
+    "latex": [
+      "latex"
+    ],
+    "sesame": [
+      "sesame",
+      "sesamum"
+    ],
+    "coconut": [
+      "coconut",
+      "cocos"
+    ],
+    "ragweed": [
+      "ragweed",
+      "chamomile",
+      "calendula",
+      "marigold",
+      "daisy",
+      "echinacea",
+      "chrysanthemum"
+    ],
+    "daisy": [
+      "chamomile",
+      "calendula",
+      "marigold",
+      "ragweed",
+      "daisy",
+      "echinacea",
+      "chrysanthemum"
+    ],
+    "mint": [
+      "mint",
+      "peppermint",
+      "spearmint",
+      "menthol",
+      "lavender",
+      "rosemary",
+      "sage",
+      "thyme",
+      "basil",
+      "oregano"
+    ],
+    "preservative": [
+      "phenoxyethanol",
+      "paraben",
+      "benzoate",
+      "sorbate",
+      "methylisothiazolinone"
+    ],
+    "paraben": [
+      "paraben"
+    ],
+    "sulfate": [
+      "sulfate",
+      "sulphate"
+    ]
+  },
+  "high_risk_rules": {
+    "child_max_age_years": 17,
+    "children_policy": "no_herbal_recommendations",
+    "pregnancy_policy": {
+      "oral": "block_unless_explicitly_ok",
+      "topical": "block_unless_explicitly_ok"
+    },
+    "serious_conditions_requiring_clinician": [
+      "liver disease",
+      "kidney disease",
+      "heart disease",
+      "organ transplant",
+      "autoimmune disease",
+      "epilepsy",
+      "bleeding disorder"
+    ],
+    "surgery_window_note": "If you have surgery planned, tell your surgical team about every herb and supplement; some need to be stopped beforehand."
+  }
+}

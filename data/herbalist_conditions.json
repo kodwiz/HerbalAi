@@ -1,0 +1,2675 @@
+{
+  "_meta": {
+    "purpose": "Minor-condition protocols a professional herbalist would use. first_line and second_line list herbs in priority order; the engine screens each herb for the individual patient and moves down the list, so there is always an alternative to offer.",
+    "prep_index": "prep is the index into that herb's prep list in herbalist_herbs.json.",
+    "triage": "self_care = home care is reasonable; see_clinician = herbs are supportive only and a clinician should see the patient; ongoing_condition = long-term condition, herbs only ever supplement prescribed treatment.",
+    "red_flag_levels": "urgent = emergency care now; clinician = see a doctor promptly (same day or within 24-48 hours).",
+    "last_reviewed": "2026-10-13"
+  },
+  "conditions": {
+    "indigestion_bloating": {
+      "title": "Indigestion, gas and bloating",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "indigestion",
+        "bloat",
+        "gas$",
+        "gassy",
+        "flatulen",
+        "dyspepsia",
+        "heavy stomach",
+        "stomach heavy",
+        "fullness",
+        "belch",
+        "burping",
+        "bad digestion",
+        "pait phool",
+        "pait mein gas",
+        "badhazmi",
+        "hazma",
+        "apach",
+        "gas ki"
+      ],
+      "overview": "Usually related to eating fast, large or fatty meals, swallowed air, certain foods (beans, onions, dairy, fizzy drinks) or stress, and typically settles in a few days. Carminative (gas-relieving) herbs are the traditional first choice.",
+      "first_line": [
+        {
+          "herb": "ajwain",
+          "prep": 0,
+          "why": "The classic South Asian remedy for gas and indigestion."
+        },
+        {
+          "herb": "fennel",
+          "prep": 0,
+          "why": "A carminative that relaxes gut spasm and eases bloating."
+        },
+        {
+          "herb": "peppermint",
+          "prep": 0,
+          "why": "Relaxes the gut muscle and has EMA-recognised traditional use for dyspepsia and gas."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Warms and speeds stomach emptying, which helps heaviness and fullness."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "cumin",
+          "prep": 1,
+          "why": "CCF tea is a gentle all-round digestive."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Soothing if stress or cramping is part of it."
+        },
+        {
+          "herb": "cardamom",
+          "prep": 0,
+          "why": "A mild aromatic digestive."
+        },
+        {
+          "herb": "hing",
+          "prep": 0,
+          "why": "A pinch in warm water is a traditional fix for gas."
+        }
+      ],
+      "self_care": [
+        "Eat slowly, in smaller meals, and chew well.",
+        "Walk for 10-15 minutes after meals; lying down straight after eating makes it worse.",
+        "Cut back on fizzy drinks and chewing gum, and note trigger foods (beans, onions, dairy, very fatty food).",
+        "Sip warm water through the day rather than large amounts with meals."
+      ],
+      "see_doctor_if": [
+        "It lasts more than 2 weeks or keeps coming back.",
+        "You are losing weight without trying, vomiting repeatedly, or have trouble swallowing.",
+        "You notice black or bloody stools.",
+        "Pain wakes you at night, or it is new and you are over 50."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(vomit(ing)?|vomited|throwing up)\\s+(of\\s+)?blood",
+          "level": "urgent",
+          "label": "vomiting blood"
+        },
+        {
+          "pattern": "black\\s+(tarry\\s+)?(stool|poo|motion)",
+          "level": "clinician",
+          "label": "black stools"
+        }
+      ],
+      "questions": [
+        "Is it more after meals, with particular foods, or when you are stressed?",
+        "Do you get heartburn or a sour taste too?"
+      ],
+      "insights": [
+        {
+          "id": "after_meals",
+          "pattern": "after (every |each |my )?(meal|eating|food)|post[- ]?meal",
+          "say": "Because it comes right after meals, I'd focus on slower eating, smaller portions, and taking the carminative tea straight after the meal."
+        },
+        {
+          "id": "oily",
+          "pattern": "spicy|oily|fried|fast food|greasy|heavy food|biryani",
+          "say": "Oily or spicy food is a common trigger, so try cutting the heaviest meal of the day by a third and see whether it settles."
+        },
+        {
+          "id": "reflux",
+          "pattern": "heartburn|sour|burning|acid|reflux",
+          "say": "With the burning or sour taste I'd keep ajwain and peppermint out, as they can relax the valve and worsen reflux, and lean on ginger, fennel or aloe-type soothing options."
+        },
+        {
+          "id": "gas",
+          "pattern": "gas|gassy|wind|fart|burp",
+          "say": "Gas that is the main complaint responds well to fennel or ajwain after meals, and to cutting fizzy drinks and chewing gum."
+        }
+      ]
+    },
+    "nausea": {
+      "title": "Nausea and motion sickness",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "nausea",
+        "nauseous",
+        "queasy",
+        "feel sick",
+        "morning sickness",
+        "motion sick",
+        "car sick",
+        "travel sick",
+        "sea sick",
+        "vomit",
+        "ulti",
+        "matli",
+        "jee machal",
+        "mutli"
+      ],
+      "overview": "Often from a stomach bug, travel, strong smells, an empty stomach or pregnancy. Ginger has some of the best evidence of any herb for nausea.",
+      "first_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "The best-supported herb for nausea, including motion sickness and pregnancy nausea."
+        },
+        {
+          "herb": "peppermint",
+          "prep": 0,
+          "why": "Settles the stomach and the smell is calming."
+        },
+        {
+          "herb": "fennel",
+          "prep": 0,
+          "why": "Gentle on an unsettled stomach."
+        },
+        {
+          "herb": "cardamom",
+          "prep": 0,
+          "why": "An aromatic traditionally chewed or sipped for queasiness."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Soothing if there is cramping too."
+        }
+      ],
+      "self_care": [
+        "Sip small amounts of fluid often (oral rehydration solution, weak tea, water); do not force food.",
+        "When ready, try bland foods: dry toast, plain rice, banana, khichdi.",
+        "Fresh air, a cool cloth and avoiding strong smells help; for travel, look at the horizon and sit in the front.",
+        "Acupressure on the inner wrist (about three finger-widths below the crease, between the two tendons) can help some people."
+      ],
+      "see_doctor_if": [
+        "You cannot keep fluids down for 24 hours (sooner for children, older people or in pregnancy).",
+        "There are signs of dehydration: very dark urine, dizziness, dry mouth, no urine for 8 hours.",
+        "You are vomiting blood or have severe belly pain, a stiff neck, or a head injury.",
+        "You are pregnant and vomiting several times a day."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(vomit(ing)?|vomited|throwing up)\\s+(of\\s+)?blood",
+          "level": "urgent",
+          "label": "vomiting blood"
+        },
+        {
+          "pattern": "can'?t\\s+keep\\s+(anything|water|fluids?)\\s+down",
+          "level": "clinician",
+          "label": "cannot keep fluids down"
+        }
+      ],
+      "questions": [
+        "Is it travel-related, linked to meals, or could you be pregnant?"
+      ]
+    },
+    "constipation": {
+      "title": "Constipation",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "constipat",
+        "qabz",
+        "kabz",
+        "hard stool",
+        "dry stool",
+        "can't pass stool",
+        "cannot pass stool",
+        "not passing stool",
+        "irregular bowel",
+        "straining",
+        "difficulty passing",
+        "haven't been to the toilet"
+      ],
+      "overview": "Usually from too little fibre or fluid, low movement, travel, medicines or ignoring the urge. Bulk fibre is the proven first step.",
+      "first_line": [
+        {
+          "herb": "psyllium",
+          "prep": 0,
+          "why": "Isabgol is a well-established bulk laxative that softens and increases stool."
+        },
+        {
+          "herb": "flaxseed",
+          "prep": 0,
+          "why": "Ground flaxseed adds fibre and a gentle lubricating effect."
+        },
+        {
+          "herb": "triphala",
+          "prep": 0,
+          "why": "The Ayurvedic bedtime bowel tonic for mild, short-term constipation."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "senna",
+          "prep": 0,
+          "why": "A stronger stimulant for short-term relief if fibre has not worked."
+        }
+      ],
+      "self_care": [
+        "Aim for 1.5-2 litres of fluid daily; fibre without fluid makes constipation worse.",
+        "Eat more fibre gradually: oats, whole grains, lentils, fruit (papaya, prunes, soaked figs) and vegetables.",
+        "Try 4-5 prunes or soaked figs in the morning, and a warm drink on waking.",
+        "Walk daily and do not ignore the urge; give yourself unhurried toilet time after a meal, with feet raised on a small stool."
+      ],
+      "see_doctor_if": [
+        "It lasts more than 3 weeks, or is a big change from your normal.",
+        "There is blood in the stool, narrow stools, severe pain, or unexplained weight loss.",
+        "You are over 50 with new constipation.",
+        "Laxatives are needed every day."
+      ],
+      "red_flags": [
+        {
+          "pattern": "blood\\s+in\\s+(my\\s+)?(stool|poo|motion)",
+          "level": "clinician",
+          "label": "blood in the stool"
+        }
+      ],
+      "questions": [
+        "How long has it been, and how often do you pass stool normally?",
+        "Are you drinking enough water and eating fibre?"
+      ]
+    },
+    "diarrhea_mild": {
+      "title": "Mild diarrhoea (loose motions)",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "diarrh",
+        "loose motion",
+        "loose stool",
+        "watery stool",
+        "dast",
+        "patla potty",
+        "patli potty",
+        "stomach bug",
+        "food poisoning",
+        "loose motions"
+      ],
+      "overview": "Most adult diarrhoea is a short infection or food upset that settles in 1-3 days. Replacing fluid and salts matters far more than any herb.",
+      "first_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Soothes cramping and nausea that go with it."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Traditional antispasmodic for cramping and loose stools."
+        },
+        {
+          "herb": "psyllium",
+          "prep": 0,
+          "why": "In a small amount it can firm up loose stool; stop if it causes bloating."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "cardamom",
+          "prep": 0,
+          "why": "A mild aromatic digestive."
+        }
+      ],
+      "self_care": [
+        "Drink oral rehydration solution (ORS) after every loose stool: this is the most important step.",
+        "Keep eating bland foods: rice, banana, toast, khichdi, curd or yoghurt.",
+        "Avoid alcohol, very fatty or spicy food, and large amounts of caffeine and sugary drinks until it settles.",
+        "Wash hands carefully; do not prepare food for others while unwell."
+      ],
+      "see_doctor_if": [
+        "It lasts more than 2 days in adults (sooner in children, older people or during pregnancy).",
+        "There is blood or black stool, a fever above 38.5 C (101 F), or severe belly pain.",
+        "You have signs of dehydration: very dark urine, dizziness, dry mouth, or no urine for 8 hours.",
+        "You recently took antibiotics or travelled abroad."
+      ],
+      "red_flags": [
+        {
+          "pattern": "blood\\s+in\\s+(my\\s+)?(stool|poo|motion)|bloody\\s+(stool|diarrh)",
+          "level": "clinician",
+          "label": "blood in the stool"
+        },
+        {
+          "pattern": "(very\\s+)?dark\\s+urine|not\\s+(passed|peed|urinated)\\s+(for|in)\\s+(8|eight|\\d+)\\s+hours",
+          "level": "clinician",
+          "label": "possible dehydration"
+        }
+      ],
+      "questions": [
+        "How many days has it lasted, and is there any blood, fever or severe pain?",
+        "Who is it for: an adult, a child, or an older person?"
+      ]
+    },
+    "heartburn_reflux": {
+      "title": "Heartburn, acidity and reflux",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "heartburn",
+        "reflux",
+        "acidity",
+        "acid$",
+        "hyperacid",
+        "gerd",
+        "sour belch",
+        "jalan seene",
+        "seene mein jalan",
+        "khatti dakar",
+        "khatti dakaren",
+        "burning in my chest after",
+        "gastric"
+      ],
+      "overview": "Stomach acid rising into the gullet, usually worse after large, fatty or late meals, and when lying down. Soothing and coating herbs help; peppermint and strongly heating spices can make it worse.",
+      "first_line": [
+        {
+          "herb": "dgl",
+          "prep": 0,
+          "why": "Deglycyrrhizinated licorice coats and calms the stomach lining without the blood-pressure effect of whole licorice."
+        },
+        {
+          "herb": "marshmallow_root",
+          "prep": 0,
+          "why": "A mucilage that coats the gullet and stomach."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Calms the gut and any stress component."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Small amounts of mild ginger tea can help emptying, but stop if it makes burning worse."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "slippery_elm",
+          "prep": 0,
+          "why": "A soothing coating gruel."
+        }
+      ],
+      "self_care": [
+        "Eat smaller meals and finish eating at least 3 hours before bed.",
+        "Raise the head of the bed by about 15 cm (6 inches) rather than adding pillows.",
+        "Cut back on the common triggers: coffee, tea on an empty stomach, spicy and fried food, chocolate, citrus, mint, fizzy drinks, alcohol and smoking.",
+        "Avoid peppermint, ajwain and large amounts of black pepper while it is active."
+      ],
+      "see_doctor_if": [
+        "Heartburn occurs twice a week or more for more than 2 weeks, or you need antacids most days.",
+        "You have trouble or pain swallowing, vomiting, black stools, or unexplained weight loss.",
+        "You are over 50 with new symptoms.",
+        "Chest pain spreading to the arm, jaw or back, or with sweating or breathlessness is an emergency."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(trouble|difficulty|pain)\\s+(in\\s+)?swallowing",
+          "level": "clinician",
+          "label": "trouble swallowing"
+        },
+        {
+          "pattern": "black\\s+(tarry\\s+)?(stool|poo|motion)",
+          "level": "clinician",
+          "label": "black stools"
+        }
+      ],
+      "questions": [
+        "Is it worse lying down or after particular foods?",
+        "Do you take painkillers like ibuprofen or aspirin regularly?"
+      ]
+    },
+    "ibs_cramping": {
+      "title": "Stomach cramps and irritable-bowel type symptoms",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "ibs",
+        "irritable bowel",
+        "cramp",
+        "stomach cramp",
+        "abdominal pain",
+        "stomach pain",
+        "belly pain",
+        "spasm",
+        "mucus in stool",
+        "pait dard",
+        "pait mein dard",
+        "maroor"
+      ],
+      "overview": "Recurrent cramping with bloating and changing bowel habit is often irritable bowel syndrome, but it should have been properly diagnosed once. Peppermint oil has the strongest evidence of any herb here.",
+      "first_line": [
+        {
+          "herb": "peppermint",
+          "prep": 1,
+          "why": "Enteric-coated peppermint oil has good trial evidence for IBS cramping."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "A traditional antispasmodic and calming gut herb."
+        },
+        {
+          "herb": "fennel",
+          "prep": 0,
+          "why": "Relaxes gut spasm and eases gas."
+        },
+        {
+          "herb": "cumin",
+          "prep": 1,
+          "why": "CCF tea is a gentle daily gut soother."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Calms gut movement and nausea."
+        },
+        {
+          "herb": "psyllium",
+          "prep": 0,
+          "why": "Soluble fibre helps both constipation- and diarrhoea-type IBS."
+        }
+      ],
+      "self_care": [
+        "Keep a short food and symptom diary for 2 weeks to spot triggers.",
+        "Eat regular meals, chew well, and ask about a trial low-FODMAP approach with a dietitian.",
+        "A hot-water bottle on the belly, gentle exercise and relaxation breathing all help.",
+        "Limit caffeine, alcohol and very fatty meals."
+      ],
+      "see_doctor_if": [
+        "This is new and you are over 50.",
+        "There is blood in the stool, fever, unexplained weight loss, night-time diarrhoea, or progressive pain.",
+        "You have a family history of bowel cancer, coeliac disease or inflammatory bowel disease.",
+        "It has never been properly assessed."
+      ],
+      "red_flags": [
+        {
+          "pattern": "blood\\s+in\\s+(my\\s+)?(stool|poo|motion)",
+          "level": "clinician",
+          "label": "blood in the stool"
+        },
+        {
+          "pattern": "(severe|sharp|sudden)\\s+(pain|cramp).*(right|lower)",
+          "level": "clinician",
+          "label": "severe or localised belly pain"
+        }
+      ],
+      "questions": [
+        "Has a doctor ever diagnosed this, and how long has it been going on?",
+        "Is it mostly constipation, diarrhoea, or a mix?"
+      ]
+    },
+    "common_cold": {
+      "title": "Common cold and mild flu",
+      "category": "respiratory",
+      "triage": "self_care",
+      "keywords": [
+        "common cold",
+        "cold$",
+        "a cold",
+        "have a cold",
+        "runny nose",
+        "sneez",
+        "flu$",
+        "flu-like",
+        "nazla",
+        "zukam",
+        "zukaam",
+        "zukham",
+        "stuffy",
+        "chills",
+        "body ache"
+      ],
+      "overview": "A viral illness that peaks around day 3 and mostly clears within 7-10 days. Nothing shortens it dramatically, but warming, soothing herbs and fluids make it much more comfortable.",
+      "first_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Warming, eases aches and throat, and is the base of cold kadhas."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "The traditional cold and cough leaf in Ayurveda."
+        },
+        {
+          "herb": "honey",
+          "prep": 0,
+          "why": "Soothes the throat and has trial evidence for cough."
+        },
+        {
+          "herb": "elder",
+          "prep": 0,
+          "why": "Elderflower tea is a classic hot sweating tea at the start of a cold."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "turmeric",
+          "prep": 0,
+          "why": "Haldi doodh at night is the household cold remedy."
+        },
+        {
+          "herb": "black_pepper",
+          "prep": 0,
+          "why": "A pinch in kadha clears mucus."
+        },
+        {
+          "herb": "cinnamon",
+          "prep": 0,
+          "why": "Warming and pleasant in kadha."
+        },
+        {
+          "herb": "garlic",
+          "prep": 0,
+          "why": "Raw garlic is a traditional antimicrobial."
+        },
+        {
+          "herb": "echinacea",
+          "prep": 0,
+          "why": "Evidence is mixed, but some use it at the first sign of a cold."
+        }
+      ],
+      "self_care": [
+        "Kadha: simmer 5-6 tulsi leaves, a 1 cm piece of ginger, 2-3 peppercorns, 1 clove and a small piece of cinnamon in 2 cups of water until it halves (about 10 minutes), strain, and sweeten with honey (not for children under 1). Sip 1-2 cups a day.",
+        "Rest, drink plenty of warm fluids, and gargle with warm salt water (half a teaspoon in a glass).",
+        "Steam inhalation or a hot shower and a saline nose spray help a blocked nose.",
+        "Paracetamol (acetaminophen) at the label dose is fine for fever and aches if you are able to take it; do not give aspirin to anyone under 18."
+      ],
+      "see_doctor_if": [
+        "Fever above 39 C (102 F), or any fever lasting more than 3 days.",
+        "Symptoms last more than 10 days or get worse after seeming to improve.",
+        "Shortness of breath, wheeze, chest pain, a very severe sore throat, or earache.",
+        "You are pregnant, over 65, have a chronic illness, or it is for an infant."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(trouble|difficulty|can'?t)\\s+breath",
+          "level": "urgent",
+          "label": "breathing difficulty"
+        },
+        {
+          "pattern": "fever\\s+(for|over|more\\s+than)\\s+(3|three|4|four|5|five|\\d+)\\s+days",
+          "level": "clinician",
+          "label": "fever lasting several days"
+        }
+      ],
+      "questions": [
+        "How many days in, and do you have a fever?",
+        "Do you have a sore throat, cough or blocked nose most?"
+      ]
+    },
+    "sore_throat": {
+      "title": "Sore throat",
+      "category": "respiratory",
+      "triage": "self_care",
+      "keywords": [
+        "sore throat",
+        "throat pain",
+        "throat ache",
+        "scratchy throat",
+        "gala kharab",
+        "gale mein",
+        "gale ki",
+        "gala dard",
+        "tonsil",
+        "hoarse",
+        "painful swallow",
+        "lost my voice"
+      ],
+      "overview": "Most sore throats are viral and settle in about a week. Soothing, coating and antiseptic remedies reduce the pain while it passes.",
+      "first_line": [
+        {
+          "herb": "honey",
+          "prep": 0,
+          "why": "Coats and soothes; it also helps the cough that comes with it."
+        },
+        {
+          "herb": "sage",
+          "prep": 0,
+          "why": "A sage gargle has trial support for sore throat."
+        },
+        {
+          "herb": "licorice",
+          "prep": 0,
+          "why": "Mulethi is the classic soothing throat herb; only for a short course."
+        },
+        {
+          "herb": "marshmallow_root",
+          "prep": 0,
+          "why": "A mucilage that coats the irritated throat."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Warm ginger tea soothes and warms the throat."
+        },
+        {
+          "herb": "thyme",
+          "prep": 0,
+          "why": "Mildly antiseptic tea."
+        },
+        {
+          "herb": "slippery_elm",
+          "prep": 0,
+          "why": "A soothing coating gruel or lozenge."
+        },
+        {
+          "herb": "turmeric",
+          "prep": 0,
+          "why": "Haldi doodh at night is a household throat remedy."
+        }
+      ],
+      "self_care": [
+        "Gargle with warm salt water (half a teaspoon in a glass) 3-4 times a day.",
+        "Sip warm fluids, rest your voice, and keep the air moist.",
+        "Lozenges and paracetamol at the label dose can ease pain."
+      ],
+      "see_doctor_if": [
+        "Severe pain with trouble swallowing, drooling, or trouble breathing is an emergency.",
+        "A fever above 38.5 C (101 F) with white patches on the tonsils and no cough, which could be strep throat.",
+        "It lasts more than a week, or hoarseness lasts more than 3 weeks.",
+        "A one-sided swelling in the throat or neck, or a rash."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(drool|can'?t\\s+swallow|cannot\\s+swallow|can'?t\\s+open\\s+(my\\s+)?mouth)",
+          "level": "urgent",
+          "label": "severe throat swelling or swallowing difficulty"
+        }
+      ],
+      "questions": [
+        "How long has it been, and is there a fever or cough?"
+      ]
+    },
+    "cough": {
+      "title": "Cough",
+      "category": "respiratory",
+      "triage": "self_care",
+      "keywords": [
+        "cough",
+        "khansi",
+        "khaansi",
+        "tickly",
+        "hacking",
+        "phlegm",
+        "mucus",
+        "chesty",
+        "wet cough",
+        "productive cough",
+        "balgham",
+        "chest congestion",
+        "chest is congested"
+      ],
+      "overview": "Most coughs follow a cold and linger up to 2-3 weeks. Honey is the best-evidenced home remedy; thyme and ginger help a chesty cough, while marshmallow and licorice soothe a dry one.",
+      "first_line": [
+        {
+          "herb": "honey",
+          "prep": 0,
+          "why": "Reduced cough frequency in trials and is as effective as common cough medicines in children over 1."
+        },
+        {
+          "herb": "thyme",
+          "prep": 0,
+          "why": "A traditional expectorant with trial support in chesty cough."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Warm ginger tea loosens mucus and soothes the throat."
+        },
+        {
+          "herb": "marshmallow_root",
+          "prep": 0,
+          "why": "Coats and calms a dry, tickly cough."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "licorice",
+          "prep": 0,
+          "why": "Mulethi soothes dry cough; only a short course."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "The traditional cough leaf."
+        },
+        {
+          "herb": "eucalyptus",
+          "prep": 0,
+          "why": "Steam loosens a congested chest."
+        },
+        {
+          "herb": "black_pepper",
+          "prep": 0,
+          "why": "A pinch with honey is a traditional mucus-clearer."
+        },
+        {
+          "herb": "clove",
+          "prep": 0,
+          "why": "Clove in kadha is a classic cough remedy."
+        }
+      ],
+      "self_care": [
+        "Keep well hydrated; warm fluids loosen mucus.",
+        "Honey before bed (not under 12 months).",
+        "Steam or a hot shower; raise the head of the bed for night cough.",
+        "Stop smoking and avoid smoke or dust.",
+        "Some blood-pressure medicines (the 'pril' ACE inhibitors, such as lisinopril or ramipril) can cause a dry cough; mention it to your prescriber."
+      ],
+      "see_doctor_if": [
+        "A cough that lasts more than 2 weeks should be checked (this includes screening for TB, which is common in South Asia).",
+        "Coughing up blood, or rust-coloured or green phlegm with fever.",
+        "Breathlessness, wheeze or chest pain; a high fever lasting more than 3 days.",
+        "Night sweats or unexplained weight loss.",
+        "A child with a barking cough, noisy breathing, or any cough in an infant."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(cough(ing)?|spit(ting)?)\\s+(up\\s+)?blood|blood\\s+(in|when)\\s+(my\\s+)?(cough|phlegm|sputum)",
+          "level": "clinician",
+          "label": "coughing blood"
+        },
+        {
+          "pattern": "(trouble|difficulty|can'?t)\\s+breath|whooping",
+          "level": "urgent",
+          "label": "breathing difficulty"
+        }
+      ],
+      "questions": [
+        "How long have you been coughing, and is it dry or bringing up phlegm?",
+        "Is there any fever, breathlessness or blood?"
+      ],
+      "insights": [
+        {
+          "id": "dry",
+          "pattern": "\\bdry\\b|tickl|irritat",
+          "say": "A dry, tickly cough needs soothing herbs (honey, marshmallow), not expectorants, so I'd lean on those."
+        },
+        {
+          "id": "wet",
+          "pattern": "phlegm|mucus|chesty|wet cough|wet|catarrh|balgham",
+          "say": "A chesty cough with phlegm is better helped by thyme or ginger, which loosen mucus, and plenty of warm fluids."
+        },
+        {
+          "id": "night",
+          "pattern": "at night|night time|nighttime|lying down|worse (in the )?night",
+          "say": "A night-time cough eases if you raise your head with an extra pillow and take the honey just before bed."
+        },
+        {
+          "id": "colour",
+          "pattern": "green|yellow|brown|rust",
+          "say": "Coloured phlegm alone does not prove an infection, but if it comes with fever or lasts beyond a week, please see a doctor."
+        }
+      ]
+    },
+    "nasal_congestion_sinus": {
+      "title": "Blocked nose and sinus congestion",
+      "category": "respiratory",
+      "triage": "self_care",
+      "keywords": [
+        "blocked nose",
+        "nasal congestion",
+        "stuffy nose",
+        "stuffed up",
+        "sinus",
+        "congestion",
+        "naak band",
+        "naak behna",
+        "nose blocked",
+        "post nasal",
+        "postnasal"
+      ],
+      "overview": "Usually a cold or allergy swelling the nasal lining. Steam and saline are the most reliable remedies; aromatic herbs give welcome temporary relief.",
+      "first_line": [
+        {
+          "herb": "eucalyptus",
+          "prep": 0,
+          "why": "Steam with eucalyptus opens the nose temporarily."
+        },
+        {
+          "herb": "ajwain",
+          "prep": 1,
+          "why": "Ajwain steam is the traditional blocked-nose remedy."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "A warming tea that helps drainage."
+        },
+        {
+          "herb": "peppermint",
+          "prep": 0,
+          "why": "The menthol gives a clear-nose sensation."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "Traditional tea for blocked nose."
+        },
+        {
+          "herb": "garlic",
+          "prep": 0,
+          "why": "Raw garlic is a traditional decongestant food."
+        },
+        {
+          "herb": "thyme",
+          "prep": 0,
+          "why": "A mildly antiseptic tea."
+        }
+      ],
+      "self_care": [
+        "Saline nasal rinse or spray (use boiled-and-cooled or distilled water for rinses, and clean the bottle each time).",
+        "Hot shower steam, plenty of fluids, and sleeping with the head raised.",
+        "Do not use decongestant nasal sprays for more than 3 days: they cause rebound blockage."
+      ],
+      "see_doctor_if": [
+        "Symptoms last more than 10 days or get worse after improving.",
+        "Severe facial pain, swelling around the eyes, or a high fever.",
+        "Blocked on one side only for weeks, or with blood.",
+        "You get these infections very often."
+      ],
+      "red_flags": [
+        {
+          "pattern": "swelling\\s+(around|of)\\s+(my\\s+)?(eye|eyes)|vision\\s+(change|loss|blur)",
+          "level": "urgent",
+          "label": "swelling around the eyes or vision change"
+        }
+      ],
+      "questions": [
+        "How long has it been blocked, and is there any facial pain or fever?"
+      ]
+    },
+    "allergic_rhinitis": {
+      "title": "Hay fever and allergic nose",
+      "category": "respiratory",
+      "triage": "self_care",
+      "keywords": [
+        "hay fever",
+        "allergic rhinitis",
+        "seasonal allerg",
+        "pollen",
+        "dust allergy",
+        "sneezing allergy",
+        "allergic cold",
+        "allergy$",
+        "allergies$",
+        "itchy eyes",
+        "runny nose allergy"
+      ],
+      "overview": "An overreaction to pollen, dust or pets. Herbs offer only modest relief here; an over-the-counter non-drowsy antihistamine is more reliable, and a pharmacist can advise.",
+      "first_line": [
+        {
+          "herb": "kalonji",
+          "prep": 0,
+          "why": "Black seed has small trials showing reduced allergic nose symptoms."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "A traditional tea for sneezing and watery nose."
+        },
+        {
+          "herb": "turmeric",
+          "prep": 0,
+          "why": "A gentle anti-inflammatory in food or golden milk."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "A warming tea for a runny nose."
+        }
+      ],
+      "self_care": [
+        "Saline nasal rinse to wash out pollen and dust.",
+        "Shower and change clothes after being outdoors; keep windows closed in high-pollen hours; wash bedding in hot water.",
+        "A pharmacist can suggest a non-drowsy antihistamine (such as cetirizine or loratadine) or a steroid nasal spray, which work better than herbs."
+      ],
+      "see_doctor_if": [
+        "Wheeze, chest tightness or breathlessness.",
+        "Symptoms for weeks despite treatment, or affecting sleep and work.",
+        "Swelling of the lips, tongue or face, hives all over, or trouble breathing is an emergency."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(lip|lips|tongue|face|throat)\\s+(is\\s+|are\\s+)?(swell|swollen|swelling)",
+          "level": "urgent",
+          "label": "possible severe allergic reaction"
+        }
+      ],
+      "questions": [
+        "Is it seasonal, or all year? Do you also have wheeze or asthma?"
+      ]
+    },
+    "insomnia_mild": {
+      "title": "Trouble sleeping",
+      "category": "sleep_stress",
+      "triage": "self_care",
+      "keywords": [
+        "insomnia",
+        "can't sleep",
+        "cannot sleep",
+        "cant sleep",
+        "trouble sleeping",
+        "sleepless",
+        "poor sleep",
+        "wake up at night",
+        "waking at night",
+        "wake in the night",
+        "neend nahi",
+        "neend nahin",
+        "neend",
+        "sleep$",
+        "not sleeping",
+        "fall asleep",
+        "falling asleep"
+      ],
+      "overview": "Short-term sleep trouble usually follows stress, caffeine, irregular routine or a change of environment. Sleep habits make the biggest difference; calming herbs help alongside them.",
+      "first_line": [
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "A gentle, widely used pre-bed tea."
+        },
+        {
+          "herb": "lemon_balm",
+          "prep": 0,
+          "why": "Calms nervous tension and a busy mind."
+        },
+        {
+          "herb": "lavender",
+          "prep": 0,
+          "why": "Aromatherapy at bedtime has trial support for sleep quality."
+        },
+        {
+          "herb": "passionflower",
+          "prep": 0,
+          "why": "A calming tea for restless sleep."
+        },
+        {
+          "herb": "valerian",
+          "prep": 0,
+          "why": "The best-known sleep herb; builds over 2-4 weeks."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "ashwagandha",
+          "prep": 0,
+          "why": "Trials show better sleep quality when stress is the driver."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "A calming evening tea."
+        }
+      ],
+      "self_care": [
+        "Keep fixed wake and bed times, even on weekends.",
+        "No caffeine after early afternoon, no heavy meal or alcohol close to bedtime, and no screens for the last hour.",
+        "Make the bedroom dark, cool and quiet; a warm bath or shower 1-2 hours before bed helps.",
+        "If you are awake for 20 minutes, get up and do something calm in dim light, then return.",
+        "Write tomorrow's worries on paper before bed; try slow breathing (in for 4, out for 6)."
+      ],
+      "see_doctor_if": [
+        "Poor sleep lasts more than 3-4 weeks.",
+        "You snore loudly or stop breathing in your sleep, have restless legs, or fall asleep during the day.",
+        "Low mood, anxiety or racing thoughts are part of it.",
+        "You rely on alcohol or sleeping pills."
+      ],
+      "red_flags": [],
+      "questions": [
+        "Is it trouble falling asleep, waking at night, or waking too early?",
+        "How much caffeine do you have, and when?"
+      ],
+      "insights": [
+        {
+          "id": "onset",
+          "pattern": "fall(ing)? asleep|take[s]? (a )?(long|hours)|lying (awake|in bed)|can'?t (fall|get) (to )?sleep",
+          "say": "Difficulty falling asleep responds best to a wind-down: the calming tea 30-60 minutes before bed, dim light, and no screens in the last hour."
+        },
+        {
+          "id": "maintenance",
+          "pattern": "wake (up )?(at|in|during) (the )?night|waking|wake in the night|3 ?am|early morning",
+          "say": "Waking in the night is often linked to stress hormones, late caffeine or alcohol, so keep caffeine before midday and avoid a heavy late meal."
+        },
+        {
+          "id": "stress",
+          "pattern": "stress|worr|anxi|overthink|thinking|racing",
+          "say": "Because a busy mind is part of this, lemon balm or chamomile suits you better than a sedating herb, and a 5-minute slow-breathing or writing-it-down routine before bed helps."
+        },
+        {
+          "id": "screens",
+          "pattern": "phone|screen|laptop|tv|mobile",
+          "say": "Screens late at night delay your body clock; try keeping them out of the bedroom for a week."
+        }
+      ]
+    },
+    "stress_anxiety_mild": {
+      "title": "Stress and mild anxiety",
+      "category": "sleep_stress",
+      "triage": "self_care",
+      "keywords": [
+        "stress",
+        "anxious",
+        "anxiety",
+        "worry",
+        "worried",
+        "tense",
+        "nervous",
+        "overwhelm",
+        "restless",
+        "burnout",
+        "burn out",
+        "ghabrahat",
+        "pareshan",
+        "tension",
+        "on edge"
+      ],
+      "overview": "Everyday stress and mild anxiety respond well to daily habits plus calming herbs. If panic attacks, constant dread or low mood are involved, it is worth seeing a clinician as well.",
+      "first_line": [
+        {
+          "herb": "lemon_balm",
+          "prep": 0,
+          "why": "A calming tea with small trials in mild anxiety."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Gentle, calming and soothes a nervous stomach."
+        },
+        {
+          "herb": "lavender",
+          "prep": 0,
+          "why": "Lavender aromatherapy or tea has trial support for anxiety."
+        },
+        {
+          "herb": "ashwagandha",
+          "prep": 0,
+          "why": "The leading adaptogen for stress, with moderate trial evidence over 6-12 weeks."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "Traditional daily stress-resilience tea."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "passionflower",
+          "prep": 0,
+          "why": "A calming tea for restlessness."
+        },
+        {
+          "herb": "green_tea",
+          "prep": 0,
+          "why": "Contains L-theanine for calm alertness (mind the caffeine)."
+        }
+      ],
+      "self_care": [
+        "Move every day: a 30-minute brisk walk is as good as many supplements.",
+        "Slow breathing for 5 minutes (in for 4, out for 6) lowers arousal quickly.",
+        "Cut back on caffeine and alcohol, keep regular sleep, and take real breaks.",
+        "Talk it through with someone you trust; therapy is effective for anxiety."
+      ],
+      "see_doctor_if": [
+        "It lasts more than 2 weeks and affects work, sleep or relationships.",
+        "You have panic attacks, chest pain or palpitations (get those checked), or feel hopeless.",
+        "You have thoughts of harming yourself: this is an emergency, call your local emergency number or crisis line now."
+      ],
+      "red_flags": [
+        {
+          "pattern": "panic\\s+attack",
+          "level": "clinician",
+          "label": "panic attacks"
+        }
+      ],
+      "questions": [
+        "What is the main source of stress, and how is it affecting your sleep and day?",
+        "Do you get panic attacks, or feel low or hopeless?"
+      ]
+    },
+    "low_mood": {
+      "title": "Low mood",
+      "category": "sleep_stress",
+      "triage": "see_clinician",
+      "keywords": [
+        "low mood",
+        "feeling down",
+        "feel down",
+        "sad$",
+        "unhappy",
+        "depress",
+        "udaas",
+        "udasi",
+        "no motivation",
+        "hopeless",
+        "feel empty"
+      ],
+      "overview": "Low mood that lasts more than two weeks deserves a proper assessment, and talking therapy or medication can make a big difference. Herbs can support but should not be the only plan.",
+      "first_line": [
+        {
+          "herb": "saffron",
+          "prep": 0,
+          "why": "Several trials show saffron extract helps mild to moderate low mood over 6-8 weeks."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "st_johns_wort",
+          "prep": 0,
+          "why": "Effective in trials, but it interacts with a huge number of medicines, so it is only an option when you take none and a pharmacist agrees."
+        }
+      ],
+      "self_care": [
+        "Daylight in the morning and daily exercise (30 minutes on most days) have real antidepressant effects.",
+        "Keep a regular sleep routine and stay in contact with people, even when you do not feel like it.",
+        "Eat regularly; oily fish or omega-3 foods may help. Ask for a vitamin D and thyroid check.",
+        "Talk to a doctor or counsellor; therapy such as CBT is very effective."
+      ],
+      "see_doctor_if": [
+        "Low mood or loss of interest lasts more than 2 weeks.",
+        "It affects work, sleep, appetite or relationships.",
+        "You have thoughts of harming yourself: this is an emergency, call your local emergency number or crisis line now."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(want|going)\\s+to\\s+(die|end\\s+it)|suicid|kill\\s+myself|end\\s+my\\s+life",
+          "level": "urgent",
+          "label": "thoughts of self-harm"
+        }
+      ],
+      "questions": [
+        "How long have you felt this way, and is it affecting sleep, appetite or work?",
+        "Are you taking any medicines, especially for mood?"
+      ]
+    },
+    "tension_headache": {
+      "title": "Headache",
+      "category": "pain",
+      "triage": "self_care",
+      "keywords": [
+        "headache",
+        "head ache",
+        "migraine",
+        "sar dard",
+        "sir dard",
+        "sar mein dard",
+        "sir mein dard",
+        "tension headache",
+        "head is pounding",
+        "temples"
+      ],
+      "overview": "Most headaches are tension-type, related to stress, poor sleep, dehydration, skipped meals, caffeine changes or screen strain. Diluted peppermint oil on the temples has trial support and works about as well as paracetamol for tension headache.",
+      "first_line": [
+        {
+          "herb": "peppermint",
+          "prep": 2,
+          "why": "Diluted peppermint oil on the temples relieved tension headache in trials."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Ginger tea helps headache with nausea, as in migraine."
+        },
+        {
+          "herb": "lavender",
+          "prep": 0,
+          "why": "Lavender inhalation has trial support for migraine pain."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "feverfew",
+          "prep": 0,
+          "why": "For people with frequent migraines, a daily course may reduce how often they come."
+        },
+        {
+          "herb": "willow_bark",
+          "prep": 0,
+          "why": "A natural aspirin-like pain reliever; only for healthy adults on no blood thinners."
+        }
+      ],
+      "self_care": [
+        "Drink a large glass of water, eat something, and rest in a dim, quiet room.",
+        "A cool cloth on the forehead or a warm compress on the neck; gentle neck and shoulder stretches.",
+        "Check caffeine, sleep and screen breaks (the 20-20-20 rule); see an optician if you strain your eyes.",
+        "Paracetamol or ibuprofen at the label dose are effective; avoid taking painkillers on more than 2 days a week, which can cause rebound headaches."
+      ],
+      "see_doctor_if": [
+        "A sudden, severe 'worst ever' headache, or one with fever and stiff neck, confusion, weakness, slurred speech, or vision change is an emergency.",
+        "A headache after a head injury.",
+        "A new, different or worsening headache, especially over 50 or waking you at night.",
+        "Headaches on more than 15 days a month."
+      ],
+      "red_flags": [
+        {
+          "pattern": "worst\\s+headache|thunderclap|sudden(ly)?\\s+severe\\s+headache",
+          "level": "urgent",
+          "label": "sudden severe headache"
+        },
+        {
+          "pattern": "stiff\\s+neck|slurred\\s+speech|weakness\\s+(on|in)\\s+one|vision\\s+(loss|change)|after\\s+(a\\s+)?head\\s+(injury|knock|bump)",
+          "level": "urgent",
+          "label": "headache with warning signs"
+        }
+      ],
+      "questions": [
+        "How often do you get them, and where is the pain?",
+        "Is there any nausea, light sensitivity or visual aura?"
+      ],
+      "insights": [
+        {
+          "id": "screens",
+          "pattern": "screen|computer|laptop|eyes|reading|phone",
+          "say": "Screen work is a classic trigger: use the 20-20-20 rule (every 20 minutes look 20 feet away for 20 seconds) and have your eyes tested if you haven't recently."
+        },
+        {
+          "id": "neck",
+          "pattern": "neck|shoulder|posture|stiff",
+          "say": "Neck and shoulder tension points to posture, so gentle neck stretches and a warm compress on the shoulders will help as much as the herbs."
+        },
+        {
+          "id": "water",
+          "pattern": "water|dehydrat|skip(ped)? (a )?meal|fasting|hungry",
+          "say": "Missed meals and low water intake are common headache triggers, so try regular meals and 6-8 glasses of fluid a day."
+        },
+        {
+          "id": "stress",
+          "pattern": "stress|worr|anxi|tension|work",
+          "say": "Stress-related headaches respond well to peppermint oil on the temples and a short break to breathe slowly."
+        }
+      ]
+    },
+    "fatigue": {
+      "title": "Tiredness and low energy",
+      "category": "general",
+      "triage": "self_care",
+      "keywords": [
+        "tired",
+        "tiredness",
+        "fatigue",
+        "exhausted",
+        "low energy",
+        "no energy",
+        "lack of energy",
+        "weakness",
+        "weak$",
+        "kamzori",
+        "thakan",
+        "thakawat",
+        "sluggish",
+        "drained"
+      ],
+      "overview": "Everyday tiredness is most often sleep, stress, diet or iron. Persistent tiredness deserves a basic blood check (blood count and iron, thyroid, blood sugar, B12, vitamin D) so that something treatable is not missed.",
+      "first_line": [
+        {
+          "herb": "ashwagandha",
+          "prep": 0,
+          "why": "Trials show less fatigue and better stamina in stressed adults."
+        },
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "Traditional daily tonic tea."
+        },
+        {
+          "herb": "amla",
+          "prep": 0,
+          "why": "A vitamin C-rich Ayurvedic tonic fruit."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "green_tea",
+          "prep": 0,
+          "why": "Gentle alertness from caffeine with L-theanine; keep it earlier in the day."
+        },
+        {
+          "herb": "cinnamon",
+          "prep": 0,
+          "why": "May help steady blood sugar dips in the afternoon."
+        }
+      ],
+      "self_care": [
+        "Sleep 7-9 hours at regular times; most tiredness is sleep debt.",
+        "Eat a protein-rich breakfast, and iron-rich foods (lentils, spinach, dates, jaggery, red meat) with a vitamin C source.",
+        "Get daylight and moderate exercise; both raise energy more than they cost.",
+        "Limit sugar spikes and late caffeine; stay hydrated."
+      ],
+      "see_doctor_if": [
+        "Tiredness lasts more than 2-4 weeks without a clear cause.",
+        "You also have breathlessness, palpitations, heavy periods, weight change, or low mood.",
+        "You snore loudly, or fall asleep during the day."
+      ],
+      "red_flags": [],
+      "questions": [
+        "How long has it lasted, and how are your sleep and diet?",
+        "Any heavy periods, weight change, or low mood?"
+      ]
+    },
+    "menstrual_cramps": {
+      "title": "Period pain",
+      "category": "womens_health",
+      "triage": "self_care",
+      "keywords": [
+        "period pain",
+        "menstrual cramp",
+        "dysmenorrh",
+        "painful period",
+        "cramps during period",
+        "periods pain",
+        "period cramps",
+        "mahwari",
+        "haiz",
+        "ayyam",
+        "period ka dard",
+        "pet dard period"
+      ],
+      "overview": "Common and usually not a sign of disease in younger women. Ginger has trial evidence comparable to some anti-inflammatory painkillers for period pain.",
+      "first_line": [
+        {
+          "herb": "ginger",
+          "prep": 1,
+          "why": "Taken from the start of the period for 3 days, ginger reduced pain in several trials."
+        },
+        {
+          "herb": "fennel",
+          "prep": 0,
+          "why": "Fennel has trials showing less period pain."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "A traditional antispasmodic, calming tea."
+        },
+        {
+          "herb": "cinnamon",
+          "prep": 0,
+          "why": "Warming; small trials show reduced cramps and bleeding."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "lemon_balm",
+          "prep": 0,
+          "why": "Eases tension that makes cramps feel worse."
+        }
+      ],
+      "self_care": [
+        "A hot-water bottle or heat patch on the lower belly for 15-20 minutes works about as well as a painkiller.",
+        "Gentle movement, stretching or yoga; avoid long inactivity.",
+        "Reduce salt and caffeine in the days beforehand; magnesium-rich foods (nuts, greens, whole grains) can help.",
+        "Ibuprofen or mefenamic acid at the label dose with food is effective unless you cannot take NSAIDs."
+      ],
+      "see_doctor_if": [
+        "Pain is severe, getting worse, or stops you from working or studying.",
+        "Pain started after age 25, or periods are very heavy (soaking a pad every hour), or bleeding between periods.",
+        "Pain with fever or unusual discharge, or when you might be pregnant.",
+        "No help after 3 cycles of treatment, which can point to conditions such as endometriosis."
+      ],
+      "red_flags": [
+        {
+          "pattern": "soaking\\s+(a\\s+)?(pad|through)|bleeding\\s+(a\\s+lot|heavily)|heavy\\s+bleeding",
+          "level": "clinician",
+          "label": "very heavy bleeding"
+        }
+      ],
+      "questions": [
+        "How old were you when the pain began, and is it getting worse?",
+        "Could you be pregnant, and do you use a hormonal contraceptive?"
+      ],
+      "insights": [
+        {
+          "id": "teen_onset",
+          "pattern": "\\b(was|at|age|aged|since)\\s*(8|9|1[0-7])\\b|first period|since (my )?(first|teen)|teenage|\\bteen\\b",
+          "say": "Cramps that began in the teen years and come with your periods are the typical pattern (primary period pain, driven by prostaglandins) and are not usually a sign of disease. Starting the ginger the day before your period is due works better than waiting for the pain.",
+          "answers": 0
+        },
+        {
+          "id": "worsening",
+          "pattern": "getting worse|worsening|more (painful|severe)|worse each|increas",
+          "say": "Because it is getting worse over time, please mention it at your next check-up; a simple ultrasound can rule out things like fibroids or endometriosis.",
+          "answers": 0
+        },
+        {
+          "id": "heavy",
+          "pattern": "heavy|clots|soak",
+          "say": "With heavy bleeding I would also like your iron level checked, and I'd avoid cinnamon in large amounts for now."
+        },
+        {
+          "id": "every_month",
+          "pattern": "every month|each month|monthly|regular",
+          "say": "Since it is cyclical and regular, you can start the plan 1-2 days before your period is expected and keep a simple pain diary for 3 cycles to see what helps."
+        }
+      ]
+    },
+    "pms": {
+      "title": "Premenstrual symptoms (PMS)",
+      "category": "womens_health",
+      "triage": "self_care",
+      "keywords": [
+        "pms",
+        "premenstrual",
+        "before my period",
+        "before periods",
+        "mood swings",
+        "breast tender",
+        "breast pain period",
+        "bloating before period"
+      ],
+      "overview": "Mood swings, bloating, breast tenderness and irritability in the 1-2 weeks before a period. Lifestyle changes and chaste tree have the best evidence.",
+      "first_line": [
+        {
+          "herb": "vitex",
+          "prep": 0,
+          "why": "Chaste tree extract improved PMS over 3 cycles in trials."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 0,
+          "why": "Calms mood and cramping."
+        },
+        {
+          "herb": "lemon_balm",
+          "prep": 0,
+          "why": "Eases irritability and tension."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "Helps cramps and nausea around the period."
+        },
+        {
+          "herb": "fennel",
+          "prep": 0,
+          "why": "May ease bloating and cramps."
+        }
+      ],
+      "self_care": [
+        "Regular exercise is one of the best-evidenced PMS treatments.",
+        "Cut back on caffeine, salt and alcohol in the second half of the cycle; eat regular, complex-carbohydrate meals.",
+        "Calcium-rich foods (dairy, greens, nuts) and adequate magnesium and vitamin B6 from food help; ask a pharmacist before supplementing.",
+        "Track symptoms for 2-3 cycles; it shows the pattern and helps a doctor."
+      ],
+      "see_doctor_if": [
+        "Mood symptoms are severe (rage, hopelessness, thoughts of self-harm).",
+        "Symptoms disrupt work or relationships.",
+        "No improvement after 3 cycles of self-care."
+      ],
+      "red_flags": [],
+      "questions": [
+        "Which symptoms bother you most, and in which week of your cycle?",
+        "Do you use a hormonal contraceptive?"
+      ]
+    },
+    "menopause_symptoms": {
+      "title": "Menopause symptoms and hot flushes",
+      "category": "womens_health",
+      "triage": "self_care",
+      "keywords": [
+        "hot flash",
+        "hot flush",
+        "menopaus",
+        "perimenopaus",
+        "night sweat",
+        "hot flushes",
+        "periods stopped"
+      ],
+      "overview": "Hot flushes, sweats and sleep disturbance around menopause. Herbal evidence is mixed; hormone therapy is the most effective treatment and worth discussing with a doctor.",
+      "first_line": [
+        {
+          "herb": "sage",
+          "prep": 1,
+          "why": "Small trials suggest sage reduces hot flush frequency and sweating."
+        },
+        {
+          "herb": "flaxseed",
+          "prep": 0,
+          "why": "Phytoestrogen-rich seeds; evidence is modest."
+        },
+        {
+          "herb": "black_cohosh",
+          "prep": 0,
+          "why": "Widely used, with mixed trial results; rare liver reports."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "lemon_balm",
+          "prep": 0,
+          "why": "Helps the sleep and irritability that come with it."
+        }
+      ],
+      "self_care": [
+        "Dress in layers, keep the bedroom cool, and use a fan.",
+        "Common triggers: caffeine, alcohol, spicy food, stress; slow paced breathing and regular exercise help.",
+        "Soy foods (tofu, soya milk) may help a little.",
+        "Ask a doctor about hormone therapy, which is the most effective option, and about bone health."
+      ],
+      "see_doctor_if": [
+        "Any bleeding after periods have stopped for 12 months.",
+        "Symptoms are severe, or there is a history of breast cancer or clots (before using any hormone-like herb).",
+        "Very heavy or irregular bleeding, or palpitations."
+      ],
+      "red_flags": [
+        {
+          "pattern": "bleeding\\s+after\\s+menopause|postmenopausal\\s+bleeding",
+          "level": "clinician",
+          "label": "bleeding after menopause"
+        }
+      ],
+      "questions": [
+        "Have your periods stopped, and do you have a history of breast cancer or blood clots?"
+      ]
+    },
+    "muscle_joint_pain": {
+      "title": "Muscle aches, joint pain and sprains",
+      "category": "pain",
+      "triage": "self_care",
+      "keywords": [
+        "joint pain",
+        "muscle pain",
+        "muscle ache",
+        "body ache",
+        "body pain",
+        "back pain",
+        "arthritis",
+        "stiff joint",
+        "stiffness",
+        "knee pain",
+        "sprain",
+        "strain$",
+        "bruise",
+        "jodon ka dard",
+        "jodon mein dard",
+        "kamar dard",
+        "kamar mein dard",
+        "ghutne",
+        "sore muscle"
+      ],
+      "overview": "Overuse, minor strains and mild osteoarthritis are the usual causes. Warming, anti-inflammatory kitchen herbs and topical rubs help comfort; movement helps recovery.",
+      "first_line": [
+        {
+          "herb": "ginger",
+          "prep": 1,
+          "why": "Mild anti-inflammatory effect shown in osteoarthritis and exercise-soreness trials."
+        },
+        {
+          "herb": "turmeric",
+          "prep": 0,
+          "why": "Haldi doodh is the traditional remedy; extracts have moderate trial support."
+        },
+        {
+          "herb": "capsaicin",
+          "prep": 0,
+          "why": "Capsaicin cream has moderate evidence for joint and muscle pain."
+        },
+        {
+          "herb": "arnica",
+          "prep": 0,
+          "why": "Arnica gel for bruises, sprains and sore muscles."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "boswellia",
+          "prep": 0,
+          "why": "Trials show less knee pain after 4-12 weeks."
+        },
+        {
+          "herb": "willow_bark",
+          "prep": 0,
+          "why": "A natural aspirin-like pain reliever; only for healthy adults on no blood thinners."
+        }
+      ],
+      "self_care": [
+        "Fresh injury (first 48 hours): rest, ice wrapped in a cloth for 15 minutes, compression and elevation. Stiff, old pain: warmth (hot pack or shower).",
+        "Keep gently moving; strengthening and stretching are the best long-term treatment.",
+        "Warm sesame oil massage is a traditional and comforting option.",
+        "Over-the-counter topical anti-inflammatory gels (such as diclofenac) are effective for knees and hands."
+      ],
+      "see_doctor_if": [
+        "A hot, red, swollen joint, or fever with joint pain.",
+        "You cannot put weight on a limb, or after a significant fall or accident.",
+        "Back pain with numbness in the groin, leg weakness, or loss of bladder or bowel control is an emergency.",
+        "Pain wakes you at night, or lasts more than 6 weeks."
+      ],
+      "red_flags": [
+        {
+          "pattern": "loss\\s+of\\s+(bladder|bowel)|numb(ness)?\\s+(in|around)\\s+(my\\s+)?(groin|genitals|saddle)|can'?t\\s+(pass\\s+urine|control\\s+(my\\s+)?(bladder|bowels))",
+          "level": "urgent",
+          "label": "possible spinal nerve compression"
+        },
+        {
+          "pattern": "(hot|red)\\s+(and\\s+)?(swollen\\s+)?joint|joint\\s+is\\s+(hot|red)",
+          "level": "clinician",
+          "label": "hot red joint"
+        }
+      ],
+      "questions": [
+        "Where is the pain, and did it start after an injury?",
+        "Do you take blood thinners or anti-inflammatory painkillers?"
+      ]
+    },
+    "minor_wounds": {
+      "title": "Minor cuts and scrapes",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "small cut",
+        "minor cut",
+        "cut$",
+        "scrape",
+        "graze",
+        "abrasion",
+        "minor wound",
+        "wound",
+        "zakhm",
+        "chot",
+        "chhil gaya",
+        "chheel gaya",
+        "scratch"
+      ],
+      "overview": "Clean, protect and keep moist. Herbal healers help wounds mend and calm irritation, but cleaning and covering do most of the work.",
+      "first_line": [
+        {
+          "herb": "calendula",
+          "prep": 0,
+          "why": "Calendula ointment supports wound healing in trials."
+        },
+        {
+          "herb": "honey",
+          "prep": 1,
+          "why": "Medical-grade honey dressings help small wounds heal."
+        },
+        {
+          "herb": "plantain_leaf",
+          "prep": 0,
+          "why": "A traditional soothing poultice for scrapes and stings."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Cooling and soothing for superficial scrapes."
+        }
+      ],
+      "self_care": [
+        "Press firmly with a clean cloth for 10 minutes to stop bleeding.",
+        "Rinse under clean running water for several minutes, wash around it with mild soap, and remove grit.",
+        "Cover with a clean dressing, change it daily, and keep it lightly moist rather than letting a thick scab dry out.",
+        "Check your tetanus protection: a booster is advised if your last one was more than 10 years ago (5 for a dirty wound)."
+      ],
+      "see_doctor_if": [
+        "The wound is deep, gaping, or will not stop bleeding after 10-15 minutes of firm pressure (emergency if heavy).",
+        "It is dirty, rusty, from an animal or human bite, or you are unsure about tetanus.",
+        "Spreading redness, warmth, swelling, pus, red streaks or fever (infection).",
+        "Numbness, or it is near the eye, a joint or the genitals."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(heavy|severe|uncontrolled|spurting)\\s+bleeding|won'?t\\s+stop\\s+bleeding",
+          "level": "urgent",
+          "label": "bleeding that will not stop"
+        },
+        {
+          "pattern": "\\bpus\\b|red\\s+streaks?|spreading\\s+red|animal\\s+bite|dog\\s+bite|human\\s+bite",
+          "level": "clinician",
+          "label": "possible infection or bite"
+        }
+      ],
+      "questions": [
+        "How deep is it, and how did it happen?",
+        "When was your last tetanus injection?"
+      ]
+    },
+    "burns_sunburn": {
+      "title": "Minor burns and sunburn",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "burn$",
+        "burnt",
+        "burned",
+        "sunburn",
+        "sun burn",
+        "scald",
+        "jal gaya",
+        "jal gayi",
+        "jalne se",
+        "kitchen burn"
+      ],
+      "overview": "For a small, superficial burn (red, painful, no or small blisters), cool water immediately is the single most important step. Aloe vera gel then soothes.",
+      "first_line": [
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Cooling gel with evidence for superficial burns and sunburn."
+        },
+        {
+          "herb": "calendula",
+          "prep": 0,
+          "why": "Soothes and supports healing of irritated skin."
+        },
+        {
+          "herb": "chamomile",
+          "prep": 1,
+          "why": "A cooled chamomile compress calms heat and redness."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "oatmeal",
+          "prep": 0,
+          "why": "Soothes itching as sunburn peels (once the heat has settled)."
+        }
+      ],
+      "self_care": [
+        "Cool the burn under cool (not ice-cold) running water for 20 minutes straight away; remove rings and watches first.",
+        "Do not burst blisters; cover with a loose, non-fluffy dressing. Do not use butter, toothpaste or ice.",
+        "For sunburn: cool showers, plenty of fluids, loose clothing, and stay out of the sun until healed.",
+        "Paracetamol or ibuprofen at the label dose can ease pain."
+      ],
+      "see_doctor_if": [
+        "The burn is bigger than the palm of your hand, or has large blisters.",
+        "It is on the face, hands, feet, genitals or over a joint, or looks deep, white or charred.",
+        "It is a chemical or electrical burn, or in a child or older person.",
+        "Sunburn with fever, chills, faintness, or severe blistering."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(chemical|electrical)\\s+burn|burn(ed|t)?\\s+(on|to)\\s+(my\\s+)?(face|genitals|hands?)|third[- ]degree|charred|white\\s+(and\\s+)?(waxy|leathery)",
+          "level": "urgent",
+          "label": "serious burn"
+        }
+      ],
+      "questions": [
+        "How big is it, where is it, and are there blisters?"
+      ]
+    },
+    "acne_mild": {
+      "title": "Mild acne and pimples",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "acne",
+        "pimple",
+        "spots on my face",
+        "breakout",
+        "zits",
+        "blackhead",
+        "whitehead",
+        "muhase",
+        "muhaase",
+        "daane"
+      ],
+      "overview": "Mild to moderate acne responds to consistent gentle care. Tea tree gel has real trial support; proven over-the-counter actives (benzoyl peroxide, salicylic acid, adapalene) are the first-line standard.",
+      "first_line": [
+        {
+          "herb": "tea_tree",
+          "prep": 0,
+          "why": "5 percent tea tree gel performed comparably to benzoyl peroxide in trials, with less dryness."
+        },
+        {
+          "herb": "green_tea",
+          "prep": 1,
+          "why": "Green tea applied to the skin may reduce oil and spots."
+        },
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Soothes redness and irritation from acne treatments."
+        },
+        {
+          "herb": "neem",
+          "prep": 1,
+          "why": "Neem has traditional and early lab support against acne bacteria."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "turmeric",
+          "prep": 1,
+          "why": "A traditional spot mask (it stains)."
+        }
+      ],
+      "self_care": [
+        "Wash twice a day with a gentle cleanser; do not scrub or pick.",
+        "Use an oil-free moisturiser and daily sunscreen.",
+        "Benzoyl peroxide 2.5-5 percent, salicylic acid or adapalene from a pharmacy are proven first-line options.",
+        "Wash pillowcases weekly; keep hands off the face; a lower-sugar, lower-glycaemic diet may help."
+      ],
+      "see_doctor_if": [
+        "Deep, painful cysts or nodules, or scarring.",
+        "No improvement after 8-12 weeks.",
+        "It affects your mood, or you also have irregular periods and excess hair (possible PCOS).",
+        "You are pregnant or might be."
+      ],
+      "red_flags": [
+        {
+          "pattern": "\\bpus\\b|painful\\s+(cysts?|nodules?)",
+          "level": "clinician",
+          "label": "painful cystic acne"
+        }
+      ],
+      "questions": [
+        "How long have you had it, and is it only on the face?",
+        "Is your skin oily or dry, and what are you using on it now?"
+      ]
+    },
+    "eczema_dry_skin": {
+      "title": "Dry, itchy skin and mild eczema",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "eczema",
+        "dry skin",
+        "itchy skin",
+        "itching",
+        "itchy",
+        "dermatitis",
+        "rough skin",
+        "flaky skin",
+        "khujli",
+        "khujli",
+        "khushk jild",
+        "khushk skin",
+        "rash$"
+      ],
+      "overview": "Dry, itchy skin is mostly about repairing the skin barrier with thick moisturiser. Colloidal oatmeal is the best-evidenced botanical for itch and dryness.",
+      "first_line": [
+        {
+          "herb": "oatmeal",
+          "prep": 0,
+          "why": "Colloidal oat baths and creams calm itch and dryness."
+        },
+        {
+          "herb": "coconut_oil",
+          "prep": 0,
+          "why": "A traditional emollient with small trials in atopic skin."
+        },
+        {
+          "herb": "calendula",
+          "prep": 0,
+          "why": "A soothing cream for irritated skin."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "chamomile",
+          "prep": 1,
+          "why": "A cooled compress calms itchy patches."
+        }
+      ],
+      "self_care": [
+        "Moisturise 2-3 times a day with a thick, fragrance-free cream or ointment, especially within 3 minutes of a lukewarm (not hot) short bath.",
+        "Use a soap-free wash; wear soft cotton; keep nails short.",
+        "Avoid known triggers (wool, perfumed products, harsh detergents).",
+        "A pharmacist can suggest a mild hydrocortisone cream for short flares."
+      ],
+      "see_doctor_if": [
+        "Weeping, crusting or yellow patches, or fever (possible infection).",
+        "It is widespread, or keeps you awake.",
+        "No improvement after 2 weeks, or it keeps returning.",
+        "A sudden painful rash or blistering."
+      ],
+      "red_flags": [
+        {
+          "pattern": "\\bpus\\b|weeping|crust(ed|y|ing)|painful\\s+rash|blister(s|ing)?",
+          "level": "clinician",
+          "label": "possible infection or severe rash"
+        }
+      ],
+      "questions": [
+        "Where is it, and has it been there before?",
+        "Does eczema, asthma or hay fever run in your family?"
+      ]
+    },
+    "insect_bites": {
+      "title": "Insect bites and stings",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "insect bite",
+        "mosquito bite",
+        "bug bite",
+        "bee sting",
+        "wasp sting",
+        "sting$",
+        "stung",
+        "bitten by",
+        "machhar",
+        "bites$",
+        "itchy bite"
+      ],
+      "overview": "Local itching and swelling are normal and settle in a few days. Soothing plant remedies and a cold compress help; do not scratch.",
+      "first_line": [
+        {
+          "herb": "witch_hazel",
+          "prep": 0,
+          "why": "A cooling astringent that eases itch."
+        },
+        {
+          "herb": "plantain_leaf",
+          "prep": 0,
+          "why": "The classic folk poultice for bites and stings."
+        },
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Cooling and soothing."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "calendula",
+          "prep": 0,
+          "why": "A gentle soothing cream."
+        }
+      ],
+      "self_care": [
+        "Wash with soap and water; scrape out a bee stinger with a card edge.",
+        "A cold compress for 10 minutes reduces swelling and itch.",
+        "Over-the-counter hydrocortisone 1 percent cream or an antihistamine tablet can help.",
+        "Prevent bites: repellents, long sleeves at dusk, and clearing standing water."
+      ],
+      "see_doctor_if": [
+        "Spreading redness over 10 cm, pus or fever.",
+        "Fever, severe headache, or body and joint pains in the days after mosquito bites, which can be dengue or malaria and needs a test.",
+        "A tick bite or an expanding rash.",
+        "Swelling of the lips, face or tongue, wheeze, hives all over, or faintness is an emergency."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(lip|lips|tongue|face|throat)\\s+(is\\s+|are\\s+)?(swell|swollen|swelling)|hives\\s+all\\s+over",
+          "level": "urgent",
+          "label": "possible severe allergic reaction"
+        }
+      ],
+      "questions": [
+        "What bit or stung you, and where?",
+        "Any fever, spreading redness, or swelling of the face or lips?"
+      ]
+    },
+    "cold_sores": {
+      "title": "Cold sores",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "cold sore",
+        "fever blister",
+        "herpes labialis",
+        "blister on my lip",
+        "lip blister",
+        "sore on my lip"
+      ],
+      "overview": "A recurrent herpes simplex lip blister that heals in about 7-10 days. Starting treatment at the first tingle works best.",
+      "first_line": [
+        {
+          "herb": "lemon_balm",
+          "prep": 1,
+          "why": "Lemon balm cream shortens healing and eases symptoms in trials."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Soothes the dry, sore edges."
+        }
+      ],
+      "self_care": [
+        "Over-the-counter aciclovir 5 percent cream, applied at the first tingle, is the proven option.",
+        "Avoid kissing and sharing cups, towels or lip products while it is active; wash hands after touching it.",
+        "Protect lips with SPF lip balm in strong sun, and manage stress and tiredness, common triggers."
+      ],
+      "see_doctor_if": [
+        "A sore near the eye, or any eye pain or blurred vision.",
+        "Weakened immunity, or sores that spread or are very frequent.",
+        "It lasts more than 2 weeks, or in a baby or someone with eczema."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(eye|eyes)\\s+(pain|sore|red)|blurred\\s+vision",
+          "level": "urgent",
+          "label": "possible eye involvement"
+        }
+      ],
+      "questions": [
+        "How long have you had it, and is it near your eye?"
+      ]
+    },
+    "fungal_skin": {
+      "title": "Athlete's foot and ringworm (fungal skin)",
+      "category": "skin",
+      "triage": "self_care",
+      "keywords": [
+        "athlete's foot",
+        "athletes foot",
+        "fungal",
+        "ringworm",
+        "tinea",
+        "between my toes",
+        "between toes",
+        "itchy feet",
+        "daad",
+        "dad ",
+        "jock itch",
+        "groin rash",
+        "nail fungus"
+      ],
+      "overview": "Itchy, scaly or ring-shaped patches, often between the toes or in skin folds. Over-the-counter antifungals work well; tea tree has trial support.",
+      "first_line": [
+        {
+          "herb": "tea_tree",
+          "prep": 1,
+          "why": "Tea tree solutions helped athlete's foot in trials."
+        },
+        {
+          "herb": "neem",
+          "prep": 0,
+          "why": "A traditional antifungal rinse."
+        }
+      ],
+      "second_line": [],
+      "self_care": [
+        "Keep the skin dry, especially between the toes; change cotton socks daily and air your shoes.",
+        "Clotrimazole or terbinafine cream from a pharmacy is the proven first-line option; continue for 2 weeks after it clears.",
+        "Wash towels and bedding in hot water, and do not share them."
+      ],
+      "see_doctor_if": [
+        "You have diabetes or weakened immunity.",
+        "Nails or the scalp are involved (especially in children).",
+        "No improvement after 2-4 weeks, or the skin is painful, oozing or very red."
+      ],
+      "red_flags": [
+        {
+          "pattern": "\\bpus\\b|spreading\\s+red",
+          "level": "clinician",
+          "label": "possible skin infection"
+        }
+      ],
+      "questions": [
+        "Where is it, and how long have you had it?",
+        "Do you have diabetes?"
+      ]
+    },
+    "dandruff": {
+      "title": "Dandruff and itchy scalp",
+      "category": "hair",
+      "triage": "self_care",
+      "keywords": [
+        "dandruff",
+        "flaky scalp",
+        "scalp flakes",
+        "itchy scalp",
+        "scalp itch",
+        "sikri",
+        "sikri",
+        "khushki",
+        "flakes in my hair"
+      ],
+      "overview": "Flaking with itch is usually a yeast overgrowth on the scalp (seborrheic dermatitis). Tea tree shampoo has trial support; medicated shampoos are also very effective.",
+      "first_line": [
+        {
+          "herb": "tea_tree",
+          "prep": 0,
+          "why": "5 percent tea tree shampoo reduced dandruff in a randomised trial."
+        },
+        {
+          "herb": "neem",
+          "prep": 0,
+          "why": "A traditional antifungal scalp rinse."
+        },
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Soothes an itchy, dry scalp."
+        },
+        {
+          "herb": "fenugreek",
+          "prep": 1,
+          "why": "Methi paste is a traditional anti-dandruff scalp mask."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "coconut_oil",
+          "prep": 0,
+          "why": "May help dryness, but can worsen oily dandruff."
+        }
+      ],
+      "self_care": [
+        "Shampoo 2-3 times a week with an anti-dandruff ingredient (ketoconazole, zinc pyrithione, selenium sulfide) and leave it on for 3-5 minutes.",
+        "Rinse thoroughly; limit heavy oils and styling products.",
+        "Manage stress, get some sunlight, and avoid scratching."
+      ],
+      "see_doctor_if": [
+        "The scalp is red, painful, oozing or has thick scaly plaques (possible psoriasis).",
+        "You are losing hair with the flaking.",
+        "No improvement after 4 weeks."
+      ],
+      "red_flags": [
+        {
+          "pattern": "\\bpus\\b|oozing|bleeding\\s+scalp|painful\\s+scalp",
+          "level": "clinician",
+          "label": "inflamed or infected scalp"
+        }
+      ],
+      "questions": [
+        "Is your scalp oily or dry, and is it very itchy or red?"
+      ]
+    },
+    "hair_fall": {
+      "title": "Hair fall and thinning",
+      "category": "hair",
+      "triage": "self_care",
+      "keywords": [
+        "hair fall",
+        "hair loss",
+        "hair thinning",
+        "shedding",
+        "baal jhad",
+        "baal gir",
+        "balon ka girna",
+        "balon ka jhadna",
+        "bal jhad",
+        "bal gir",
+        "thinning hair",
+        "receding",
+        "losing hair",
+        "falling hair",
+        "hair falling",
+        "hair is falling",
+        "hair shedding"
+      ],
+      "overview": "Diffuse shedding after illness, stress, childbirth, crash dieting or low iron (telogen effluvium) usually recovers in 3-6 months once the trigger is dealt with. Pattern thinning is genetic, and treatments need months to work.",
+      "first_line": [
+        {
+          "herb": "rosemary",
+          "prep": 0,
+          "why": "One randomised trial found rosemary oil as effective as 2 percent minoxidil after 6 months."
+        },
+        {
+          "herb": "amla",
+          "prep": 1,
+          "why": "Amla oil is the traditional Ayurvedic hair tonic and amla fruit supplies vitamin C for iron absorption."
+        },
+        {
+          "herb": "fenugreek",
+          "prep": 1,
+          "why": "Methi paste is a traditional scalp conditioner."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "coconut_oil",
+          "prep": 0,
+          "why": "A pre-wash oil that reduces protein loss from hair."
+        },
+        {
+          "herb": "aloe_vera",
+          "prep": 0,
+          "why": "Soothes the scalp."
+        }
+      ],
+      "self_care": [
+        "Eat enough protein, iron (lentils, spinach, dates, meat), zinc and vitamin D; avoid crash diets.",
+        "Be gentle: avoid tight hairstyles, very hot styling and harsh chemical treatments; massage the scalp.",
+        "Ask for blood tests (ferritin, thyroid, vitamin D, B12), especially if you are a woman with heavy periods.",
+        "Minoxidil 2-5 percent from a pharmacy is the proven over-the-counter treatment for pattern thinning.",
+        "Allow 3-6 months before judging any treatment."
+      ],
+      "see_doctor_if": [
+        "Sudden, patchy or bald-spot hair loss.",
+        "A painful, red, scaly or scarred scalp.",
+        "Loss together with weight change, irregular periods, extreme tiredness or other symptoms.",
+        "Shedding continues beyond 6 months."
+      ],
+      "red_flags": [
+        {
+          "pattern": "patch(y|es)|bald\\s+(spot|patch)|sudden(ly)?\\s+(hair\\s+)?(loss|falling|losing)",
+          "level": "clinician",
+          "label": "sudden or patchy hair loss"
+        }
+      ],
+      "questions": [
+        "Is it all over, or in patches or a thinning area?",
+        "Any recent illness, stress, crash diet, childbirth or new medicine?"
+      ],
+      "insights": [
+        {
+          "id": "stress",
+          "pattern": "stress|worr|anxi|exam|grief",
+          "say": "Hair shedding often follows a stressful period by 2-3 months, so it usually regrows once the stress and sleep settle."
+        },
+        {
+          "id": "illness",
+          "pattern": "after (a )?(fever|covid|illness|delivery|baby|surgery|typhoid)|postpartum",
+          "say": "Shedding that follows an illness, surgery or childbirth is typically temporary, and it should slow over a few months."
+        },
+        {
+          "id": "diet",
+          "pattern": "diet|protein|iron|anaemi|anemi|crash|dieting|skip",
+          "say": "Low iron, protein or vitamin D are very common causes, so a simple blood test (ferritin, vitamin D, thyroid) is worth doing alongside the herbs."
+        },
+        {
+          "id": "dandruff",
+          "pattern": "dandruff|itch|flak|scalp",
+          "say": "An itchy, flaky scalp should be treated first, because a healthy scalp is the base for regrowth."
+        }
+      ]
+    },
+    "mouth_ulcers_gum": {
+      "title": "Mouth ulcers, sore gums and toothache",
+      "category": "oral",
+      "triage": "self_care",
+      "keywords": [
+        "mouth ulcer",
+        "canker",
+        "aphthous",
+        "sore gums",
+        "gum pain",
+        "gums",
+        "toothache",
+        "tooth ache",
+        "daant dard",
+        "daant mein dard",
+        "chhaale",
+        "chale mooh",
+        "mouth sore"
+      ],
+      "overview": "Minor mouth ulcers heal by themselves in 1-2 weeks. Toothache needs a dentist, but a clove can buy comfort until then.",
+      "first_line": [
+        {
+          "herb": "chamomile",
+          "prep": 1,
+          "why": "A cooled chamomile rinse soothes inflamed gums and ulcers."
+        },
+        {
+          "herb": "sage",
+          "prep": 0,
+          "why": "A sage gargle is a traditional mouth and gum rinse."
+        },
+        {
+          "herb": "clove",
+          "prep": 1,
+          "why": "Clove (eugenol) numbs a sore tooth temporarily."
+        }
+      ],
+      "second_line": [],
+      "self_care": [
+        "Rinse with warm salt water (half a teaspoon in a glass) 3 times a day.",
+        "Avoid spicy, acidic or sharp foods and use a soft brush and an SLS-free toothpaste.",
+        "A benzocaine or choline salicylate gel from a pharmacy numbs ulcers (not salicylate gels for under-16s).",
+        "Recurrent ulcers can point to low iron, B12 or folate; ask for a check."
+      ],
+      "see_doctor_if": [
+        "Any mouth ulcer lasting more than 3 weeks, especially if you smoke, chew paan, gutka or tobacco.",
+        "Large, spreading ulcers, or ulcers with fever.",
+        "Toothache with facial swelling, fever or trouble swallowing: see a dentist or doctor the same day.",
+        "Bleeding gums that persist."
+      ],
+      "red_flags": [
+        {
+          "pattern": "swell(ing|en)\\s+(of|in|on)\\s+(my\\s+)?(face|jaw|cheek)|face\\s+is\\s+swollen|fever.*(tooth|toothache)",
+          "level": "urgent",
+          "label": "possible dental abscess"
+        },
+        {
+          "pattern": "ulcer.*(3|three|4|four|several)\\s+weeks|(3|three|4|four)\\s+weeks.*ulcer",
+          "level": "clinician",
+          "label": "ulcer lasting more than 3 weeks"
+        }
+      ],
+      "questions": [
+        "How long have you had it, and do you smoke or chew tobacco or paan?"
+      ]
+    },
+    "urinary_symptoms": {
+      "title": "Burning urine and urinary symptoms",
+      "category": "urinary",
+      "triage": "see_clinician",
+      "keywords": [
+        "burning urine",
+        "burning when i pee",
+        "burning when urinating",
+        "burning urination",
+        "uti",
+        "urinary infection",
+        "urine infection",
+        "frequent urination",
+        "cystitis",
+        "peshab mein jalan",
+        "peshab jalan",
+        "pishab",
+        "urinary"
+      ],
+      "overview": "Burning and urgency are usually a urinary tract infection, which needs a urine test and often antibiotics. Herbs and fluids support comfort and prevention but should not replace testing.",
+      "first_line": [
+        {
+          "herb": "cranberry",
+          "prep": 0,
+          "why": "Cranberry reduces the chance of repeat infections; it is for prevention rather than treating an active infection."
+        }
+      ],
+      "second_line": [],
+      "self_care": [
+        "See a doctor or pharmacist about a urine test within 24-48 hours.",
+        "Drink plenty of water, pass urine often, and do not hold it in.",
+        "A warm pack on the lower belly and paracetamol at the label dose ease discomfort.",
+        "Wipe front to back, pass urine after sex, and avoid perfumed soaps."
+      ],
+      "see_doctor_if": [
+        "Fever, shaking chills, back or side pain, or vomiting (possible kidney infection) needs same-day care.",
+        "Blood in the urine, or symptoms in pregnancy, diabetes, men, or children.",
+        "Symptoms last more than 48 hours or keep coming back."
+      ],
+      "red_flags": [
+        {
+          "pattern": "fever.*(urine|urinat|pee)|(back|flank|side)\\s+pain.*(urine|urinat|pee)|blood\\s+in\\s+(my\\s+)?urine",
+          "level": "clinician",
+          "label": "possible kidney infection or blood in urine"
+        }
+      ],
+      "questions": [
+        "How long have you had it, and is there any fever, back pain, or blood in the urine?",
+        "Are you pregnant, or do you have diabetes?"
+      ]
+    },
+    "metabolic_support": {
+      "title": "Blood sugar, blood pressure and cholesterol support",
+      "category": "metabolic",
+      "triage": "ongoing_condition",
+      "keywords": [
+        "blood sugar",
+        "high sugar",
+        "sugar control",
+        "diabetes",
+        "prediabetes",
+        "blood pressure",
+        "high bp",
+        "hypertension",
+        "cholesterol",
+        "sugar ki",
+        "sugar ki bimari",
+        "bp high",
+        "bp ki",
+        "lipid"
+      ],
+      "overview": "Long-term conditions are managed by your prescriber and your medicines. Food, movement and a few well-studied herbs can support that plan, but never replace it. Herbs that act on blood sugar and pressure can make medicines work harder, so readings need watching.",
+      "first_line": [
+        {
+          "herb": "hibiscus",
+          "prep": 0,
+          "why": "Hibiscus tea modestly lowers blood pressure in trials."
+        },
+        {
+          "herb": "cinnamon",
+          "prep": 0,
+          "why": "Evidence on blood sugar is mixed; small amounts are a pleasant addition."
+        },
+        {
+          "herb": "fenugreek",
+          "prep": 0,
+          "why": "Soaked methi seeds show modest lowering of blood sugar."
+        },
+        {
+          "herb": "garlic",
+          "prep": 0,
+          "why": "Modest effects on cholesterol and blood pressure in trials."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "psyllium",
+          "prep": 0,
+          "why": "Soluble fibre lowers cholesterol and flattens sugar spikes."
+        },
+        {
+          "herb": "flaxseed",
+          "prep": 0,
+          "why": "Fibre and omega-3 for cholesterol."
+        },
+        {
+          "herb": "karela",
+          "prep": 0,
+          "why": "Traditional bitter vegetable for blood sugar; keep to food amounts."
+        }
+      ],
+      "self_care": [
+        "Never stop or change prescribed medicine without your prescriber.",
+        "Eat more vegetables, legumes, oats and whole grains; cut sugary drinks and refined flour; keep salt under about 5 g a day.",
+        "Aim for 150 minutes of brisk activity a week and a healthy weight.",
+        "Check your readings at home after starting any herb and share them with your prescriber."
+      ],
+      "see_doctor_if": [
+        "Blood pressure 180/120 or higher, or severe headache, chest pain, vision change or weakness (emergency).",
+        "Blood sugar very high with intense thirst, vomiting or confusion, or very low with shakiness and sweating.",
+        "New diabetes symptoms (thirst, frequent urination, weight loss) need a test.",
+        "Any new herb in someone on these medicines should be mentioned to the prescriber."
+      ],
+      "red_flags": [
+        {
+          "pattern": "(180|190|200)\\s*/\\s*(110|120|130)|bp\\s+(is\\s+)?(very\\s+)?high.*(headache|chest|vision)",
+          "level": "urgent",
+          "label": "dangerously high blood pressure"
+        }
+      ],
+      "questions": [
+        "Which medicines do you take for this, and how are your readings?"
+      ]
+    },
+    "immunity_support": {
+      "title": "Immunity and general resilience",
+      "category": "immunity",
+      "triage": "self_care",
+      "keywords": [
+        "immunity",
+        "immune",
+        "frequent cold",
+        "catch cold",
+        "catching cold",
+        "prevent cold",
+        "boost immun",
+        "mudafiat",
+        "qowat",
+        "quwwat",
+        "weak immune"
+      ],
+      "overview": "No herb 'boosts' immunity beyond what sleep, nutrition and vaccination do. Daily tonic foods and teas are a good, safe supporting habit, and they are best started before the cold season.",
+      "first_line": [
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "The traditional daily resilience tea."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "A warming daily tea for the cold season."
+        },
+        {
+          "herb": "amla",
+          "prep": 0,
+          "why": "A rich natural vitamin C source."
+        },
+        {
+          "herb": "garlic",
+          "prep": 0,
+          "why": "Raw garlic has some trial support for fewer colds."
+        },
+        {
+          "herb": "turmeric",
+          "prep": 0,
+          "why": "Haldi doodh is a traditional night tonic."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "elder",
+          "prep": 0,
+          "why": "Elderflower tea at the first sign of a cold."
+        },
+        {
+          "herb": "echinacea",
+          "prep": 0,
+          "why": "A short course at the first sign of a cold; evidence is mixed."
+        },
+        {
+          "herb": "green_tea",
+          "prep": 0,
+          "why": "A daily antioxidant-rich tea."
+        }
+      ],
+      "self_care": [
+        "Sleep 7-9 hours; poor sleep is one of the biggest drivers of repeated infections.",
+        "Eat a varied diet with protein, fruit and vegetables; get sensible sun for vitamin D.",
+        "Wash hands often, keep vaccinations up to date, and stay active.",
+        "Quit smoking and limit alcohol."
+      ],
+      "see_doctor_if": [
+        "You get infections more than 4-6 times a year, or they are unusually severe.",
+        "Wounds are slow to heal, or you have unexplained weight loss, night sweats or persistent fever."
+      ],
+      "red_flags": [],
+      "questions": [
+        "How often do you get ill, and how are your sleep and diet?"
+      ]
+    },
+    "fever_mild": {
+      "title": "Mild fever",
+      "category": "immunity",
+      "triage": "self_care",
+      "keywords": [
+        "fever",
+        "bukhar",
+        "bukhaar",
+        "high temperature",
+        "temperature of",
+        "feverish",
+        "running a temperature"
+      ],
+      "overview": "A mild fever is the body fighting an infection and usually settles in 2-3 days. Fluids and rest matter most. In places where dengue, malaria or typhoid are common, a fever lasting more than 2-3 days needs a blood test.",
+      "first_line": [
+        {
+          "herb": "tulsi",
+          "prep": 0,
+          "why": "A traditional warm tea during fever."
+        },
+        {
+          "herb": "ginger",
+          "prep": 0,
+          "why": "A warming tea that helps sweating and comfort."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "elder",
+          "prep": 0,
+          "why": "Elderflower tea is a classic sweating tea."
+        },
+        {
+          "herb": "honey",
+          "prep": 0,
+          "why": "Soothes the throat or cough that goes with it."
+        }
+      ],
+      "self_care": [
+        "Drink plenty of fluids, including oral rehydration solution; rest.",
+        "Paracetamol at the label dose helps comfort; never give aspirin to anyone under 18.",
+        "Dress lightly; tepid (not cold) sponging can ease discomfort.",
+        "Record the temperature and any other symptoms for a doctor if it persists."
+      ],
+      "see_doctor_if": [
+        "Fever above 39.5 C (103 F), or any fever lasting more than 3 days (sooner for children, the elderly, in pregnancy, or in dengue or malaria areas).",
+        "Severe headache, stiff neck, rash, confusion, breathing difficulty, or a seizure is an emergency.",
+        "Any fever in a baby under 3 months is an emergency."
+      ],
+      "red_flags": [
+        {
+          "pattern": "stiff\\s+neck|confus(ed|ion)|seizure|convuls|rash.*fever|fever.*rash",
+          "level": "urgent",
+          "label": "fever with warning signs"
+        },
+        {
+          "pattern": "(fever|bukhar|bukhaar).*(3|three|4|four|5|five|\\d+)\\s+(days|din)",
+          "level": "clinician",
+          "label": "fever lasting several days"
+        }
+      ],
+      "questions": [
+        "What is the temperature, how many days has it lasted, and who is it for?"
+      ]
+    },
+    "piles_mild": {
+      "title": "Piles (haemorrhoids) and rectal discomfort",
+      "category": "digestion",
+      "triage": "self_care",
+      "keywords": [
+        "piles",
+        "haemorrhoid",
+        "hemorrhoid",
+        "bawaseer",
+        "bawasir",
+        "anal itch",
+        "rectal pain",
+        "pain when passing stool"
+      ],
+      "overview": "Swollen veins at the back passage, usually from constipation and straining. Fibre, fluids and warm baths are the foundation. Any rectal bleeding should be checked at least once.",
+      "first_line": [
+        {
+          "herb": "psyllium",
+          "prep": 0,
+          "why": "Soft, bulky stool prevents straining, which is the main driver."
+        },
+        {
+          "herb": "witch_hazel",
+          "prep": 0,
+          "why": "Cooling witch hazel pads ease itch and irritation."
+        }
+      ],
+      "second_line": [
+        {
+          "herb": "flaxseed",
+          "prep": 0,
+          "why": "Fibre for softer stool."
+        }
+      ],
+      "self_care": [
+        "Warm sitz baths (10-15 minutes, 2-3 times a day) ease pain.",
+        "Drink plenty of fluids and eat more fibre; do not strain or sit on the toilet for long.",
+        "Pat gently with moist wipes or water rather than rubbing; avoid perfumed products."
+      ],
+      "see_doctor_if": [
+        "Any rectal bleeding that is new or unexplained should be checked.",
+        "Severe pain or a hard, painful lump (possible clot).",
+        "No improvement after a week or two, or you are over 45 with a change in bowel habits."
+      ],
+      "red_flags": [
+        {
+          "pattern": "bleeding\\s+(from|when)|blood\\s+(in|on)\\s+(my\\s+)?(stool|poo|toilet|tissue)",
+          "level": "clinician",
+          "label": "rectal bleeding"
+        }
+      ],
+      "questions": [
+        "Is there any bleeding, and are you constipated?"
+      ]
+    }
+  }
+}

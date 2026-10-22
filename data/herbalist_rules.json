@@ -1,0 +1,737 @@
+{
+  "_note": "Graduated safety rules for the herbalist consultation engine. Medication keyword lists are used to CLASSIFY what a patient takes so that herb-specific interactions can be applied precisely. They are not a complete drug database. A medicine that is not recognised is handled by herb risk level (see herbalist_screening.py), never by a blanket refusal.",
+  "never_recommend": [
+    {
+      "name": "kava",
+      "aliases": [
+        "kava kava",
+        "piper methysticum"
+      ],
+      "why": "serious liver injury reports"
+    },
+    {
+      "name": "comfrey (internal)",
+      "aliases": [
+        "comfrey tea",
+        "symphytum"
+      ],
+      "why": "pyrrolizidine alkaloids, liver damage when taken by mouth"
+    },
+    {
+      "name": "ephedra",
+      "aliases": [
+        "ma huang",
+        "ephedra sinica"
+      ],
+      "why": "heart attack, stroke and death reports"
+    },
+    {
+      "name": "aristolochia",
+      "aliases": [
+        "aristolochic acid",
+        "birthwort"
+      ],
+      "why": "kidney failure and urinary tract cancer"
+    },
+    {
+      "name": "chaparral",
+      "aliases": [
+        "larrea tridentata"
+      ],
+      "why": "liver failure"
+    },
+    {
+      "name": "pennyroyal",
+      "aliases": [
+        "pennyroyal oil",
+        "mentha pulegium"
+      ],
+      "why": "liver failure, used as abortifacient, deaths reported"
+    },
+    {
+      "name": "germander",
+      "aliases": [
+        "teucrium chamaedrys"
+      ],
+      "why": "liver failure"
+    },
+    {
+      "name": "yohimbe",
+      "aliases": [
+        "yohimbine",
+        "pausinystalia"
+      ],
+      "why": "heart rhythm and blood pressure effects"
+    },
+    {
+      "name": "kratom",
+      "aliases": [
+        "mitragyna"
+      ],
+      "why": "dependence, liver injury, deaths"
+    },
+    {
+      "name": "bitter orange extract",
+      "aliases": [
+        "synephrine",
+        "citrus aurantium extract"
+      ],
+      "why": "heart rhythm and blood pressure effects"
+    },
+    {
+      "name": "usnic acid",
+      "aliases": [
+        "usnea supplement"
+      ],
+      "why": "liver failure in weight-loss products"
+    },
+    {
+      "name": "colloidal silver",
+      "aliases": [
+        "silver water"
+      ],
+      "why": "argyria, no proven benefit"
+    },
+    {
+      "name": "oral essential oils",
+      "aliases": [
+        "ingest essential oil",
+        "swallow essential oil"
+      ],
+      "why": "essential oils must not be swallowed undiluted"
+    }
+  ],
+  "med_classes": {
+    "anticoagulant": {
+      "label": "blood thinner or antiplatelet",
+      "keywords": [
+        "warfarin",
+        "coumadin",
+        "acenocoumarol",
+        "heparin",
+        "enoxaparin",
+        "apixaban",
+        "eliquis",
+        "rivaroxaban",
+        "xarelto",
+        "dabigatran",
+        "clopidogrel",
+        "plavix",
+        "aspirin",
+        "disprin",
+        "ecosprin",
+        "ticagrelor",
+        "prasugrel",
+        "cilostazol",
+        "blood thinner"
+      ]
+    },
+    "antidiabetic": {
+      "label": "diabetes medicine",
+      "keywords": [
+        "metformin",
+        "glucophage",
+        "insulin",
+        "glipizide",
+        "glimepiride",
+        "amaryl",
+        "gliclazide",
+        "glyburide",
+        "glibenclamide",
+        "daonil",
+        "sitagliptin",
+        "januvia",
+        "vildagliptin",
+        "linagliptin",
+        "empagliflozin",
+        "dapagliflozin",
+        "pioglitazone",
+        "liraglutide",
+        "semaglutide",
+        "diabetes"
+      ]
+    },
+    "antihypertensive": {
+      "label": "blood pressure medicine",
+      "keywords": [
+        "amlodipine",
+        "nifedipine",
+        "felodipine",
+        "lisinopril",
+        "enalapril",
+        "ramipril",
+        "captopril",
+        "losartan",
+        "valsartan",
+        "telmisartan",
+        "olmesartan",
+        "candesartan",
+        "atenolol",
+        "metoprolol",
+        "bisoprolol",
+        "propranolol",
+        "nadolol",
+        "carvedilol",
+        "labetalol",
+        "clonidine",
+        "methyldopa",
+        "doxazosin",
+        "prazosin",
+        "blood pressure"
+      ]
+    },
+    "diuretic": {
+      "label": "water pill (diuretic)",
+      "keywords": [
+        "furosemide",
+        "lasix",
+        "hydrochlorothiazide",
+        "hctz",
+        "spironolactone",
+        "chlorthalidone",
+        "indapamide",
+        "torsemide",
+        "water pill",
+        "diuretic"
+      ]
+    },
+    "digoxin": {
+      "label": "digoxin",
+      "keywords": [
+        "digoxin",
+        "lanoxin"
+      ]
+    },
+    "corticosteroid": {
+      "label": "steroid",
+      "keywords": [
+        "prednisone",
+        "prednisolone",
+        "dexamethasone",
+        "hydrocortisone",
+        "methylprednisolone",
+        "deflazacort",
+        "betamethasone",
+        "budesonide",
+        "steroid"
+      ]
+    },
+    "immunosuppressant": {
+      "label": "immune-suppressing medicine",
+      "keywords": [
+        "cyclosporine",
+        "ciclosporin",
+        "tacrolimus",
+        "mycophenolate",
+        "azathioprine",
+        "methotrexate",
+        "sirolimus",
+        "everolimus",
+        "tofacitinib",
+        "adalimumab",
+        "etanercept",
+        "infliximab",
+        "rituximab",
+        "leflunomide"
+      ]
+    },
+    "sedative": {
+      "label": "sedating medicine",
+      "keywords": [
+        "diazepam",
+        "valium",
+        "lorazepam",
+        "alprazolam",
+        "xanax",
+        "clonazepam",
+        "rivotril",
+        "zolpidem",
+        "zopiclone",
+        "eszopiclone",
+        "phenobarbital",
+        "gabapentin",
+        "pregabalin",
+        "lyrica",
+        "quetiapine",
+        "olanzapine",
+        "trazodone",
+        "amitriptyline",
+        "sleeping pill",
+        "benzodiazepine",
+        "opioid",
+        "tramadol",
+        "codeine",
+        "morphine"
+      ]
+    },
+    "antidepressant": {
+      "label": "antidepressant",
+      "keywords": [
+        "sertraline",
+        "zoloft",
+        "fluoxetine",
+        "prozac",
+        "escitalopram",
+        "lexapro",
+        "citalopram",
+        "paroxetine",
+        "venlafaxine",
+        "duloxetine",
+        "bupropion",
+        "mirtazapine",
+        "fluvoxamine",
+        "antidepressant",
+        "ssri",
+        "snri"
+      ]
+    },
+    "maoi": {
+      "label": "MAO inhibitor",
+      "keywords": [
+        "phenelzine",
+        "tranylcypromine",
+        "moclobemide",
+        "selegiline",
+        "rasagiline",
+        "isocarboxazid",
+        "maoi"
+      ]
+    },
+    "thyroid": {
+      "label": "thyroid medicine",
+      "keywords": [
+        "levothyroxine",
+        "thyroxine",
+        "synthroid",
+        "euthyrox",
+        "eltroxin",
+        "thyronorm",
+        "liothyronine",
+        "methimazole",
+        "carbimazole",
+        "neomercazole",
+        "propylthiouracil"
+      ]
+    },
+    "hormonal": {
+      "label": "hormonal medicine",
+      "keywords": [
+        "oral contraceptive",
+        "contraceptive pill",
+        "birth control",
+        "the pill",
+        "estrogen",
+        "oestrogen",
+        "estradiol",
+        "progesterone",
+        "progestin",
+        "hormone replacement",
+        "hrt",
+        "tamoxifen",
+        "letrozole",
+        "anastrozole",
+        "clomiphene",
+        "mirena",
+        "implant",
+        "depo"
+      ]
+    },
+    "cyp3a4": {
+      "label": "medicine broken down by liver enzymes (CYP3A4/P-gp)",
+      "keywords": [
+        "atorvastatin",
+        "simvastatin",
+        "lovastatin",
+        "rosuvastatin",
+        "amlodipine",
+        "felodipine",
+        "nifedipine",
+        "cyclosporine",
+        "ciclosporin",
+        "tacrolimus",
+        "sildenafil",
+        "tadalafil",
+        "midazolam",
+        "alprazolam",
+        "carbamazepine",
+        "digoxin",
+        "clarithromycin",
+        "ketoconazole",
+        "itraconazole"
+      ]
+    },
+    "antiepileptic": {
+      "label": "anti-seizure medicine",
+      "keywords": [
+        "carbamazepine",
+        "tegretol",
+        "phenytoin",
+        "valproate",
+        "valproic",
+        "epilim",
+        "lamotrigine",
+        "levetiracetam",
+        "keppra",
+        "topiramate",
+        "oxcarbazepine",
+        "phenobarbital",
+        "clobazam",
+        "seizure"
+      ]
+    },
+    "lithium": {
+      "label": "lithium",
+      "keywords": [
+        "lithium"
+      ]
+    },
+    "antiviral_cancer": {
+      "label": "HIV, transplant or cancer medicine",
+      "keywords": [
+        "antiretroviral",
+        "hiv",
+        "ritonavir",
+        "efavirenz",
+        "saquinavir",
+        "dolutegravir",
+        "chemotherapy",
+        "imatinib",
+        "paclitaxel",
+        "docetaxel",
+        "capecitabine",
+        "cisplatin",
+        "irinotecan",
+        "cancer"
+      ]
+    },
+    "acid_reducer": {
+      "label": "acid reducer or antacid",
+      "keywords": [
+        "omeprazole",
+        "esomeprazole",
+        "pantoprazole",
+        "lansoprazole",
+        "rabeprazole",
+        "ranitidine",
+        "famotidine",
+        "antacid",
+        "gaviscon"
+      ]
+    },
+    "nsaid": {
+      "label": "anti-inflammatory painkiller (NSAID)",
+      "keywords": [
+        "ibuprofen",
+        "brufen",
+        "naproxen",
+        "diclofenac",
+        "voltaren",
+        "ketorolac",
+        "celecoxib",
+        "mefenamic",
+        "ponstan",
+        "etoricoxib",
+        "nsaid"
+      ]
+    },
+    "iron": {
+      "label": "iron supplement",
+      "keywords": [
+        "iron",
+        "ferrous",
+        "ferrous sulfate",
+        "ferrous fumarate",
+        "ferrous sulphate"
+      ]
+    },
+    "antibiotic_cipro": {
+      "label": "fluoroquinolone or tetracycline antibiotic",
+      "keywords": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "ofloxacin",
+        "norfloxacin",
+        "doxycycline",
+        "tetracycline",
+        "minocycline"
+      ]
+    }
+  },
+  "no_interaction_meds": [
+    "homeopathic",
+    "homoeopathic",
+    "homeopathy",
+    "homoeopathy",
+    "homeopath",
+    "bach flower",
+    "paracetamol",
+    "acetaminophen",
+    "panadol",
+    "calpol",
+    "tylenol",
+    "cetirizine",
+    "levocetirizine",
+    "loratadine",
+    "fexofenadine",
+    "montelukast",
+    "salbutamol",
+    "albuterol",
+    "inhaler",
+    "vitamin d",
+    "vitamin c",
+    "vitamin b",
+    "vitamin a",
+    "vitamin e",
+    "multivitamin",
+    "calcium",
+    "magnesium",
+    "zinc",
+    "omega-3",
+    "omega 3",
+    "fish oil",
+    "probiotic",
+    "folic acid",
+    "folate",
+    "ors",
+    "oral rehydration",
+    "saline",
+    "eye drop",
+    "nasal spray",
+    "cough syrup",
+    "lozenge",
+    "sunscreen",
+    "moisturiser",
+    "moisturizer",
+    "minoxidil",
+    "finasteride",
+    "isotretinoin",
+    "d3",
+    "b12",
+    "vitamin d3"
+  ],
+  "condition_tags": {
+    "liver disease": [
+      "liver",
+      "hepatitis",
+      "cirrhosis",
+      "fatty liver",
+      "nafld",
+      "jaundice"
+    ],
+    "kidney disease": [
+      "kidney disease",
+      "renal",
+      "ckd",
+      "dialysis",
+      "kidney failure"
+    ],
+    "kidney stones": [
+      "kidney stone",
+      "renal stone",
+      "kidney stones",
+      "oxalate"
+    ],
+    "gallstones": [
+      "gallstone",
+      "gall stone"
+    ],
+    "gallbladder or bile duct disease": [
+      "gallbladder",
+      "gall bladder",
+      "bile duct",
+      "cholecyst",
+      "gallstone",
+      "gall stone"
+    ],
+    "bleeding disorder": [
+      "hemophilia",
+      "haemophilia",
+      "bleeding disorder",
+      "von willebrand",
+      "thrombocytopenia",
+      "low platelet",
+      "easy bruising"
+    ],
+    "high blood pressure": [
+      "hypertension",
+      "high blood pressure",
+      "high bp"
+    ],
+    "low blood pressure": [
+      "low blood pressure",
+      "hypotension",
+      "low bp"
+    ],
+    "heart disease": [
+      "heart disease",
+      "heart failure",
+      "cardiac",
+      "coronary",
+      "arrhythmia",
+      "afib",
+      "atrial fibrillation",
+      "palpitations",
+      "heart attack",
+      "angina",
+      "stent"
+    ],
+    "low potassium": [
+      "hypokalemia",
+      "hypokalaemia",
+      "low potassium"
+    ],
+    "thyroid disorder": [
+      "thyroid",
+      "hashimoto",
+      "graves",
+      "goitre",
+      "goiter",
+      "hypothyroid",
+      "hyperthyroid"
+    ],
+    "autoimmune disease": [
+      "autoimmune",
+      "lupus",
+      "rheumatoid",
+      "multiple sclerosis",
+      "crohn",
+      "ulcerative colitis",
+      "psoriatic",
+      "sjogren",
+      "myasthenia",
+      "celiac",
+      "coeliac"
+    ],
+    "organ transplant": [
+      "transplant"
+    ],
+    "epilepsy": [
+      "epilepsy",
+      "seizure disorder",
+      "seizures",
+      "fits"
+    ],
+    "diabetes": [
+      "diabetes",
+      "diabetic",
+      "sugar patient",
+      "high blood sugar",
+      "prediabetes",
+      "pre-diabetes",
+      "type 2",
+      "type 1"
+    ],
+    "gastroesophageal reflux": [
+      "gerd",
+      "reflux",
+      "acid reflux",
+      "hiatal",
+      "hiatus hernia"
+    ],
+    "peptic ulcer or gastritis": [
+      "ulcer",
+      "gastritis",
+      "h. pylori",
+      "h pylori",
+      "helicobacter"
+    ],
+    "irritable or inflamed bowel": [
+      "ibd",
+      "crohn",
+      "ulcerative colitis",
+      "diverticulitis"
+    ],
+    "bowel obstruction or swallowing problem": [
+      "bowel obstruction",
+      "intestinal obstruction",
+      "ileus",
+      "stricture",
+      "dysphagia",
+      "difficulty swallowing",
+      "trouble swallowing",
+      "fecal impaction",
+      "faecal impaction"
+    ],
+    "g6pd deficiency": [
+      "g6pd",
+      "favism"
+    ],
+    "asthma": [
+      "asthma",
+      "copd",
+      "wheez"
+    ],
+    "anxiety or mood disorder": [
+      "anxiety disorder",
+      "generalized anxiety",
+      "generalised anxiety",
+      "panic disorder",
+      "depression",
+      "depressed",
+      "bipolar",
+      "schizophrenia",
+      "psychosis",
+      "ocd"
+    ],
+    "iron deficiency": [
+      "iron deficiency",
+      "anemia",
+      "anaemia",
+      "low hemoglobin",
+      "low haemoglobin",
+      "thalassemia",
+      "thalassaemia"
+    ],
+    "hormone-sensitive condition": [
+      "breast cancer",
+      "ovarian cancer",
+      "uterine cancer",
+      "endometrial cancer",
+      "prostate cancer",
+      "endometriosis",
+      "fibroid",
+      "pcos",
+      "hormone sensitive",
+      "hormone-sensitive"
+    ],
+    "scheduled surgery": [
+      "surgery planned",
+      "upcoming surgery",
+      "having surgery",
+      "going for surgery",
+      "operation next",
+      "scheduled surgery"
+    ],
+    "glaucoma": [
+      "glaucoma"
+    ],
+    "fertility treatment": [
+      "ivf",
+      "trying to conceive",
+      "trying for a baby",
+      "fertility treatment",
+      "ttc"
+    ]
+  },
+  "serious_conditions_graded": [
+    "liver disease",
+    "kidney disease",
+    "heart disease",
+    "organ transplant",
+    "autoimmune disease",
+    "epilepsy",
+    "bleeding disorder"
+  ],
+  "child_policy": {
+    "infant_max_months": 12,
+    "toddler_max_years": 2,
+    "child_max_years": 11,
+    "teen_max_years": 17,
+    "notes": {
+      "under_1": "No herbs, no honey (infant botulism). See a paediatrician or pharmacist.",
+      "1_to_2": "Only honey for cough (1 to 2 years: half a teaspoon) and normal food. See a paediatrician for anything else.",
+      "3_to_11": "Gentle kitchen herbs in food or weak, cooled teas only (chamomile, fennel, ginger in food, honey for cough). Avoid essential oils near the face, strong teas, licorice, ashwagandha, valerian and anything concentrated. Check amounts with a paediatric pharmacist.",
+      "12_to_17": "Low-risk herbs at roughly half to adult amounts. Avoid higher-risk herbs (ashwagandha, licorice, valerian, sage, vitex, black cohosh, willow bark, St John's wort)."
+    }
+  }
+}

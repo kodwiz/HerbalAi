@@ -1,0 +1,195 @@
+{
+  "_note": "Product catalogue. Entries marked is_demo are placeholders only. Replace with verified products: see README 'How to add products'. Never add a product without a traceable source.",
+  "products": [
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": true,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-001",
+      "name": "DEMO Aloe Soothing Gel",
+      "category": "skin",
+      "intended_use": "Topical soothing of minor skin irritation",
+      "herb_ids": [
+        "aloe_vera"
+      ],
+      "ingredients": [
+        "aloe barbadensis leaf juice",
+        "glycerin",
+        "xanthan gum",
+        "phenoxyethanol"
+      ],
+      "form": "gel",
+      "route": "topical"
+    },
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": true,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-002",
+      "name": "DEMO Calendula Barrier Cream",
+      "category": "skin",
+      "intended_use": "Topical care for dry, mildly irritated skin",
+      "herb_ids": [
+        "calendula"
+      ],
+      "ingredients": [
+        "water",
+        "calendula officinalis flower extract",
+        "shea butter",
+        "glycerin",
+        "cetearyl alcohol",
+        "phenoxyethanol"
+      ],
+      "form": "cream",
+      "route": "topical"
+    },
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": false,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-003",
+      "name": "DEMO Rosemary Scalp Serum",
+      "category": "hair",
+      "intended_use": "Scalp care as part of a hair-care routine",
+      "herb_ids": [
+        "rosemary"
+      ],
+      "ingredients": [
+        "jojoba seed oil",
+        "rosemary leaf oil (diluted)",
+        "tocopherol"
+      ],
+      "form": "oil",
+      "route": "topical"
+    },
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": true,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-004",
+      "name": "DEMO Plain Psyllium Husk Powder",
+      "category": "digestion",
+      "intended_use": "Bulk-forming fibre for occasional constipation",
+      "herb_ids": [
+        "psyllium_husk"
+      ],
+      "ingredients": [
+        "psyllium husk (plantago ovata)"
+      ],
+      "form": "powder",
+      "route": "oral"
+    },
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": true,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-005",
+      "name": "DEMO Peppermint Leaf Tea Bags",
+      "category": "digestion",
+      "intended_use": "After-meal herbal tea",
+      "herb_ids": [
+        "peppermint"
+      ],
+      "ingredients": [
+        "peppermint leaf (mentha x piperita)"
+      ],
+      "form": "tea",
+      "route": "oral"
+    },
+    {
+      "brand": "Demo Brand (placeholder)",
+      "manufacturer": "Not applicable (demonstration)",
+      "official_url": null,
+      "price": null,
+      "availability_region": [
+        "demo"
+      ],
+      "source_of_information": "Demonstration data created for this app",
+      "last_verified": null,
+      "verification_status": "demonstration_placeholder",
+      "is_demo": true,
+      "fragrance_free": true,
+      "product_warnings": [
+        "DEMONSTRATION ENTRY - not a real product. Ingredient list is an illustrative placeholder and must be replaced with verified label data before real use."
+      ],
+      "formulation_notes": "Concentration unknown (demonstration)",
+      "id": "DEMO-006",
+      "name": "DEMO Chamomile Flower Tea Bags",
+      "category": "sleep_stress",
+      "intended_use": "Evening herbal tea",
+      "herb_ids": [
+        "chamomile"
+      ],
+      "ingredients": [
+        "chamomile flower (matricaria chamomilla)"
+      ],
+      "form": "tea",
+      "route": "oral"
+    }
+  ]
+}
